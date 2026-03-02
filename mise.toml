@@ -1,12 +1,11 @@
 [tools]
 node = "25.2.1"
-"npm:workspaced" = "0.1.0"
 
 [tasks.lint]
-run = "workspaced codebase lint"
+run = "npm run lint"
 
 [tasks.fmt]
-run = "workspaced codebase format"
+run = "npm run lint"
 
 [tasks.test]
 depends = ["test:*"]
