@@ -1,7 +1,6 @@
 [tools]
 node = "25.2.1"
-python = "2.7.18"
-"npm:workspaced" = "0.1.0"
+"github:lucasew/workspaced" = "latest"
 
 [tasks.lint]
 run = "workspaced codebase lint"
@@ -11,9 +10,6 @@ run = "workspaced codebase format"
 
 [tasks.test]
 depends = ["test:*"]
-
-[tasks."test:vitest"]
-run = "npx vitest run"
 
 [tasks.codegen]
 depends = ["codegen:*"]
