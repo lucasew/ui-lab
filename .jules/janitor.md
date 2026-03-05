@@ -1,0 +1,1 @@
+- 2025-03-05: Formatting was inconsistent across the src directory; enforced a consistent code style.
