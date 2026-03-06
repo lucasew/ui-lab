@@ -3,10 +3,22 @@ import React from 'react';
 import { Header } from './Header';
 import './page.css';
 
+/**
+ * Local definition representing an active user context.
+ * In production, this would be centrally provided by Auth.
+ */
 type User = {
   name: string;
 };
 
+/**
+ * An isolated composite component intended for template and story-driven development.
+ * Demonstrates a standard layout including `Header` and some static content.
+ *
+ * Uses internal state to simulate an authentication journey (login/logout flows),
+ * providing a seamless sandbox for component-driven UI validation without needing
+ * actual backend or Oauth integration.
+ */
 export const Page: React.FC = () => {
   const [user, setUser] = React.useState<User>();
 

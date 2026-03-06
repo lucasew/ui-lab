@@ -2,20 +2,51 @@ import React from 'react';
 
 import './button.css';
 
+/**
+ * Configuration options for the Button component.
+ * Used to control the visual hierarchy and interaction states.
+ */
 export interface ButtonProps {
-  /** Is this the principal call to action on the page? */
+  /**
+   * Defines if the button represents the primary action on the view.
+   * Primary buttons usually feature higher contrast and should ideally be used once per view context.
+   * Defaults to false (renders as secondary).
+   */
   primary?: boolean;
-  /** What background color to use */
+  /**
+   * Overrides the default theme background color.
+   * Use sparingly, as custom colors may break contrast accessibility guidelines.
+   */
   backgroundColor?: string;
-  /** How large should the button be? */
+  /**
+   * Controls the padding and text sizing of the button.
+   * - `small`: Used in dense interfaces or secondary actions.
+   * - `medium`: Standard sizing for general forms and calls to action.
+   * - `large`: Prominent actions, useful for hero sections or main conversions.
+   * Defaults to 'medium'.
+   */
   size?: 'small' | 'medium' | 'large';
-  /** Button contents */
+  /**
+   * The text displayed inside the button.
+   * Should be concise and verb-led (e.g., "Save", "Cancel", "Submit").
+   */
   label: string;
-  /** Optional click handler */
+  /**
+   * Callback fired when the button is clicked or activated via keyboard (Enter/Space).
+   */
   onClick?: () => void;
 }
 
-/** Primary UI component for user interaction */
+/**
+ * An interactive UI element that triggers actions or submits forms.
+ * Composes a standard HTML button with predefined sizing and semantic variants.
+ *
+ * Inherits standard HTML button attributes implicitly via `...props`, but exposes
+ * typed, high-level modifiers via `ButtonProps`.
+ *
+ * @example
+ * <Button primary size="large" label="Checkout Now" onClick={handleCheckout} />
+ */
 export const Button = ({
   primary = false,
   size = 'medium',
