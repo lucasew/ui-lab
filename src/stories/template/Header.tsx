@@ -3,17 +3,48 @@ import React from 'react';
 import { Button } from './Button';
 import './header.css';
 
+/**
+ * Basic profile metadata required by the layout.
+ * Acts as the source of truth for rendering user-specific UI parts.
+ */
 type User = {
   name: string;
 };
 
+/**
+ * High-level layout props that configure navigation and authentication flows.
+ */
 export interface HeaderProps {
+  /**
+   * The authenticated user instance. If absent, the header displays guest actions.
+   * Modifies the internal layout from Sign up / Log in to Welcome / Log out.
+   */
   user?: User;
+  /**
+   * Callback triggered when a guest clicks "Log in".
+   * Usually hooks into the central auth context or Oauth flow.
+   */
   onLogin?: () => void;
+  /**
+   * Callback triggered when an authenticated user clicks "Log out".
+   * Must clear local session and dispatch state invalidation.
+   */
   onLogout?: () => void;
+  /**
+   * Callback triggered when a guest clicks "Sign up".
+   * Generally navigates to a registration page or triggers a modal.
+   */
   onCreateAccount?: () => void;
 }
 
+/**
+ * Global application top-bar component.
+ * It establishes brand identity and exposes the primary authentication actions.
+ *
+ * It manages two distinct views:
+ * - Guest mode: Prominently offers Login and Sign up.
+ * - Authenticated mode: Greets the user and offers Session termination.
+ */
 export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) => (
   <header>
     <div className="storybook-header">
