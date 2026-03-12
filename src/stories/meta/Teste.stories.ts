@@ -28,6 +28,6 @@ export const Lucas: Story = {
 
 export const Trabson: Story = {
   args: {
-    item: "trabson"
-  }
+    item: "trabson",
+  },
 };
