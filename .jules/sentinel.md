@@ -1,0 +1,1 @@
+- 2026-03-12: [Medium - target="_blank" missing rel="noopener noreferrer" allows tabnabbing]
