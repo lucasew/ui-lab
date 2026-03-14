@@ -10,16 +10,16 @@
 	} = $props();
 
 	const toneClasses: Record<Tone, string> = {
-		primary: 'bg-indigo-100 text-indigo-600',
-		success: 'bg-emerald-100 text-emerald-700',
-		warning: 'bg-amber-100 text-amber-700',
-		danger: 'bg-rose-100 text-rose-700',
-		neutral: 'bg-slate-100 text-slate-600'
+		primary: 'border border-[#7375fc]/40 bg-[#e9ebf8] text-[#5451cf]',
+		success: 'border border-emerald-200 bg-emerald-50 text-emerald-700',
+		warning: 'border border-amber-200 bg-amber-50 text-amber-700',
+		danger: 'border border-rose-200 bg-rose-50 text-rose-700',
+		neutral: 'border border-zinc-200 bg-zinc-50 text-zinc-500'
 	};
 </script>
 
 <span
-	class={`inline-flex min-h-7 items-center justify-center rounded-full px-3 text-xs font-extrabold tracking-[0.02em] ${toneClasses[tone]}`}
+	class={`inline-flex min-h-6 items-center justify-center rounded-md px-2.5 py-1 text-xs font-semibold leading-4 ${toneClasses[tone]}`}
 >
 	{label}
 </span>

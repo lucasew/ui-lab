@@ -14,6 +14,6 @@
 <div class="grid gap-3 md:grid-cols-[minmax(0,1fr)_auto]">
 	<Input {label} {placeholder} prefix="⌕" />
 	<div class="self-end">
-		<Button label="Adicionar" variant="secondary" icon="+" />
+		<Button label="Adicionar" variant="ghost" />
 	</div>
 </div>

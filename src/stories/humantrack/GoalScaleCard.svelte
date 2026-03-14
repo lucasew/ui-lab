@@ -20,22 +20,28 @@
 
 <SectionCard
 	eyebrow="Metas"
-	title="Escala GAS"
-	description="Defina os níveis de desempenho esperados e os marcos que serão usados na avaliação."
-	status="3 cenários"
+	title="Metas"
+	description="Crie metas com escala completa (-2 a +2). Quanto mais específico for o texto de cada nível, mais fácil será interpretar a evolução."
 >
-	<div class="grid gap-3">
+	<div class="flex flex-col gap-8 pt-4">
 		{#each rows as row}
-			<div
-				class="grid gap-3 rounded-[18px] border border-slate-200 bg-slate-50 p-3.5 md:grid-cols-[auto_minmax(0,1fr)_96px_96px] md:items-center"
-			>
-				<Badge label={row.label} tone={row.tone} />
-				<div class="flex flex-col gap-1">
-					<div class="font-bold text-slate-900">{row.description}</div>
-					<div class="text-xs text-slate-500">Ajuste o valor base e a meta para essa condição.</div>
+			<div class="flex flex-col gap-4 border-t border-zinc-200 pt-4 first:border-t-0 first:pt-0">
+				<div class="flex items-center justify-between gap-4">
+					<div class="text-sm font-semibold text-[#292965]">{row.description}</div>
+					<Badge label={row.label} tone={row.tone} />
 				</div>
-				<Input label="Base" value={row.baseline} />
-				<Input label="Meta" value={row.target} />
+				<div class="grid gap-4 md:grid-cols-[36px_minmax(0,1fr)]">
+					<div class="grid h-9 w-9 place-items-center rounded-[2px] border border-[#7375fc]/30 bg-[#e9ebf8] text-sm font-semibold text-[#5451cf]">
+						0
+					</div>
+					<Input label="Descreva a linha base" value={row.baseline} />
+				</div>
+				<div class="grid gap-4 md:grid-cols-[36px_minmax(0,1fr)]">
+					<div class="grid h-9 w-9 place-items-center rounded-[2px] border border-[#7375fc]/30 bg-[#e9ebf8] text-sm font-semibold text-[#5451cf]">
+						+1
+					</div>
+					<Input label="Descreva a meta" value={row.target} />
+				</div>
 			</div>
 		{/each}
 	</div>

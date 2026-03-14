@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Badge from './Badge.svelte';
 	import Switch from './Switch.svelte';
 
 	let {
@@ -14,12 +13,17 @@
 </script>
 
 <div
-	class="grid gap-3 rounded-[18px] border border-slate-200 bg-slate-50 p-3.5 md:grid-cols-[92px_minmax(0,1fr)_auto] md:items-center"
+	class="grid gap-4 md:grid-cols-[minmax(0,1fr)_120px] md:items-end"
 >
-	<div class="font-extrabold text-slate-900">{day}</div>
-	<div class="text-sm text-slate-500">Disparo automático às {time} para coleta da submissão.</div>
-	<div class="flex items-center gap-3 md:justify-end">
-		<Badge label={time} tone="success" />
-		<Switch label="Ativo" {checked} />
+	<Switch label={day} {checked} />
+	<div class="max-w-[120px]">
+		<div class="flex flex-col gap-2">
+			<span class="text-sm font-medium leading-4 text-[#292965]">Horário</span>
+			<input
+				class="h-9 w-full rounded-lg border border-zinc-200 bg-white px-3 py-2 text-sm text-[#292965] shadow-[0_1px_2px_rgba(0,0,0,0.05)]"
+				type="text"
+				value={time}
+			/>
+		</div>
 	</div>
 </div>

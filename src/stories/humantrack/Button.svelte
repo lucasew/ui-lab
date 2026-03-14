@@ -15,14 +15,15 @@
 
 	const variantClasses: Record<Variant, string> = {
 		primary:
-			'bg-linear-to-br from-indigo-500 to-indigo-400 text-white shadow-[0_12px_20px_rgba(91,108,255,0.24)]',
-		secondary: 'bg-indigo-50 text-indigo-600',
-		ghost: 'border border-slate-200 bg-white/40 text-slate-500'
+			'border border-[#7375fc] bg-linear-to-b from-[#6868ee] to-[#5451cf] text-[#fafafa] shadow-[0_1px_2px_rgba(0,0,0,0.08)]',
+		secondary:
+			'border border-[#5451cf] bg-transparent text-[#5451cf] shadow-[0_1px_2px_rgba(0,0,0,0.05)]',
+		ghost: 'border border-zinc-200 bg-white text-zinc-500 shadow-[0_1px_2px_rgba(0,0,0,0.05)]'
 	};
 </script>
 
 <button
-	class={`inline-flex min-h-10 items-center justify-center gap-2 rounded-[14px] px-4 font-extrabold transition duration-150 hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-55 ${variantClasses[variant]}`}
+	class={`inline-flex h-9 items-center justify-center gap-2 rounded-md px-4 text-sm font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-55 ${variantClasses[variant]}`}
 	type="button"
 	{disabled}
 >

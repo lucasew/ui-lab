@@ -10,12 +10,10 @@
 
 <div class="inline-flex items-center gap-3">
 	<div
-		class={`relative h-7 w-12 rounded-full transition duration-150 ${checked ? 'bg-linear-to-br from-indigo-500 to-sky-400' : 'bg-slate-300'}`}
+		class={`flex h-5 w-9 items-center rounded-full border-2 border-transparent px-0.5 transition-colors ${checked ? 'justify-end bg-[#6868ee]' : 'justify-start bg-zinc-300'}`}
 		aria-hidden="true"
 	>
-		<div
-			class={`absolute top-[3px] h-[22px] w-[22px] rounded-full bg-white shadow-[0_4px_10px_rgba(15,24,45,0.18)] transition duration-150 ${checked ? 'translate-x-[22px]' : 'translate-x-1'}`}
-		></div>
+		<div class="h-4 w-4 rounded-full bg-white shadow-[0_4px_10px_rgba(0,0,0,0.14)]"></div>
 	</div>
-	<span class="text-[0.84rem] font-bold text-slate-700">{label}</span>
+	<span class="text-sm font-medium text-[#292965]">{label}</span>
 </div>

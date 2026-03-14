@@ -15,19 +15,19 @@
 </script>
 
 <label class="flex flex-col gap-2">
-	<span class="text-[0.84rem] font-bold text-slate-700">{label}</span>
+	<span class="text-sm font-medium leading-4 text-[#292965]">{label}</span>
 	<div class={`relative ${prefix ? 'has-prefix' : ''}`}>
 		{#if prefix}
-			<span class="absolute top-1/2 left-3.5 -translate-y-1/2 text-sm text-slate-400">{prefix}</span>
+			<span class="absolute top-1/2 left-3 -translate-y-1/2 text-sm text-zinc-500">{prefix}</span>
 		{/if}
 		<input
-			class={`w-full rounded-2xl border border-slate-200 bg-slate-50 px-3.5 py-3 font-inherit text-slate-900 transition duration-150 placeholder:text-slate-400 focus:border-indigo-400 focus:bg-white focus:outline-none focus:ring-4 focus:ring-indigo-100 ${prefix ? 'pl-10' : ''}`}
+			class={`h-9 w-full rounded-lg border border-zinc-200 bg-white px-3 py-2 text-sm text-[#292965] shadow-[0_1px_2px_rgba(0,0,0,0.05)] transition placeholder:text-zinc-500 focus:border-[#7375fc] focus:outline-none focus:ring-2 focus:ring-[#e9ebf8] ${prefix ? 'pl-9' : ''}`}
 			type="text"
 			{placeholder}
 			{value}
 		/>
 	</div>
 	{#if hint}
-		<span class="text-xs text-slate-500">{hint}</span>
+		<span class="text-xs leading-4 text-zinc-500">{hint}</span>
 	{/if}
 </label>
