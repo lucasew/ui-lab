@@ -1,10 +1,10 @@
 <script module lang="ts">
 	import { defineMeta } from '@storybook/addon-svelte-csf';
-	import HTGasFormScreen from './HTGasFormScreen.svelte';
+	import GasFormScreen from './GasFormScreen.svelte';
 
 	const { Story } = defineMeta({
 		title: 'HumanTrack/Screens',
-		component: HTGasFormScreen,
+		component: GasFormScreen,
 		tags: ['autodocs'],
 		parameters: {
 			layout: 'fullscreen'

@@ -1,13 +1,13 @@
 <script module lang="ts">
 	import { defineMeta } from '@storybook/addon-svelte-csf';
-	import HTAiBanner from './HTAiBanner.svelte';
-	import HTGoalScaleCard from './HTGoalScaleCard.svelte';
-	import HTHeaderBar from './HTHeaderBar.svelte';
-	import HTPatientLookup from './HTPatientLookup.svelte';
-	import HTReminderRow from './HTReminderRow.svelte';
-	import HTSectionCard from './HTSectionCard.svelte';
-	import HTInput from './HTInput.svelte';
-	import HTTextArea from './HTTextArea.svelte';
+	import AiBanner from './AiBanner.svelte';
+	import GoalScaleCard from './GoalScaleCard.svelte';
+	import HeaderBar from './HeaderBar.svelte';
+	import PatientLookup from './PatientLookup.svelte';
+	import ReminderRow from './ReminderRow.svelte';
+	import SectionCard from './SectionCard.svelte';
+	import Input from './Input.svelte';
+	import TextArea from './TextArea.svelte';
 
 	const rows = [
 		{
@@ -43,39 +43,39 @@
 </script>
 
 <Story name="Header Bar">
-	<div class="ht-story" style="min-width: 1100px">
-		<HTHeaderBar />
+	<div class="min-w-[1100px] bg-slate-100 p-4 font-[Manrope,Avenir_Next,Segoe_UI,sans-serif]">
+		<HeaderBar />
 	</div>
 </Story>
 
 <Story name="Section Card">
-	<div class="ht-story" style="width: 720px">
-		<HTSectionCard
+	<div class="w-[720px] bg-slate-100 p-4 font-[Manrope,Avenir_Next,Segoe_UI,sans-serif]">
+		<SectionCard
 			eyebrow="Contexto clínico"
 			title="Detalhes da GAS"
 			description="Defina as informações essenciais que orientam a formulação da meta e a coleta."
 			status="Etapa 1"
 		>
-			<div class="ht-stack">
-				<HTInput label="Título da meta" placeholder="Ampliar alcance funcional do membro superior" />
-				<HTTextArea
+			<div class="flex flex-col gap-3">
+				<Input label="Título da meta" placeholder="Ampliar alcance funcional do membro superior" />
+				<TextArea
 					label="Resumo"
 					placeholder="Registre observações clínicas, contexto de uso e critérios mensuráveis."
 				/>
 			</div>
-		</HTSectionCard>
+		</SectionCard>
 	</div>
 </Story>
 
 <Story name="Patient Lookup">
-	<div class="ht-story" style="width: 720px">
-		<HTPatientLookup />
+	<div class="w-[720px] bg-slate-100 p-4 font-[Manrope,Avenir_Next,Segoe_UI,sans-serif]">
+		<PatientLookup />
 	</div>
 </Story>
 
 <Story name="AI Banner">
-	<div class="ht-story" style="width: 760px">
-		<HTAiBanner
+	<div class="w-[760px] bg-slate-100 p-4 font-[Manrope,Avenir_Next,Segoe_UI,sans-serif]">
+		<AiBanner
 			title="IA assistiva para redação SMART"
 			description="A HumanTrack sugere verbos, métricas e horizontes temporais a partir do contexto preenchido."
 		/>
@@ -83,13 +83,13 @@
 </Story>
 
 <Story name="Reminder Row">
-	<div class="ht-story" style="width: 760px">
-		<HTReminderRow day="Segunda" time="08:30" />
+	<div class="w-[760px] bg-slate-100 p-4 font-[Manrope,Avenir_Next,Segoe_UI,sans-serif]">
+		<ReminderRow day="Segunda" time="08:30" />
 	</div>
 </Story>
 
 <Story name="Goal Scale">
-	<div class="ht-story" style="width: 1080px">
-		<HTGoalScaleCard {rows} />
+	<div class="w-[1080px] bg-slate-100 p-4 font-[Manrope,Avenir_Next,Segoe_UI,sans-serif]">
+		<GoalScaleCard {rows} />
 	</div>
 </Story>
