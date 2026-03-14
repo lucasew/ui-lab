@@ -1,4 +1,6 @@
 <script lang="ts">
+	import HumantrackLogo from './HumantrackLogo.svelte';
+
 	let {
 		breadcrumbs = ['Home', '...', 'Breadcrumb', 'Breadcrumb', 'Breadcrumb', 'Nova GAS'],
 		accountLabel = 'Minha conta',
@@ -16,12 +18,7 @@
 	class="flex flex-col gap-4 bg-[#f7f7fa] px-6 py-6 text-sm md:flex-row md:items-center md:justify-between"
 >
 	<div class="flex min-w-0 flex-1 flex-col gap-1 md:flex-row md:items-center md:gap-4">
-		<div class="flex shrink-0 items-center gap-2">
-			<div class="grid h-6 w-6 place-items-center rounded-md bg-linear-to-br from-[#aba7f9] via-[#75c1e6] to-[#6ce4c0]">
-				<div class="h-3 w-3 rounded-sm border border-white/80"></div>
-			</div>
-			<div class="text-sm font-semibold tracking-tight text-[#6868ee]">humantrack</div>
-		</div>
+		<HumantrackLogo />
 
 		<nav class="min-w-0">
 			<div class="flex flex-wrap items-center gap-1.5 text-sm text-zinc-500">
