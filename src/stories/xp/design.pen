@@ -2657,74 +2657,4128 @@
     },
     {
       "type": "frame",
-      "id": "fBHYN",
-      "x": -3409,
-      "y": -1479,
-      "name": "Reference",
-      "clip": true,
-      "width": 924,
-      "height": 2481,
-      "fill": "#FFFFFF",
+      "id": "oNFg7",
+      "x": 270,
+      "y": 199,
+      "name": "App Container",
+      "width": 260,
+      "height": 231,
+      "fill": {
+        "type": "color",
+        "color": "#ffffffff",
+        "enabled": false
+      },
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      },
       "layout": "none",
       "children": [
         {
-          "type": "rectangle",
-          "id": "gIWZr",
+          "type": "group",
+          "id": "1kPqp",
           "x": 0,
           "y": 0,
-          "name": "Reference Image",
-          "fill": {
-            "type": "image",
-            "enabled": true,
-            "url": "image.png",
-            "mode": "fill"
-          },
-          "width": 480,
-          "height": 360
-        },
-        {
-          "type": "rectangle",
-          "id": "VSTKa",
-          "x": 0,
-          "y": 1093,
-          "fill": {
-            "type": "image",
-            "enabled": true,
-            "url": "image-2.png",
-            "mode": "fill"
-          },
-          "width": 800,
-          "height": 600
-        },
-        {
-          "type": "rectangle",
-          "id": "U0wXs",
-          "x": 0,
-          "y": 1693,
-          "fill": {
-            "type": "image",
-            "enabled": true,
-            "url": "image-3.png",
-            "mode": "fill"
-          },
-          "width": 800,
-          "height": 600
+          "name": "App Container",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "XVydG",
+              "x": 0,
+              "y": 0,
+              "name": "Blue Background (Edges)",
+              "fill": "#004cffff",
+              "width": 260,
+              "height": 231,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              }
+            },
+            {
+              "type": "rectangle",
+              "id": "vchIn",
+              "x": 1,
+              "y": 0,
+              "name": "Highlight",
+              "fill": "#166aeeff",
+              "width": 1,
+              "height": 228,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              }
+            },
+            {
+              "type": "rectangle",
+              "id": "2D1A7",
+              "x": 3,
+              "y": 0,
+              "name": "Main Content",
+              "fill": "#ece9d8ff",
+              "width": 254,
+              "height": 228,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "type": "rectangle",
-      "id": "fHQLV",
-      "x": -3409,
-      "y": -1094,
-      "fill": {
-        "type": "image",
-        "enabled": true,
-        "url": "image-1.png",
-        "mode": "fill"
-      },
-      "width": 800,
-      "height": 600
+      "id": "qfpRm",
+      "x": 285,
+      "y": 258,
+      "name": "What is this?",
+      "fill": "#ece9d8ff",
+      "width": 27,
+      "height": 26,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      }
+    },
+    {
+      "type": "group",
+      "id": "ooUVr",
+      "x": 446,
+      "y": 294,
+      "name": "Right",
+      "children": [
+        {
+          "type": "frame",
+          "id": "Hu9Ib",
+          "x": 39,
+          "y": 0,
+          "name": "Button / Small",
+          "width": 32,
+          "height": 25,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "E0cnM",
+              "x": 0,
+              "y": 0,
+              "name": "Button / Background",
+              "width": 32,
+              "height": 25,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2.5,
+                  "id": "0Bho2",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 9",
+                  "fill": [
+                    "#f5f5f1ff",
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": -180,
+                      "size": {
+                        "height": 0.9999999999999999
+                      },
+                      "colors": [
+                        {
+                          "color": "#ffffffff",
+                          "position": 0
+                        },
+                        {
+                          "color": "#f0f0eaff",
+                          "position": 1
+                        }
+                      ],
+                      "center": {
+                        "y": 0.49999999999999994
+                      }
+                    }
+                  ],
+                  "width": 32,
+                  "height": 25,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#003c74ff"
+                  },
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#0000000d",
+                      "offset": {
+                        "x": -1,
+                        "y": -1
+                      }
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#ffffffbf",
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "oaym5",
+              "x": 8,
+              "y": 6,
+              "name": "Button / Text / Small / sqrt",
+              "width": 16,
+              "height": 13,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xQEde",
+          "x": 39,
+          "y": 33,
+          "name": "Button / Small",
+          "width": 32,
+          "height": 25,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "2nnaU",
+              "x": 0,
+              "y": 0,
+              "name": "Button / Background",
+              "width": 32,
+              "height": 25,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2.5,
+                  "id": "EWcwO",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 9",
+                  "fill": [
+                    "#f5f5f1ff",
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": -180,
+                      "size": {
+                        "height": 0.9999999999999999
+                      },
+                      "colors": [
+                        {
+                          "color": "#ffffffff",
+                          "position": 0
+                        },
+                        {
+                          "color": "#f0f0eaff",
+                          "position": 1
+                        }
+                      ],
+                      "center": {
+                        "y": 0.49999999999999994
+                      }
+                    }
+                  ],
+                  "width": 32,
+                  "height": 25,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#003c74ff"
+                  },
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#0000000d",
+                      "offset": {
+                        "x": -1,
+                        "y": -1
+                      }
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#ffffffbf",
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "alLNM",
+              "x": 8,
+              "y": 6,
+              "name": "Button / Text / Small / sqrt",
+              "width": 16,
+              "height": 13,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pm0KO",
+          "x": 39,
+          "y": 65,
+          "name": "Button / Small",
+          "width": 32,
+          "height": 25,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "g3GlJ",
+              "x": 0,
+              "y": 0,
+              "name": "Button / Background",
+              "width": 32,
+              "height": 25,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2.5,
+                  "id": "Nb5Hr",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 9",
+                  "fill": [
+                    "#f5f5f1ff",
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": -180,
+                      "size": {
+                        "height": 0.9999999999999999
+                      },
+                      "colors": [
+                        {
+                          "color": "#ffffffff",
+                          "position": 0
+                        },
+                        {
+                          "color": "#f0f0eaff",
+                          "position": 1
+                        }
+                      ],
+                      "center": {
+                        "y": 0.49999999999999994
+                      }
+                    }
+                  ],
+                  "width": 32,
+                  "height": 25,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#003c74ff"
+                  },
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#0000000d",
+                      "offset": {
+                        "x": -1,
+                        "y": -1
+                      }
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#ffffffbf",
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "giEsm",
+              "x": 8,
+              "y": 6,
+              "name": "Button / Text / Small / sqrt",
+              "width": 16,
+              "height": 13,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "LRg7z",
+          "x": 39,
+          "y": 98,
+          "name": "Button / Small",
+          "width": 32,
+          "height": 25,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "scHYo",
+              "x": 0,
+              "y": 0,
+              "name": "Button / Background",
+              "width": 32,
+              "height": 25,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2.5,
+                  "id": "kQ9YQ",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 9",
+                  "fill": [
+                    "#f5f5f1ff",
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": -180,
+                      "size": {
+                        "height": 0.9999999999999999
+                      },
+                      "colors": [
+                        {
+                          "color": "#ffffffff",
+                          "position": 0
+                        },
+                        {
+                          "color": "#f0f0eaff",
+                          "position": 1
+                        }
+                      ],
+                      "center": {
+                        "y": 0.49999999999999994
+                      }
+                    }
+                  ],
+                  "width": 32,
+                  "height": 25,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#003c74ff"
+                  },
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#0000000d",
+                      "offset": {
+                        "x": -1,
+                        "y": -1
+                      }
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#ffffffbf",
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "RQpXu",
+              "x": 8,
+              "y": 6,
+              "name": "Button / Text / Small / sqrt",
+              "width": 16,
+              "height": 13,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "zg0Qm",
+          "x": 0,
+          "y": 0,
+          "name": "Button / Small",
+          "width": 32,
+          "height": 25,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "d8SpZ",
+              "x": 0,
+              "y": 0,
+              "name": "Button / Background",
+              "width": 32,
+              "height": 25,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2.5,
+                  "id": "L5N7p",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 9",
+                  "fill": [
+                    "#f5f5f1ff",
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": -180,
+                      "size": {
+                        "height": 0.9999999999999999
+                      },
+                      "colors": [
+                        {
+                          "color": "#ffffffff",
+                          "position": 0
+                        },
+                        {
+                          "color": "#f0f0eaff",
+                          "position": 1
+                        }
+                      ],
+                      "center": {
+                        "y": 0.49999999999999994
+                      }
+                    }
+                  ],
+                  "width": 32,
+                  "height": 25,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#003c74ff"
+                  },
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#0000000d",
+                      "offset": {
+                        "x": -1,
+                        "y": -1
+                      }
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#ffffffbf",
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "XrUkj",
+              "x": 8,
+              "y": 6,
+              "name": "Button / Text / Small / sqrt",
+              "width": 16,
+              "height": 13,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "7LShg",
+          "x": 0,
+          "y": 33,
+          "name": "Button / Small",
+          "width": 32,
+          "height": 25,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "32atB",
+              "x": 0,
+              "y": 0,
+              "name": "Button / Background",
+              "width": 32,
+              "height": 25,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2.5,
+                  "id": "9i6jz",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 9",
+                  "fill": [
+                    "#f5f5f1ff",
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": -180,
+                      "size": {
+                        "height": 0.9999999999999999
+                      },
+                      "colors": [
+                        {
+                          "color": "#ffffffff",
+                          "position": 0
+                        },
+                        {
+                          "color": "#f0f0eaff",
+                          "position": 1
+                        }
+                      ],
+                      "center": {
+                        "y": 0.49999999999999994
+                      }
+                    }
+                  ],
+                  "width": 32,
+                  "height": 25,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#003c74ff"
+                  },
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#0000000d",
+                      "offset": {
+                        "x": -1,
+                        "y": -1
+                      }
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#ffffffbf",
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "wAQld",
+              "x": 8,
+              "y": 6,
+              "name": "Button / Text / Small / sqrt",
+              "width": 16,
+              "height": 13,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "AuRcG",
+          "x": 0,
+          "y": 65,
+          "name": "Button / Small",
+          "width": 32,
+          "height": 25,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "jp4Pf",
+              "x": 0,
+              "y": 0,
+              "name": "Button / Background",
+              "width": 32,
+              "height": 25,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2.5,
+                  "id": "X0zvK",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 9",
+                  "fill": [
+                    "#f5f5f1ff",
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": -180,
+                      "size": {
+                        "height": 0.9999999999999999
+                      },
+                      "colors": [
+                        {
+                          "color": "#ffffffff",
+                          "position": 0
+                        },
+                        {
+                          "color": "#f0f0eaff",
+                          "position": 1
+                        }
+                      ],
+                      "center": {
+                        "y": 0.49999999999999994
+                      }
+                    }
+                  ],
+                  "width": 32,
+                  "height": 25,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#003c74ff"
+                  },
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#0000000d",
+                      "offset": {
+                        "x": -1,
+                        "y": -1
+                      }
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#ffffffbf",
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "zsOLG",
+              "x": 8,
+              "y": 6,
+              "name": "Button / Text / Small / sqrt",
+              "width": 16,
+              "height": 13,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "ibuAa",
+                  "x": 7,
+                  "y": 7,
+                  "name": "Rectangle 196",
+                  "fill": "#ff0000ff",
+                  "width": 2,
+                  "height": 1,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "EWLRW",
+          "x": 0,
+          "y": 98,
+          "name": "Button / Small",
+          "width": 32,
+          "height": 25,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "2qQhK",
+              "x": 0,
+              "y": 0,
+              "name": "Button / Background",
+              "width": 32,
+              "height": 25,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2.5,
+                  "id": "O4U5x",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 9",
+                  "fill": [
+                    "#f5f5f1ff",
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": -180,
+                      "size": {
+                        "height": 0.9999999999999999
+                      },
+                      "colors": [
+                        {
+                          "color": "#ffffffff",
+                          "position": 0
+                        },
+                        {
+                          "color": "#f0f0eaff",
+                          "position": 1
+                        }
+                      ],
+                      "center": {
+                        "y": 0.49999999999999994
+                      }
+                    }
+                  ],
+                  "width": 32,
+                  "height": 25,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#003c74ff"
+                  },
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#0000000d",
+                      "offset": {
+                        "x": -1,
+                        "y": -1
+                      }
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#ffffffbf",
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "008Lx",
+              "x": 8,
+              "y": 6,
+              "name": "Button / Text / Small / sqrt",
+              "width": 16,
+              "height": 13,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "l1e5T",
+      "x": 329,
+      "y": 294,
+      "name": "Middle",
+      "children": [
+        {
+          "type": "frame",
+          "id": "OXFFC",
+          "x": 78,
+          "y": 0,
+          "name": "Button / Small",
+          "width": 32,
+          "height": 25,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "OSvmS",
+              "x": 0,
+              "y": 0,
+              "name": "Button / Background",
+              "width": 32,
+              "height": 25,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2.5,
+                  "id": "q0EI6",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 9",
+                  "fill": [
+                    "#f5f5f1ff",
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": -180,
+                      "size": {
+                        "height": 0.9999999999999999
+                      },
+                      "colors": [
+                        {
+                          "color": "#ffffffff",
+                          "position": 0
+                        },
+                        {
+                          "color": "#f0f0eaff",
+                          "position": 1
+                        }
+                      ],
+                      "center": {
+                        "y": 0.49999999999999994
+                      }
+                    }
+                  ],
+                  "width": 32,
+                  "height": 25,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#003c74ff"
+                  },
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#0000000d",
+                      "offset": {
+                        "x": -1,
+                        "y": -1
+                      }
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#ffffffbf",
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "aD8kc",
+              "x": 8,
+              "y": 6,
+              "name": "Button / Text / Small / sqrt",
+              "width": 16,
+              "height": 13,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "B9LLR",
+          "x": 78,
+          "y": 33,
+          "name": "Button / Small",
+          "width": 32,
+          "height": 25,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "VynH2",
+              "x": 0,
+              "y": 0,
+              "name": "Button / Background",
+              "width": 32,
+              "height": 25,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2.5,
+                  "id": "a34WX",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 9",
+                  "fill": [
+                    "#f5f5f1ff",
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": -180,
+                      "size": {
+                        "height": 0.9999999999999999
+                      },
+                      "colors": [
+                        {
+                          "color": "#ffffffff",
+                          "position": 0
+                        },
+                        {
+                          "color": "#f0f0eaff",
+                          "position": 1
+                        }
+                      ],
+                      "center": {
+                        "y": 0.49999999999999994
+                      }
+                    }
+                  ],
+                  "width": 32,
+                  "height": 25,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#003c74ff"
+                  },
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#0000000d",
+                      "offset": {
+                        "x": -1,
+                        "y": -1
+                      }
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#ffffffbf",
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "f3DT0",
+              "x": 8,
+              "y": 6,
+              "name": "Button / Text / Small / sqrt",
+              "width": 16,
+              "height": 13,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "GXlyr",
+          "x": 78,
+          "y": 65,
+          "name": "Button / Small",
+          "width": 32,
+          "height": 25,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "uFyg3",
+              "x": 0,
+              "y": 0,
+              "name": "Button / Background",
+              "width": 32,
+              "height": 25,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2.5,
+                  "id": "kEyP8",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 9",
+                  "fill": [
+                    "#f5f5f1ff",
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": -180,
+                      "size": {
+                        "height": 0.9999999999999999
+                      },
+                      "colors": [
+                        {
+                          "color": "#ffffffff",
+                          "position": 0
+                        },
+                        {
+                          "color": "#f0f0eaff",
+                          "position": 1
+                        }
+                      ],
+                      "center": {
+                        "y": 0.49999999999999994
+                      }
+                    }
+                  ],
+                  "width": 32,
+                  "height": 25,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#003c74ff"
+                  },
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#0000000d",
+                      "offset": {
+                        "x": -1,
+                        "y": -1
+                      }
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#ffffffbf",
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "636En",
+              "x": 8,
+              "y": 6,
+              "name": "Button / Text / Small / sqrt",
+              "width": 16,
+              "height": 13,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "zGvQA",
+          "x": 78,
+          "y": 98,
+          "name": "Button / Small",
+          "width": 32,
+          "height": 25,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "69I3s",
+              "x": 0,
+              "y": 0,
+              "name": "Button / Background",
+              "width": 32,
+              "height": 25,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2.5,
+                  "id": "LwvJQ",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 9",
+                  "fill": [
+                    "#f5f5f1ff",
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": -180,
+                      "size": {
+                        "height": 0.9999999999999999
+                      },
+                      "colors": [
+                        {
+                          "color": "#ffffffff",
+                          "position": 0
+                        },
+                        {
+                          "color": "#f0f0eaff",
+                          "position": 1
+                        }
+                      ],
+                      "center": {
+                        "y": 0.49999999999999994
+                      }
+                    }
+                  ],
+                  "width": 32,
+                  "height": 25,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#003c74ff"
+                  },
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#0000000d",
+                      "offset": {
+                        "x": -1,
+                        "y": -1
+                      }
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#ffffffbf",
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hLO2Z",
+              "x": 8,
+              "y": 6,
+              "name": "Button / Text / Small / sqrt",
+              "width": 16,
+              "height": 13,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "Gjvp0",
+                  "x": 7,
+                  "y": 10,
+                  "name": "Rectangle 195",
+                  "fill": "#0000ffff",
+                  "width": 1,
+                  "height": 1,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "eI7fm",
+          "x": 39,
+          "y": 0,
+          "name": "Button / Small",
+          "width": 32,
+          "height": 25,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "w1Z4x",
+              "x": 0,
+              "y": 0,
+              "name": "Button / Background",
+              "width": 32,
+              "height": 25,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2.5,
+                  "id": "aFlZr",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 9",
+                  "fill": [
+                    "#f5f5f1ff",
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": -180,
+                      "size": {
+                        "height": 0.9999999999999999
+                      },
+                      "colors": [
+                        {
+                          "color": "#ffffffff",
+                          "position": 0
+                        },
+                        {
+                          "color": "#f0f0eaff",
+                          "position": 1
+                        }
+                      ],
+                      "center": {
+                        "y": 0.49999999999999994
+                      }
+                    }
+                  ],
+                  "width": 32,
+                  "height": 25,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#003c74ff"
+                  },
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#0000000d",
+                      "offset": {
+                        "x": -1,
+                        "y": -1
+                      }
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#ffffffbf",
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "SFDUo",
+              "x": 8,
+              "y": 6,
+              "name": "Button / Text / Small / sqrt",
+              "width": 16,
+              "height": 13,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "awyRp",
+          "x": 39,
+          "y": 33,
+          "name": "Button / Small",
+          "width": 32,
+          "height": 25,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "2vZ6k",
+              "x": 0,
+              "y": 0,
+              "name": "Button / Background",
+              "width": 32,
+              "height": 25,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2.5,
+                  "id": "1Ni2N",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 9",
+                  "fill": [
+                    "#f5f5f1ff",
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": -180,
+                      "size": {
+                        "height": 0.9999999999999999
+                      },
+                      "colors": [
+                        {
+                          "color": "#ffffffff",
+                          "position": 0
+                        },
+                        {
+                          "color": "#f0f0eaff",
+                          "position": 1
+                        }
+                      ],
+                      "center": {
+                        "y": 0.49999999999999994
+                      }
+                    }
+                  ],
+                  "width": 32,
+                  "height": 25,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#003c74ff"
+                  },
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#0000000d",
+                      "offset": {
+                        "x": -1,
+                        "y": -1
+                      }
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#ffffffbf",
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jesn6",
+              "x": 8,
+              "y": 6,
+              "name": "Button / Text / Small / sqrt",
+              "width": 16,
+              "height": 13,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "hCQUd",
+          "x": 39,
+          "y": 65,
+          "name": "Button / Small",
+          "width": 32,
+          "height": 25,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "8L3x4",
+              "x": 0,
+              "y": 0,
+              "name": "Button / Background",
+              "width": 32,
+              "height": 25,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2.5,
+                  "id": "KN2P4",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 9",
+                  "fill": [
+                    "#f5f5f1ff",
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": -180,
+                      "size": {
+                        "height": 0.9999999999999999
+                      },
+                      "colors": [
+                        {
+                          "color": "#ffffffff",
+                          "position": 0
+                        },
+                        {
+                          "color": "#f0f0eaff",
+                          "position": 1
+                        }
+                      ],
+                      "center": {
+                        "y": 0.49999999999999994
+                      }
+                    }
+                  ],
+                  "width": 32,
+                  "height": 25,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#003c74ff"
+                  },
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#0000000d",
+                      "offset": {
+                        "x": -1,
+                        "y": -1
+                      }
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#ffffffbf",
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "2cBmg",
+              "x": 8,
+              "y": 6,
+              "name": "Button / Text / Small / sqrt",
+              "width": 16,
+              "height": 13,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "8p4kk",
+          "x": 39,
+          "y": 98,
+          "name": "Button / Small",
+          "width": 32,
+          "height": 25,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "xHwA9",
+              "x": 0,
+              "y": 0,
+              "name": "Button / Background",
+              "width": 32,
+              "height": 25,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2.5,
+                  "id": "Rf13d",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 9",
+                  "fill": [
+                    "#f5f5f1ff",
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": -180,
+                      "size": {
+                        "height": 0.9999999999999999
+                      },
+                      "colors": [
+                        {
+                          "color": "#ffffffff",
+                          "position": 0
+                        },
+                        {
+                          "color": "#f0f0eaff",
+                          "position": 1
+                        }
+                      ],
+                      "center": {
+                        "y": 0.49999999999999994
+                      }
+                    }
+                  ],
+                  "width": 32,
+                  "height": 25,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#003c74ff"
+                  },
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#0000000d",
+                      "offset": {
+                        "x": -1,
+                        "y": -1
+                      }
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#ffffffbf",
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ezbnN",
+              "x": 8,
+              "y": 6,
+              "name": "Button / Text / Small / sqrt",
+              "width": 16,
+              "height": 13,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "a46xw",
+          "x": 0,
+          "y": 0,
+          "name": "Button / Small",
+          "width": 32,
+          "height": 25,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "CGt50",
+              "x": 0,
+              "y": 0,
+              "name": "Button / Background",
+              "width": 32,
+              "height": 25,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2.5,
+                  "id": "RLfkt",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 9",
+                  "fill": [
+                    "#f5f5f1ff",
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": -180,
+                      "size": {
+                        "height": 0.9999999999999999
+                      },
+                      "colors": [
+                        {
+                          "color": "#ffffffff",
+                          "position": 0
+                        },
+                        {
+                          "color": "#f0f0eaff",
+                          "position": 1
+                        }
+                      ],
+                      "center": {
+                        "y": 0.49999999999999994
+                      }
+                    }
+                  ],
+                  "width": 32,
+                  "height": 25,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#003c74ff"
+                  },
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#0000000d",
+                      "offset": {
+                        "x": -1,
+                        "y": -1
+                      }
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#ffffffbf",
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "68p4u",
+              "x": 8,
+              "y": 6,
+              "name": "Button / Text / Small / sqrt",
+              "width": 16,
+              "height": 13,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "rEaYS",
+          "x": 0,
+          "y": 33,
+          "name": "Button / Small",
+          "width": 32,
+          "height": 25,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "4PXYm",
+              "x": 0,
+              "y": 0,
+              "name": "Button / Background",
+              "width": 32,
+              "height": 25,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2.5,
+                  "id": "BciRU",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 9",
+                  "fill": [
+                    "#f5f5f1ff",
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": -180,
+                      "size": {
+                        "height": 0.9999999999999999
+                      },
+                      "colors": [
+                        {
+                          "color": "#ffffffff",
+                          "position": 0
+                        },
+                        {
+                          "color": "#f0f0eaff",
+                          "position": 1
+                        }
+                      ],
+                      "center": {
+                        "y": 0.49999999999999994
+                      }
+                    }
+                  ],
+                  "width": 32,
+                  "height": 25,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#003c74ff"
+                  },
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#0000000d",
+                      "offset": {
+                        "x": -1,
+                        "y": -1
+                      }
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#ffffffbf",
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hCt4N",
+              "x": 8,
+              "y": 6,
+              "name": "Button / Text / Small / sqrt",
+              "width": 16,
+              "height": 13,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Ub5Ng",
+          "x": 0,
+          "y": 65,
+          "name": "Button / Small",
+          "width": 32,
+          "height": 25,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "UJTX4",
+              "x": 0,
+              "y": 0,
+              "name": "Button / Background",
+              "width": 32,
+              "height": 25,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2.5,
+                  "id": "5M0sY",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 9",
+                  "fill": [
+                    "#f5f5f1ff",
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": -180,
+                      "size": {
+                        "height": 0.9999999999999999
+                      },
+                      "colors": [
+                        {
+                          "color": "#ffffffff",
+                          "position": 0
+                        },
+                        {
+                          "color": "#f0f0eaff",
+                          "position": 1
+                        }
+                      ],
+                      "center": {
+                        "y": 0.49999999999999994
+                      }
+                    }
+                  ],
+                  "width": 32,
+                  "height": 25,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#003c74ff"
+                  },
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#0000000d",
+                      "offset": {
+                        "x": -1,
+                        "y": -1
+                      }
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#ffffffbf",
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hpqmB",
+              "x": 8,
+              "y": 6,
+              "name": "Button / Text / Small / sqrt",
+              "width": 16,
+              "height": 13,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "q50nC",
+          "x": 0,
+          "y": 98,
+          "name": "Button / Small",
+          "width": 32,
+          "height": 25,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "huvWE",
+              "x": 0,
+              "y": 0,
+              "name": "Button / Background",
+              "width": 32,
+              "height": 25,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2.5,
+                  "id": "z2WmQ",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 9",
+                  "fill": [
+                    "#f5f5f1ff",
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": -180,
+                      "size": {
+                        "height": 0.9999999999999999
+                      },
+                      "colors": [
+                        {
+                          "color": "#ffffffff",
+                          "position": 0
+                        },
+                        {
+                          "color": "#f0f0eaff",
+                          "position": 1
+                        }
+                      ],
+                      "center": {
+                        "y": 0.49999999999999994
+                      }
+                    }
+                  ],
+                  "width": 32,
+                  "height": 25,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#003c74ff"
+                  },
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#0000000d",
+                      "offset": {
+                        "x": -1,
+                        "y": -1
+                      }
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#ffffffbf",
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Bm48R",
+              "x": 8,
+              "y": 6,
+              "name": "Button / Text / Small / sqrt",
+              "width": 16,
+              "height": 13,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "D6YFO",
+      "x": 283,
+      "y": 294,
+      "name": "Left",
+      "children": [
+        {
+          "type": "frame",
+          "id": "8dp3L",
+          "x": 0,
+          "y": 0,
+          "name": "Button / Small",
+          "width": 32,
+          "height": 25,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "DOHmY",
+              "x": 0,
+              "y": 0,
+              "name": "Button / Background",
+              "width": 32,
+              "height": 25,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2.5,
+                  "id": "FN2WH",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 9",
+                  "fill": [
+                    "#f5f5f1ff",
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": -180,
+                      "size": {
+                        "height": 0.9999999999999999
+                      },
+                      "colors": [
+                        {
+                          "color": "#ffffffff",
+                          "position": 0
+                        },
+                        {
+                          "color": "#f0f0eaff",
+                          "position": 1
+                        }
+                      ],
+                      "center": {
+                        "y": 0.49999999999999994
+                      }
+                    }
+                  ],
+                  "width": 32,
+                  "height": 25,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#003c74ff"
+                  },
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#0000000d",
+                      "offset": {
+                        "x": -1,
+                        "y": -1
+                      }
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#ffffffbf",
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "AK9bF",
+              "x": 8,
+              "y": 6,
+              "name": "Button / Text / Small / sqrt",
+              "width": 16,
+              "height": 13,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "DFwh5",
+          "x": 0,
+          "y": 33,
+          "name": "Button / Small",
+          "width": 32,
+          "height": 25,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "w920b",
+              "x": 0,
+              "y": 0,
+              "name": "Button / Background",
+              "width": 32,
+              "height": 25,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2.5,
+                  "id": "7l25h",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 9",
+                  "fill": [
+                    "#f5f5f1ff",
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": -180,
+                      "size": {
+                        "height": 0.9999999999999999
+                      },
+                      "colors": [
+                        {
+                          "color": "#ffffffff",
+                          "position": 0
+                        },
+                        {
+                          "color": "#f0f0eaff",
+                          "position": 1
+                        }
+                      ],
+                      "center": {
+                        "y": 0.49999999999999994
+                      }
+                    }
+                  ],
+                  "width": 32,
+                  "height": 25,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#003c74ff"
+                  },
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#0000000d",
+                      "offset": {
+                        "x": -1,
+                        "y": -1
+                      }
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#ffffffbf",
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "8OLlS",
+              "x": 8,
+              "y": 6,
+              "name": "Button / Text / Small / sqrt",
+              "width": 16,
+              "height": 13,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "6rPZY",
+          "x": 0,
+          "y": 65,
+          "name": "Button / Small",
+          "width": 32,
+          "height": 25,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "cv5QJ",
+              "x": 0,
+              "y": 0,
+              "name": "Button / Background",
+              "width": 32,
+              "height": 25,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2.5,
+                  "id": "hwSQY",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 9",
+                  "fill": [
+                    "#f5f5f1ff",
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": -180,
+                      "size": {
+                        "height": 0.9999999999999999
+                      },
+                      "colors": [
+                        {
+                          "color": "#ffffffff",
+                          "position": 0
+                        },
+                        {
+                          "color": "#f0f0eaff",
+                          "position": 1
+                        }
+                      ],
+                      "center": {
+                        "y": 0.49999999999999994
+                      }
+                    }
+                  ],
+                  "width": 32,
+                  "height": 25,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#003c74ff"
+                  },
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#0000000d",
+                      "offset": {
+                        "x": -1,
+                        "y": -1
+                      }
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#ffffffbf",
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "5IIi5",
+              "x": 8,
+              "y": 6,
+              "name": "Button / Text / Small / sqrt",
+              "width": 16,
+              "height": 13,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "iQtmw",
+          "x": 0,
+          "y": 98,
+          "name": "Button / Small",
+          "width": 32,
+          "height": 25,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Cfd8S",
+              "x": 0,
+              "y": 0,
+              "name": "Button / Background",
+              "width": 32,
+              "height": 25,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2.5,
+                  "id": "26RbE",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 9",
+                  "fill": [
+                    "#f5f5f1ff",
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": -180,
+                      "size": {
+                        "height": 0.9999999999999999
+                      },
+                      "colors": [
+                        {
+                          "color": "#ffffffff",
+                          "position": 0
+                        },
+                        {
+                          "color": "#f0f0eaff",
+                          "position": 1
+                        }
+                      ],
+                      "center": {
+                        "y": 0.49999999999999994
+                      }
+                    }
+                  ],
+                  "width": 32,
+                  "height": 25,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#003c74ff"
+                  },
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#0000000d",
+                      "offset": {
+                        "x": -1,
+                        "y": -1
+                      }
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#ffffffbf",
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "FId0R",
+              "x": 8,
+              "y": 6,
+              "name": "Button / Text / Small / sqrt",
+              "width": 16,
+              "height": 13,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "I0S8L",
+      "x": 329,
+      "y": 258,
+      "name": "Top Large Buttons",
+      "children": [
+        {
+          "type": "frame",
+          "id": "sLq81",
+          "x": 66,
+          "y": 0,
+          "name": "Component 2",
+          "width": 58,
+          "height": 25,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "1WqEW",
+              "x": 0,
+              "y": 0,
+              "name": "Button / Background",
+              "width": 58,
+              "height": 25,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2.5,
+                  "id": "EUd3I",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 9",
+                  "fill": [
+                    "#f5f5f1ff",
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": -180,
+                      "size": {
+                        "height": 0.9999999999999999
+                      },
+                      "colors": [
+                        {
+                          "color": "#ffffffff",
+                          "position": 0
+                        },
+                        {
+                          "color": "#f0f0eaff",
+                          "position": 1
+                        }
+                      ],
+                      "center": {
+                        "y": 0.49999999999999994
+                      }
+                    }
+                  ],
+                  "width": 58,
+                  "height": 25,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#003c74ff"
+                  },
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#0000000d",
+                      "offset": {
+                        "x": -1,
+                        "y": -1
+                      }
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#ffffffbf",
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Zj2tG",
+              "x": 2,
+              "y": 6,
+              "name": "Button / Text / Large / C",
+              "width": 53,
+              "height": 12,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "eIVBb",
+          "x": 131,
+          "y": 0,
+          "name": "Component 3",
+          "width": 58,
+          "height": 25,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "5qQaR",
+              "x": 0,
+              "y": 0,
+              "name": "Button / Background",
+              "width": 58,
+              "height": 25,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2.5,
+                  "id": "bcK90",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 9",
+                  "fill": [
+                    "#f5f5f1ff",
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": -180,
+                      "size": {
+                        "height": 0.9999999999999999
+                      },
+                      "colors": [
+                        {
+                          "color": "#ffffffff",
+                          "position": 0
+                        },
+                        {
+                          "color": "#f0f0eaff",
+                          "position": 1
+                        }
+                      ],
+                      "center": {
+                        "y": 0.49999999999999994
+                      }
+                    }
+                  ],
+                  "width": 58,
+                  "height": 25,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#003c74ff"
+                  },
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#0000000d",
+                      "offset": {
+                        "x": -1,
+                        "y": -1
+                      }
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#ffffffbf",
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "E4Oak",
+              "x": 2,
+              "y": 6,
+              "name": "Button / Text / Large / C",
+              "width": 53,
+              "height": 12,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "YrYqS",
+          "x": 0,
+          "y": 0,
+          "name": "Button / Large",
+          "width": 59,
+          "height": 25,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Lg2UX",
+              "x": 0,
+              "y": 0,
+              "name": "Button / Background",
+              "width": 59,
+              "height": 25,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2.5,
+                  "id": "nfglC",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 9",
+                  "fill": [
+                    "#f5f5f1ff",
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": -180,
+                      "size": {
+                        "height": 0.9999999999999999
+                      },
+                      "colors": [
+                        {
+                          "color": "#ffffffff",
+                          "position": 0
+                        },
+                        {
+                          "color": "#f0f0eaff",
+                          "position": 1
+                        }
+                      ],
+                      "center": {
+                        "y": 0.49999999999999994
+                      }
+                    }
+                  ],
+                  "width": 59,
+                  "height": 25,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#003c74ff"
+                  },
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#0000000d",
+                      "offset": {
+                        "x": -1,
+                        "y": -1
+                      }
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#ffffffbf",
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "641Ai",
+              "x": 3,
+              "y": 6,
+              "name": "Button / Text / Large / C",
+              "width": 53,
+              "height": 12,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "qJwV2",
+      "x": 282,
+      "y": 222,
+      "name": "Input",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "RCQMK",
+          "x": 0,
+          "y": 0,
+          "name": "Rectangle 255",
+          "fill": "#ffffffff",
+          "width": 237,
+          "height": 21,
+          "stroke": {
+            "align": "outside",
+            "thickness": 1,
+            "fill": "#7f9db9ff"
+          }
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "wVPXF",
+      "x": 273,
+      "y": 203,
+      "name": "Menu",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "r2mhT",
+          "x": 0,
+          "y": 15,
+          "name": "Divider",
+          "fill": "#ffffffff",
+          "width": 254,
+          "height": 1,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          }
+        },
+        {
+          "type": "frame",
+          "id": "Nr4se",
+          "x": 6,
+          "y": 0,
+          "name": "Menu / Edit",
+          "width": 22,
+          "height": 11,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "group",
+              "id": "vRBS8",
+              "x": 0,
+              "y": 0,
+              "name": "Group 1"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ixGeL",
+          "x": 70,
+          "y": 0,
+          "name": "Menu / Help",
+          "width": 22,
+          "height": 11,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none"
+        },
+        {
+          "type": "frame",
+          "id": "tdGbS",
+          "x": 36,
+          "y": 0,
+          "name": "Menu / View",
+          "clip": true,
+          "width": 22,
+          "height": 11,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "AcahO",
+      "x": 270,
+      "y": 170,
+      "name": "App Bar",
+      "children": [
+        {
+          "type": "frame",
+          "id": "G05jB",
+          "x": 0,
+          "y": 0,
+          "name": "Window / App Bar",
+          "width": 260,
+          "height": 29,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "cornerRadius": [
+                8,
+                8,
+                0,
+                0
+              ],
+              "id": "pl3pZ",
+              "x": 0,
+              "y": 0,
+              "name": "Rectangle 332",
+              "fill": "#0055e5ff",
+              "width": 260,
+              "height": 29,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "9qxs8",
+          "x": 189,
+          "y": 6,
+          "name": "App Bar / Button",
+          "width": 19,
+          "height": 19,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "a7I3B",
+              "x": 0,
+              "y": 0,
+              "name": "App Bar / Button Background / Blue",
+              "width": 19,
+              "height": 19,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2,
+                  "id": "3U6A8",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 71",
+                  "fill": "#2266f5ff",
+                  "width": 19,
+                  "height": 19,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#ffffffff"
+                  }
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2,
+                  "id": "671Eg",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 72",
+                  "fill": "#2266f503",
+                  "width": 19,
+                  "height": 19,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "nLXqA",
+              "x": 4,
+              "y": 4,
+              "name": "App Bar / Icon / Minimize",
+              "width": 11,
+              "height": 11,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "pZ9s4",
+                  "x": 0,
+                  "y": 8,
+                  "name": "Rectangle 73",
+                  "fill": "#ffffffff",
+                  "width": 7,
+                  "height": 3,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "9v1f6",
+          "x": 235,
+          "y": 6,
+          "name": "App Bar / Button",
+          "width": 19,
+          "height": 19,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "bItJe",
+              "x": 0,
+              "y": 0,
+              "name": "App Bar / Button Background / Blue",
+              "width": 19,
+              "height": 19,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2,
+                  "id": "RUrfO",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 71",
+                  "fill": "#e55022ff",
+                  "width": 19,
+                  "height": 19,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#ffffffff"
+                  }
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2,
+                  "id": "frBBt",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 72",
+                  "fill": "#2266f503",
+                  "width": 19,
+                  "height": 19,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "w8Caz",
+              "x": 4,
+              "y": 4,
+              "name": "App Bar / Icon / Minimize",
+              "width": 11,
+              "height": 11,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Akmm7",
+          "x": 212,
+          "y": 6,
+          "name": "App Bar / Button",
+          "opacity": 0.5,
+          "width": 19,
+          "height": 19,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "x0Yxg",
+              "x": 0,
+              "y": 0,
+              "name": "App Bar / Button Background / Blue",
+              "width": 19,
+              "height": 19,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2,
+                  "id": "pql3C",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 71",
+                  "fill": "#2266f5ff",
+                  "width": 19,
+                  "height": 19,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#ffffffff"
+                  }
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2,
+                  "id": "9aOB7",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 72",
+                  "fill": "#2266f503",
+                  "width": 19,
+                  "height": 19,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "YAYIw",
+              "x": 4,
+              "y": 4,
+              "name": "App Bar / Icon / Minimize",
+              "width": 11,
+              "height": 11,
+              "fill": {
+                "type": "color",
+                "color": "#ffffffff",
+                "enabled": false
+              },
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "i8rfk",
+          "x": 7,
+          "y": 7,
+          "name": "Calculator Icon",
+          "width": 14,
+          "height": 16,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "group",
+              "id": "NNsfH",
+              "x": 0,
+              "y": 0,
+              "name": "Body",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "6Hx60",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Mask",
+                  "fill": "#c4c4c4ff",
+                  "width": 14,
+                  "height": 16,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1
+                  }
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2,
+                  "id": "txZiJ",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 367",
+                  "fill": [
+                    "#9eb2fcff",
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": -180,
+                      "size": {
+                        "height": 0.9999999999999999
+                      },
+                      "colors": [
+                        {
+                          "color": "#e3e4ffff",
+                          "position": 0
+                        },
+                        {
+                          "color": "#9eb2fcff",
+                          "position": 1
+                        }
+                      ],
+                      "center": {
+                        "y": 0.49999999999999994
+                      }
+                    }
+                  ],
+                  "width": 10,
+                  "height": 15,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1
+                  },
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#012e73",
+                    "offset": {
+                      "x": 1,
+                      "y": 0
+                    },
+                    "blur": 1.75
+                  }
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "id": "LHsGx",
+              "x": 1,
+              "y": 6,
+              "name": "Buttons",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "RDwic",
+                  "x": 6,
+                  "y": 6,
+                  "name": "Rectangle 369",
+                  "fill": "#b44600ff",
+                  "width": 2,
+                  "height": 2,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1
+                  }
+                },
+                {
+                  "type": "rectangle",
+                  "id": "WLT1U",
+                  "x": 6,
+                  "y": 0,
+                  "name": "Rectangle 372",
+                  "fill": "#586ba4ff",
+                  "width": 2,
+                  "height": 2,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1
+                  }
+                },
+                {
+                  "type": "rectangle",
+                  "id": "BdzNC",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Rectangle 370",
+                  "fill": "#586ba4ff",
+                  "width": 2,
+                  "height": 2,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1
+                  }
+                },
+                {
+                  "type": "rectangle",
+                  "id": "G3OzT",
+                  "x": 0,
+                  "y": 3,
+                  "name": "Rectangle 373",
+                  "fill": "#586ba4ff",
+                  "width": 2,
+                  "height": 2,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1
+                  }
+                },
+                {
+                  "type": "rectangle",
+                  "id": "HGFwV",
+                  "x": 0,
+                  "y": 6,
+                  "name": "Rectangle 376",
+                  "fill": "#586ba4ff",
+                  "width": 2,
+                  "height": 2,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1
+                  }
+                },
+                {
+                  "type": "rectangle",
+                  "id": "kv9cE",
+                  "x": 3,
+                  "y": 0,
+                  "name": "Rectangle 371",
+                  "fill": "#586ba4ff",
+                  "width": 2,
+                  "height": 2,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1
+                  }
+                },
+                {
+                  "type": "rectangle",
+                  "id": "fWCRp",
+                  "x": 3,
+                  "y": 3,
+                  "name": "Rectangle 374",
+                  "fill": "#586ba4ff",
+                  "width": 2,
+                  "height": 2,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1
+                  }
+                },
+                {
+                  "type": "rectangle",
+                  "id": "LM1jD",
+                  "x": 3,
+                  "y": 6,
+                  "name": "Rectangle 377",
+                  "fill": "#586ba4ff",
+                  "width": 2,
+                  "height": 2,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1
+                  }
+                },
+                {
+                  "type": "rectangle",
+                  "id": "mwl28",
+                  "x": 6,
+                  "y": 3,
+                  "name": "Rectangle 378",
+                  "fill": "#586ba4ff",
+                  "width": 2,
+                  "height": 2,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1
+                  }
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 58,
+              "id": "IFhxm",
+              "x": 1,
+              "y": 2,
+              "name": "Screen",
+              "fill": "#5b97ffff",
+              "width": 8,
+              "height": 3,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#ffffff4d",
+                "offset": {
+                  "x": 0,
+                  "y": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
