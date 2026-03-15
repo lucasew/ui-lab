@@ -7550,13 +7550,33 @@
             8,
             16
           ],
+          "alignItems": "center",
           "children": [
+            {
+              "id": "KQWIs",
+              "type": "ref",
+              "ref": "der2o",
+              "name": "keyboardBtn",
+              "x": 16,
+              "y": 8,
+              "descendants": {
+                "ultE2": {
+                  "enabled": true
+                },
+                "oV5Hg": {
+                  "iconFontName": "keyboard"
+                },
+                "wAVsD": {
+                  "enabled": false
+                }
+              }
+            },
             {
               "id": "uIbxh",
               "type": "ref",
               "ref": "der2o",
               "name": "b1",
-              "x": 16,
+              "x": 80,
               "y": 8,
               "descendants": {
                 "ultE2": {
@@ -7572,7 +7592,7 @@
               "type": "ref",
               "ref": "der2o",
               "name": "b2",
-              "x": 85,
+              "x": 149,
               "y": 8,
               "descendants": {
                 "ultE2": {
@@ -7588,7 +7608,7 @@
               "type": "ref",
               "ref": "der2o",
               "name": "b3",
-              "x": 148,
+              "x": 212,
               "y": 8,
               "descendants": {
                 "ultE2": {
@@ -7604,7 +7624,7 @@
               "type": "ref",
               "ref": "der2o",
               "name": "b4",
-              "x": 223,
+              "x": 287,
               "y": 8,
               "descendants": {
                 "ultE2": {
@@ -7620,7 +7640,7 @@
               "type": "ref",
               "ref": "der2o",
               "name": "b5",
-              "x": 292,
+              "x": 356,
               "y": 8,
               "descendants": {
                 "ultE2": {
@@ -7636,7 +7656,7 @@
               "type": "ref",
               "ref": "der2o",
               "name": "b6",
-              "x": 361,
+              "x": 425,
               "y": 8,
               "descendants": {
                 "ultE2": {
