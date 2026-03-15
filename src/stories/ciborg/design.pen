@@ -4154,6 +4154,9 @@
             "rX0Mc/PHWHh": {
               "enabled": false
             },
+            "gbpvB": {
+              "fill": "$--sidebar-accent"
+            },
             "gbpvB/PHWHh": {
               "enabled": false
             },
@@ -6580,6 +6583,9 @@
             },
             "xwVeL/PHWHh": {
               "enabled": false
+            },
+            "rX0Mc": {
+              "fill": "$--sidebar-accent"
             },
             "rX0Mc/PHWHh": {
               "enabled": false
@@ -18355,6 +18361,237 @@
                 },
                 {
                   "id": "pmJzr",
+                  "type": "ref",
+                  "ref": "QUgPD",
+                  "name": "next",
+                  "x": 870,
+                  "y": 0,
+                  "descendants": {
+                    "V8u8q": {
+                      "enabled": true
+                    },
+                    "wevbQ": {
+                      "iconFontName": "arrow-right"
+                    },
+                    "brqte": {
+                      "content": "Next"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "6QFBZ",
+      "x": 6954,
+      "y": 2493,
+      "name": "Screen / New Run - Script Editor",
+      "theme": {
+        "Accent": "Blue",
+        "Base": "Slate",
+        "Mode": "Dark"
+      },
+      "width": 1280,
+      "height": 980,
+      "fill": "$--background",
+      "cornerRadius": 18,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1,
+        "fill": "$--border"
+      },
+      "children": [
+        {
+          "id": "uyLqD",
+          "type": "ref",
+          "ref": "2ygrZ",
+          "name": "sidebar",
+          "width": 256,
+          "height": "fill_container",
+          "x": 0,
+          "y": 0,
+          "descendants": {
+            "IJQKi": {
+              "height": "fill_container"
+            },
+            "SpcJN/PHWHh": {
+              "enabled": false
+            },
+            "xwVeL/PHWHh": {
+              "enabled": false
+            },
+            "svYXR": {
+              "id": "xXUC1",
+              "type": "ref",
+              "ref": "5GgOn",
+              "x": 0,
+              "y": 68,
+              "descendants": {
+                "5NVMH": {
+                  "width": "fit_content"
+                },
+                "LTmGt": {
+                  "iconFontName": "circle-play"
+                },
+                "Rab5P": {
+                  "content": "Runs"
+                },
+                "jgKYT": {
+                  "width": "fit_content",
+                  "x": 212
+                },
+                "hgwNt": {
+                  "enabled": false
+                },
+                "rvV8D": {
+                  "content": "⌘3"
+                }
+              }
+            },
+            "rX0Mc/PHWHh": {
+              "enabled": false
+            },
+            "gbpvB/PHWHh": {
+              "enabled": false
+            },
+            "HMyI3": {
+              "y": 916
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "SSeF8",
+          "name": "main",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 32,
+          "children": [
+            {
+              "type": "frame",
+              "id": "pjss7",
+              "name": "header",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 6,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "QE3MF",
+                  "fill": "$--foreground",
+                  "content": "Script Editor",
+                  "fontFamily": "Inter",
+                  "fontSize": 30,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "c7yfd",
+                  "fill": "$--muted-foreground",
+                  "content": "Write and edit your Lua script here.",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "id": "4S0og",
+              "type": "ref",
+              "ref": "lA1Xs",
+              "gap": 4,
+              "name": "wizard-tabs",
+              "width": "fit_content",
+              "x": 32,
+              "y": 124,
+              "children": [
+                {
+                  "id": "FinOL",
+                  "type": "ref",
+                  "ref": "lC4v4",
+                  "width": 100,
+                  "x": 4,
+                  "y": 4,
+                  "descendants": {
+                    "TXVb2": {
+                      "content": "1. Preset"
+                    }
+                  }
+                },
+                {
+                  "id": "cQFFC",
+                  "type": "ref",
+                  "ref": "G67bW",
+                  "width": 100,
+                  "x": 108,
+                  "y": 4,
+                  "descendants": {
+                    "G1Msh": {
+                      "content": "2. Script"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qr0iO",
+              "name": "code-editor",
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "$--secondary",
+              "cornerRadius": 6,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "zpEeP",
+                  "fill": "$--muted-foreground",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "--[[\nSpaced test workflow\nIt performs five short `sleep 3` steps and reports incremental progress between them.\n]]\n\nfor i = 1, 5 do\n  ctx.pipeline.progress((i - 1) / 5, \"Sleep step \" .. i .. \" of 5\")\n  ctx.exec.run_must(\"sleep\", {\"3\"})\nend\n\nctx.pipeline.progress(1.0, \"Spaced test workflow finished\")",
+                  "lineHeight": 1.5,
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "12mxw",
+              "name": "actions",
+              "width": "fill_container",
+              "gap": 12,
+              "justifyContent": "end",
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "qrxPq",
+                  "type": "ref",
+                  "ref": "0K9qW",
+                  "name": "cancel",
+                  "x": 779,
+                  "y": 0,
+                  "descendants": {
+                    "FZjSD": {
+                      "enabled": false
+                    },
+                    "ecAix": {
+                      "content": "Cancel"
+                    }
+                  }
+                },
+                {
+                  "id": "nr53e",
                   "type": "ref",
                   "ref": "QUgPD",
                   "name": "next",
