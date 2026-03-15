@@ -111,18 +111,6 @@
                       "fontFamily": "Inter",
                       "fontSize": 30,
                       "fontWeight": "700"
-                    },
-                    {
-                      "type": "text",
-                      "id": "qUid9",
-                      "name": "subtitle",
-                      "fill": "$--muted-foreground",
-                      "textGrowth": "fixed-width",
-                      "width": 620,
-                      "content": "Start a conversation with an agent, attach context only when needed, and keep work moving without tying every thread to a repository.",
-                      "fontFamily": "Inter",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -207,26 +195,31 @@
                   "width": "fill_container",
                   "height": "fill_container",
                   "layout": "vertical",
+                  "gap": 12,
                   "children": [
                     {
+                      "type": "frame",
                       "id": "MKPhF",
-                      "type": "ref",
-                      "ref": "Lvc9t",
+                      "name": "threadCard",
                       "width": "fill_container",
                       "height": "fill_container",
-                      "name": "threadCard",
-                      "x": 0,
-                      "y": 0,
                       "fill": "$--card",
-                      "stroke": {
-                        "align": "inside",
-                        "thickness": 1,
-                        "fill": "$--border"
+                      "cornerRadius": 8,
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#0000000d",
+                        "offset": {
+                          "x": 0,
+                          "y": 1
+                        },
+                        "blur": 1.75
                       },
-                      "descendants": {
-                        "NPhrR": {
+                      "layout": "vertical",
+                      "children": [
+                        {
                           "type": "frame",
-                          "id": "swUHR",
+                          "id": "ulp27",
                           "name": "threadHeader",
                           "width": "fill_container",
                           "padding": 24,
@@ -301,17 +294,18 @@
                             }
                           ]
                         },
-                        "FRosU": {
+                        {
                           "type": "frame",
-                          "id": "9z3A9",
+                          "id": "svp7f",
                           "name": "threadContent",
                           "width": "fill_container",
+                          "height": "fill_container",
+                          "fill": "$--card",
+                          "cornerRadius": 8,
                           "layout": "vertical",
                           "gap": 16,
                           "padding": [
                             0,
-                            24,
-                            24,
                             24
                           ],
                           "children": [
@@ -526,109 +520,104 @@
                             }
                           ]
                         },
-                        "aArwa": {
-                          "width": "fill_container",
-                          "enabled": false
-                        }
-                      }
-                    },
-                    {
-                      "type": "frame",
-                      "id": "YHdkQ",
-                      "name": "chatEntry",
-                      "width": "fill_container",
-                      "height": "fit_content(43)",
-                      "fill": "$--background",
-                      "cornerRadius": 8,
-                      "stroke": {
-                        "align": "outside",
-                        "thickness": 1,
-                        "fill": "$--border"
-                      },
-                      "justifyContent": "center",
-                      "alignItems": "center",
-                      "children": [
                         {
-                          "id": "SC4M9",
-                          "type": "ref",
-                          "ref": "SAwyp",
+                          "type": "frame",
+                          "id": "YHdkQ",
+                          "name": "chatEntry",
                           "width": "fill_container",
-                          "name": "composerInput",
-                          "x": 0,
-                          "y": 0,
-                          "height": "fill_container",
-                          "flipX": false,
-                          "flipY": false,
-                          "layout": "vertical",
+                          "height": 23,
+                          "fill": "$--background",
+                          "cornerRadius": 8,
+                          "stroke": {
+                            "align": "center",
+                            "thickness": 1,
+                            "fill": "$--border"
+                          },
                           "justifyContent": "center",
                           "alignItems": "center",
-                          "descendants": {
-                            "IsNet": {
+                          "children": [
+                            {
+                              "id": "SC4M9",
+                              "type": "ref",
+                              "ref": "SAwyp",
                               "width": "fill_container",
-                              "height": "fit_content",
-                              "enabled": false
-                            },
-                            "syTRz": {
-                              "content": "Message",
-                              "width": "fill_container"
-                            },
-                            "IbiFq": {
-                              "width": "fill_container",
-                              "fill": [],
-                              "stroke": {
-                                "align": "inside",
-                                "thickness": 1
-                              },
+                              "name": "composerInput",
+                              "x": 0,
                               "y": 0,
                               "height": "fill_container",
-                              "padding": [
+                              "flipX": false,
+                              "flipY": false,
+                              "layout": "vertical",
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "descendants": {
+                                "IsNet": {
+                                  "width": "fill_container",
+                                  "height": "fit_content",
+                                  "enabled": false
+                                },
+                                "syTRz": {
+                                  "content": "Message",
+                                  "width": "fill_container"
+                                },
+                                "IbiFq": {
+                                  "width": "fill_container",
+                                  "fill": [],
+                                  "stroke": {
+                                    "fill": "#00000000"
+                                  },
+                                  "y": 0,
+                                  "height": "fill_container",
+                                  "padding": [
+                                    0,
+                                    12
+                                  ],
+                                  "cornerRadius": 0
+                                },
+                                "xZ6h2": {
+                                  "content": "Ask for a plan, request a review, or describe a task...",
+                                  "fill": "$--muted-foreground",
+                                  "x": 12,
+                                  "y": 0
+                                }
+                              }
+                            },
+                            {
+                              "id": "wGLf7",
+                              "type": "ref",
+                              "ref": "QUgPD",
+                              "name": "sendBtn",
+                              "width": "fit_content",
+                              "x": 931,
+                              "y": 0,
+                              "fill": "$--primary",
+                              "height": "fill_container",
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "cornerRadius": [
                                 0,
-                                12
+                                8,
+                                8,
+                                0
                               ],
-                              "cornerRadius": 0
-                            },
-                            "xZ6h2": {
-                              "content": "Ask for a plan, request a review, or describe a task...",
-                              "fill": "$--muted-foreground",
-                              "x": 12,
-                              "y": 0
+                              "descendants": {
+                                "V8u8q": {
+                                  "x": 16,
+                                  "y": 1.5
+                                },
+                                "wevbQ": {
+                                  "iconFontName": "send-horizontal"
+                                },
+                                "brqte": {
+                                  "content": "Send",
+                                  "fill": "$--primary-foreground",
+                                  "x": 42,
+                                  "y": 11.5,
+                                  "enabled": false
+                                }
+                              }
                             }
-                          }
-                        },
-                        {
-                          "id": "wGLf7",
-                          "type": "ref",
-                          "ref": "QUgPD",
-                          "name": "sendBtn",
-                          "width": "fit_content",
-                          "x": 931,
-                          "y": 0,
-                          "fill": "$--primary",
-                          "height": "fill_container",
-                          "justifyContent": "center",
-                          "alignItems": "center",
-                          "cornerRadius": [
-                            0,
-                            8,
-                            8,
-                            0
-                          ],
-                          "descendants": {
-                            "V8u8q": {
-                              "x": 16,
-                              "y": 11.5
-                            },
-                            "wevbQ": {
-                              "iconFontName": "send-horizontal"
-                            },
-                            "brqte": {
-                              "content": "Send",
-                              "fill": "$--primary-foreground",
-                              "x": 42,
-                              "y": 11.5,
-                              "enabled": false
-                            }
-                          }
+                          ]
                         }
                       ]
                     }
