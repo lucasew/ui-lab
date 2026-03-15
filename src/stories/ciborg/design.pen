@@ -49,10 +49,10 @@
                   "width": "fit_content"
                 },
                 "LTmGt": {
-                  "iconFontName": "messages-square"
+                  "iconFontName": "layout-dashboard"
                 },
                 "Rab5P": {
-                  "content": "Chats"
+                  "content": "Overview"
                 },
                 "jgKYT": {
                   "width": "fit_content",
@@ -71,6 +71,13 @@
             },
             "gbpvB/V2YHu": {
               "enabled": false
+            },
+            "A7tfE/1kZ1y": {
+              "width": "fit_content"
+            },
+            "A7tfE/JuyDl": {
+              "width": "fit_content",
+              "x": 212
             },
             "HMyI3": {
               "y": 1056
@@ -699,6 +706,13 @@
             },
             "gbpvB/PHWHh": {
               "enabled": false
+            },
+            "A7tfE/1kZ1y": {
+              "width": "fit_content"
+            },
+            "A7tfE/JuyDl": {
+              "width": "fit_content",
+              "x": 212
             },
             "HMyI3": {
               "y": 916
@@ -1702,10 +1716,10 @@
                   "width": "fit_content"
                 },
                 "LTmGt": {
-                  "iconFontName": "messages-square"
+                  "iconFontName": "circle-play"
                 },
                 "Rab5P": {
-                  "content": "Chats"
+                  "content": "Runs"
                 },
                 "jgKYT": {
                   "width": "fit_content",
@@ -1724,6 +1738,13 @@
             },
             "gbpvB/PHWHh": {
               "enabled": false
+            },
+            "A7tfE/1kZ1y": {
+              "width": "fit_content"
+            },
+            "A7tfE/JuyDl": {
+              "width": "fit_content",
+              "x": 212
             },
             "HMyI3": {
               "y": 936
@@ -2905,10 +2926,10 @@
                   "width": "fit_content"
                 },
                 "LTmGt": {
-                  "iconFontName": "circle-play"
+                  "iconFontName": "messages-square"
                 },
                 "Rab5P": {
-                  "content": "Runs"
+                  "content": "Chats"
                 },
                 "jgKYT": {
                   "width": "fit_content",
@@ -2927,6 +2948,13 @@
             },
             "gbpvB/PHWHh": {
               "enabled": false
+            },
+            "A7tfE/1kZ1y": {
+              "width": "fit_content"
+            },
+            "A7tfE/JuyDl": {
+              "width": "fit_content",
+              "x": 212
             },
             "HMyI3": {
               "y": 1056
@@ -4160,6 +4188,13 @@
             "gbpvB/PHWHh": {
               "enabled": false
             },
+            "A7tfE/1kZ1y": {
+              "width": "fit_content"
+            },
+            "A7tfE/JuyDl": {
+              "width": "fit_content",
+              "x": 212
+            },
             "HMyI3": {
               "y": 980
             }
@@ -5216,6 +5251,16 @@
             },
             "gbpvB/PHWHh": {
               "enabled": false
+            },
+            "A7tfE": {
+              "fill": "$--sidebar-accent"
+            },
+            "A7tfE/1kZ1y": {
+              "width": "fit_content"
+            },
+            "A7tfE/JuyDl": {
+              "width": "fit_content",
+              "x": 212
             },
             "HMyI3": {
               "y": 916
@@ -6593,6 +6638,13 @@
             "gbpvB/PHWHh": {
               "enabled": false
             },
+            "A7tfE/1kZ1y": {
+              "width": "fit_content"
+            },
+            "A7tfE/JuyDl": {
+              "width": "fit_content",
+              "x": 212
+            },
             "HMyI3": {
               "y": 1036
             }
@@ -7624,6 +7676,13 @@
             "xwVeL/PHWHh": {
               "enabled": false
             },
+            "A7tfE/1kZ1y": {
+              "width": "fit_content"
+            },
+            "A7tfE/JuyDl": {
+              "width": "fit_content",
+              "x": 212
+            },
             "HMyI3": {
               "y": 916
             }
@@ -8634,6 +8693,32 @@
                     },
                     "af3zh": {
                       "content": "⌘5"
+                    }
+                  }
+                },
+                {
+                  "id": "A7tfE",
+                  "type": "ref",
+                  "ref": "2FjPR",
+                  "name": "Nav Issues",
+                  "x": 0,
+                  "y": 170,
+                  "descendants": {
+                    "1kZ1y": {
+                      "width": "fit_content"
+                    },
+                    "d01ru": {
+                      "iconFontName": "alert-circle"
+                    },
+                    "Mb0uQ": {
+                      "content": "Issues"
+                    },
+                    "JuyDl": {
+                      "width": "fit_content",
+                      "x": 212
+                    },
+                    "af3zh": {
+                      "content": "⌘6"
                     }
                   }
                 }
@@ -17778,10 +17863,10 @@
                   "width": "fit_content"
                 },
                 "LTmGt": {
-                  "iconFontName": "circle-play"
+                  "iconFontName": "messages-square"
                 },
                 "Rab5P": {
-                  "content": "Runs"
+                  "content": "Chats"
                 },
                 "jgKYT": {
                   "width": "fit_content",
@@ -17800,6 +17885,13 @@
             },
             "gbpvB/PHWHh": {
               "enabled": false
+            },
+            "A7tfE/1kZ1y": {
+              "width": "fit_content"
+            },
+            "A7tfE/JuyDl": {
+              "width": "fit_content",
+              "x": 212
             },
             "HMyI3": {
               "y": 916
@@ -18160,6 +18252,13 @@
             "gbpvB/PHWHh": {
               "enabled": false
             },
+            "A7tfE/1kZ1y": {
+              "width": "fit_content"
+            },
+            "A7tfE/JuyDl": {
+              "width": "fit_content",
+              "x": 212
+            },
             "HMyI3": {
               "y": 916
             }
@@ -18435,10 +18534,10 @@
                   "width": "fit_content"
                 },
                 "LTmGt": {
-                  "iconFontName": "circle-play"
+                  "iconFontName": "messages-square"
                 },
                 "Rab5P": {
-                  "content": "Runs"
+                  "content": "Chats"
                 },
                 "jgKYT": {
                   "width": "fit_content",
@@ -18457,6 +18556,13 @@
             },
             "gbpvB/PHWHh": {
               "enabled": false
+            },
+            "A7tfE/1kZ1y": {
+              "width": "fit_content"
+            },
+            "A7tfE/JuyDl": {
+              "width": "fit_content",
+              "x": 212
             },
             "HMyI3": {
               "y": 916
