@@ -7331,135 +7331,192 @@
       "x": -5597,
       "y": 1320,
       "name": "Screen / Interactive Shell",
+      "theme": {
+        "Mode": "Dark"
+      },
       "clip": true,
       "width": 1280,
       "height": 980,
-      "fill": "$--background",
-      "cornerRadius": 18,
+      "fill": "#000000",
       "stroke": {
         "thickness": 1,
         "fill": "$--border"
       },
-      "layout": "vertical",
-      "gap": 24,
-      "padding": 24,
+      "layout": "none",
       "children": [
         {
           "type": "frame",
-          "id": "2Poq9",
-          "name": "hero",
-          "width": "fill_container",
-          "justifyContent": "space_between",
-          "alignItems": "center",
+          "id": "f3eHU",
+          "x": 0,
+          "y": 0,
+          "name": "term",
+          "width": 1280,
+          "height": 980,
+          "fill": "#000000",
+          "stroke": {
+            "thickness": 0
+          },
+          "layout": "vertical",
+          "padding": [
+            16,
+            0
+          ],
           "children": [
             {
               "type": "frame",
-              "id": "ISfjd",
-              "name": "heroCopy",
-              "layout": "vertical",
-              "gap": 8,
+              "id": "IpXRj",
+              "name": "header",
+              "width": "fill_container",
+              "stroke": {
+                "thickness": {
+                  "bottom": 1
+                },
+                "fill": "$--border"
+              },
+              "padding": [
+                0,
+                16
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
               "children": [
                 {
-                  "id": "Ahysj",
-                  "type": "ref",
-                  "ref": "qoSp4",
-                  "name": "eyebrow",
-                  "width": "fit_content",
-                  "x": 0,
-                  "y": 0,
-                  "height": "fit_content",
-                  "descendants": {
-                    "06Lq2": {
-                      "content": "Run-linked shell",
-                      "x": 8,
-                      "y": 2
+                  "type": "frame",
+                  "id": "jObLk",
+                  "name": "left",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "DL5Ng",
+                      "fill": "$--foreground",
+                      "content": "Run: 01JX4W2R9V8N6M3K1T5P7Q4A2B",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     }
-                  }
+                  ]
                 },
                 {
-                  "type": "text",
-                  "id": "PToU4",
-                  "name": "title",
-                  "fill": "$--foreground",
-                  "textGrowth": "fixed-width",
-                  "width": 720,
-                  "content": "Open an interactive shell for the active run.",
-                  "fontFamily": "Inter",
-                  "fontSize": 30,
-                  "fontWeight": "600"
-                },
-                {
-                  "type": "text",
-                  "id": "VmDGX",
-                  "name": "subtitle",
-                  "fill": "$--muted-foreground",
-                  "textGrowth": "fixed-width",
-                  "width": 720,
-                  "content": "Launch from the run detail page, attach to the worker PTY in real time, and keep approvals, transcript, and session metadata visible while you work.",
-                  "fontFamily": "Inter",
-                  "fontSize": 15,
-                  "fontWeight": "normal"
+                  "type": "frame",
+                  "id": "eJoGb",
+                  "name": "right",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "lNxYy",
+                      "type": "ref",
+                      "ref": "l1hLr",
+                      "name": "connState",
+                      "width": "fit_content",
+                      "x": 0,
+                      "y": 8,
+                      "descendants": {
+                        "NytVC": {
+                          "content": "Connected"
+                        }
+                      }
+                    },
+                    {
+                      "id": "e6Cfj",
+                      "type": "ref",
+                      "ref": "qoSp4",
+                      "width": "fit_content",
+                      "x": 92,
+                      "y": 8,
+                      "descendants": {
+                        "06Lq2": {
+                          "content": "Running"
+                        }
+                      }
+                    },
+                    {
+                      "id": "je05f",
+                      "type": "ref",
+                      "ref": "der2o",
+                      "name": "close",
+                      "x": 168,
+                      "y": 0,
+                      "descendants": {
+                        "ultE2": {
+                          "enabled": true
+                        },
+                        "oV5Hg": {
+                          "iconFontName": "x"
+                        },
+                        "wAVsD": {
+                          "content": "Close"
+                        }
+                      }
+                    }
+                  ]
                 }
               ]
             },
             {
               "type": "frame",
-              "id": "MUmnM",
-              "name": "heroActions",
-              "gap": 12,
-              "alignItems": "center",
+              "id": "cjNVv",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
               "children": [
                 {
-                  "id": "SRoeF",
-                  "type": "ref",
-                  "ref": "UtGbc",
-                  "name": "clearBtn",
-                  "width": "fit_content",
-                  "x": 0,
-                  "y": 0,
-                  "height": "fit_content",
-                  "descendants": {
-                    "dY0ci": {
-                      "enabled": true,
-                      "x": 16,
-                      "y": 8
-                    },
-                    "gSpOI": {
-                      "iconFontName": "arrow-left",
-                      "fill": "#0a0a0a"
-                    },
-                    "z9nqe": {
-                      "content": "Back to run",
-                      "x": 42,
-                      "y": 8
-                    }
-                  }
+                  "type": "text",
+                  "id": "nsd9r",
+                  "fill": "$--foreground",
+                  "content": "worker-sfo-03@run-01JX4W2R9V8N6M3K1T5P7Q4A2B:~$ env | grep CIBORG",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
                 },
                 {
-                  "id": "IclWH",
-                  "type": "ref",
-                  "ref": "QUgPD",
-                  "name": "attachBtn",
-                  "width": "fit_content",
-                  "x": 146,
-                  "y": 0,
-                  "height": "fit_content",
-                  "descendants": {
-                    "V8u8q": {
-                      "enabled": true,
-                      "x": 16,
-                      "y": 8
-                    },
-                    "wevbQ": {
-                      "iconFontName": "plug-zap",
-                      "fill": "#fafafa"
-                    },
-                    "brqte": {
-                      "content": "Reconnect",
-                      "x": 42,
-                      "y": 8
-                    }
-                  }
+                  "type": "text",
+                  "id": "0EcC1",
+                  "fill": "$--muted-foreground",
+                  "content": "CIBORG_RUN_ID=01JX4W2R9V8N6M3K1T5P7Q4A2B",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "pwwQO",
+                  "fill": "$--muted-foreground",
+                  "content": "CIBORG_SESSION_ID=sh_01J_shell",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "u77Hs",
+                  "fill": "$--foreground",
+                  "content": "worker-sfo-03@run-01JX4W2R9V8N6M3K1T5P7Q4A2B:~$ tail -f /workspace/.ciborg/stdout.log",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "R4hoF",
+                  "fill": "$--muted-foreground",
+                  "content": "[14:23:11] hydrate-inputs completed",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "tb16H",
+                  "fill": "$--foreground",
+                  "content": "worker-sfo-03@run-01JX4W2R9V8N6M3K1T5P7Q4A2B:~$ ",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
                 }
               ]
             }
@@ -7467,785 +7524,120 @@
         },
         {
           "type": "frame",
-          "id": "lh5QM",
-          "name": "body",
-          "width": "fill_container",
-          "height": "fill_container",
-          "gap": 24,
+          "id": "dSa4Q",
+          "x": 390,
+          "y": 916,
+          "name": "keys",
+          "fill": "#18181b",
+          "cornerRadius": 20,
+          "stroke": {
+            "thickness": 1,
+            "fill": "$--border"
+          },
+          "gap": 12,
+          "padding": [
+            8,
+            16
+          ],
           "children": [
             {
-              "type": "frame",
-              "id": "lkILI",
-              "name": "mainCol",
-              "width": "fill_container",
-              "height": "fill_container",
-              "layout": "vertical",
-              "gap": 24,
-              "children": [
-                {
-                  "id": "12Mcl",
-                  "type": "ref",
-                  "ref": "Lvc9t",
-                  "width": "fill_container",
-                  "height": "fill_container",
-                  "name": "shellCard",
-                  "x": 0,
-                  "y": 0,
-                  "descendants": {
-                    "NPhrR": {
-                      "type": "frame",
-                      "id": "Adlkc",
-                      "width": "fill_container",
-                      "padding": 24,
-                      "justifyContent": "space_between",
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "lPIZ5",
-                          "layout": "vertical",
-                          "gap": 4,
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "0W0Sh",
-                              "fill": "$--foreground",
-                              "content": "Attached shell",
-                              "fontFamily": "Inter",
-                              "fontSize": 20,
-                              "fontWeight": "600"
-                            },
-                            {
-                              "type": "text",
-                              "id": "eZ5aP",
-                              "fill": "$--muted-foreground",
-                              "textGrowth": "fixed-width",
-                              "width": 520,
-                              "content": "Launched from Run 01JX4W2R9V8N6M3K1T5P7Q4A2B on worker-sfo-03. Commands stream through the browser PTY bridge and stay bound to this execution context.",
-                              "fontFamily": "Inter",
-                              "fontSize": 14,
-                              "fontWeight": "normal"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "frame",
-                          "id": "yhFlh",
-                          "gap": 8,
-                          "children": [
-                            {
-                              "id": "ffnDT",
-                              "type": "ref",
-                              "ref": "zI9Ui",
-                              "width": "fit_content",
-                              "height": "fit_content",
-                              "x": 0,
-                              "y": 0,
-                              "descendants": {
-                                "9b8do": {
-                                  "content": "live",
-                                  "x": 8,
-                                  "y": 2
-                                }
-                              }
-                            },
-                            {
-                              "id": "FAVue",
-                              "type": "ref",
-                              "ref": "qoSp4",
-                              "width": "fit_content",
-                              "height": "fit_content",
-                              "x": 45,
-                              "y": 0,
-                              "descendants": {
-                                "06Lq2": {
-                                  "content": "pty",
-                                  "x": 8,
-                                  "y": 2
-                                }
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    "FRosU": {
-                      "type": "frame",
-                      "id": "h0xA8",
-                      "width": "fill_container",
-                      "height": "fill_container",
-                      "layout": "vertical",
-                      "gap": 16,
-                      "padding": 24,
-                      "children": [
-                        {
-                          "id": "Y4IAv",
-                          "type": "ref",
-                          "ref": "lA1Xs",
-                          "width": "fit_content",
-                          "x": 24,
-                          "y": 24,
-                          "children": [
-                            {
-                              "id": "b4u9t",
-                              "type": "ref",
-                              "ref": "G67bW",
-                              "fill": "#fafafa",
-                              "name": "termTab",
-                              "x": 4,
-                              "y": 4,
-                              "width": "fit_content",
-                              "height": "fit_content",
-                              "descendants": {
-                                "G1Msh": {
-                                  "content": "Terminal",
-                                  "fill": "#0a0a0a",
-                                  "x": 12,
-                                  "y": 6
-                                }
-                              }
-                            },
-                            {
-                              "id": "TbgFv",
-                              "type": "ref",
-                              "ref": "lC4v4",
-                              "name": "logTab",
-                              "width": "fit_content",
-                              "x": 94,
-                              "y": 4,
-                              "height": "fit_content",
-                              "descendants": {
-                                "TXVb2": {
-                                  "content": "Session log",
-                                  "fill": "#737373",
-                                  "x": 12,
-                                  "y": 6
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "frame",
-                          "id": "VXsFQ",
-                          "width": "fill_container",
-                          "height": "fill_container",
-                          "fill": "$--secondary",
-                          "cornerRadius": 10,
-                          "stroke": {
-                            "align": "inside",
-                            "thickness": 1,
-                            "fill": "$--border"
-                          },
-                          "layout": "vertical",
-                          "children": [
-                            {
-                              "type": "frame",
-                              "id": "E945Y",
-                              "width": "fill_container",
-                              "stroke": {
-                                "align": "inside",
-                                "thickness": {
-                                  "bottom": 1
-                                },
-                                "fill": "$--border"
-                              },
-                              "padding": [
-                                14,
-                                16
-                              ],
-                              "justifyContent": "space_between",
-                              "alignItems": "center",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "CSiA3",
-                                  "fill": "$--foreground",
-                                  "content": "> bash --login  shell://run/01JX4W2R9V8N6M3K1T5P7Q4A2B",
-                                  "fontFamily": "JetBrains Mono",
-                                  "fontSize": 13,
-                                  "fontWeight": "normal"
-                                },
-                                {
-                                  "type": "frame",
-                                  "id": "ORAlW",
-                                  "gap": 8,
-                                  "children": [
-                                    {
-                                      "id": "ewBTN",
-                                      "type": "ref",
-                                      "ref": "l1hLr",
-                                      "width": "fit_content",
-                                      "height": "fit_content",
-                                      "x": 0,
-                                      "y": 0,
-                                      "descendants": {
-                                        "NytVC": {
-                                          "content": "stdin open",
-                                          "x": 8,
-                                          "y": 2
-                                        }
-                                      }
-                                    },
-                                    {
-                                      "id": "KfI4u",
-                                      "type": "ref",
-                                      "ref": "qoSp4",
-                                      "width": "fit_content",
-                                      "height": "fit_content",
-                                      "x": 85,
-                                      "y": 0,
-                                      "descendants": {
-                                        "06Lq2": {
-                                          "content": "PTY",
-                                          "x": 8,
-                                          "y": 2
-                                        }
-                                      }
-                                    }
-                                  ]
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "id": "2nBYL",
-                              "width": "fill_container",
-                              "height": "fill_container",
-                              "layout": "vertical",
-                              "gap": 10,
-                              "padding": 16,
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "JY5ng",
-                                  "fill": "$--foreground",
-                                  "content": "worker-sfo-03@run-01JX4W2R9V8N6M3K1T5P7Q4A2B:~$ env | grep CIBORG",
-                                  "fontFamily": "JetBrains Mono",
-                                  "fontSize": 13,
-                                  "fontWeight": "normal"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "dKsaj",
-                                  "fill": "$--muted-foreground",
-                                  "content": "CIBORG_RUN_ID=01JX4W2R9V8N6M3K1T5P7Q4A2B",
-                                  "fontFamily": "JetBrains Mono",
-                                  "fontSize": 13,
-                                  "fontWeight": "normal"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "YJWe7",
-                                  "fill": "$--muted-foreground",
-                                  "content": "CIBORG_SESSION_ID=sh_01J_shell",
-                                  "fontFamily": "JetBrains Mono",
-                                  "fontSize": 13,
-                                  "fontWeight": "normal"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "jze3v",
-                                  "fill": "$--foreground",
-                                  "content": "worker-sfo-03@run-01JX4W2R9V8N6M3K1T5P7Q4A2B:~$ tail -f /workspace/.ciborg/stdout.log",
-                                  "fontFamily": "JetBrains Mono",
-                                  "fontSize": 13,
-                                  "fontWeight": "normal"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "aky04",
-                                  "fill": "$--muted-foreground",
-                                  "content": "[14:23:11] hydrate-inputs completed",
-                                  "fontFamily": "JetBrains Mono",
-                                  "fontSize": 13,
-                                  "fontWeight": "normal"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "UTptw",
-                                  "fill": "#b45309",
-                                  "content": "[14:23:17] approval required: rm -rf /tmp/cache",
-                                  "fontFamily": "JetBrains Mono",
-                                  "fontSize": 13,
-                                  "fontWeight": "normal"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "LCEM9",
-                                  "fill": "$--foreground",
-                                  "content": "worker-sfo-03@run-01JX4W2R9V8N6M3K1T5P7Q4A2B:~$ ",
-                                  "fontFamily": "JetBrains Mono",
-                                  "fontSize": 13,
-                                  "fontWeight": "normal"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "id": "eQvwp",
-                              "width": "fill_container",
-                              "gap": 12,
-                              "children": [
-                                {
-                                  "type": "frame",
-                                  "id": "CKoaq",
-                                  "width": "fill_container",
-                                  "fill": "$--background",
-                                  "cornerRadius": 8,
-                                  "stroke": {
-                                    "align": "inside",
-                                    "thickness": 1,
-                                    "fill": "$--border"
-                                  },
-                                  "padding": [
-                                    12,
-                                    14
-                                  ],
-                                  "children": [
-                                    {
-                                      "type": "text",
-                                      "id": "xTYzz",
-                                      "fill": "$--muted-foreground",
-                                      "textGrowth": "fixed-width",
-                                      "width": "fill_container",
-                                      "content": "Type a command, press Enter to send, Shift+Enter for a newline.",
-                                      "fontFamily": "Inter",
-                                      "fontSize": 14,
-                                      "fontWeight": "normal"
-                                    }
-                                  ]
-                                },
-                                {
-                                  "id": "k0reg",
-                                  "type": "ref",
-                                  "ref": "QUgPD",
-                                  "width": "fit_content",
-                                  "height": "fit_content",
-                                  "x": 704,
-                                  "y": 0,
-                                  "descendants": {
-                                    "V8u8q": {
-                                      "x": 16,
-                                      "y": 8,
-                                      "enabled": true
-                                    },
-                                    "wevbQ": {
-                                      "enabled": true,
-                                      "iconFontName": "play"
-                                    },
-                                    "brqte": {
-                                      "content": "Execute",
-                                      "x": 42,
-                                      "y": 8
-                                    }
-                                  }
-                                }
-                              ]
-                            },
-                            {
-                              "type": "text",
-                              "id": "AqFrn",
-                              "fill": "$--muted-foreground",
-                              "textGrowth": "fixed-width",
-                              "width": "fill_container",
-                              "content": "This shell streams line output live and keeps scrollback in the session transcript.",
-                              "fontFamily": "Inter",
-                              "fontSize": 13,
-                              "fontWeight": "normal"
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    "aArwa": {
-                      "width": "fill_container",
-                      "enabled": false
-                    }
-                  }
+              "id": "uIbxh",
+              "type": "ref",
+              "ref": "der2o",
+              "name": "b1",
+              "x": 16,
+              "y": 8,
+              "descendants": {
+                "ultE2": {
+                  "enabled": false
+                },
+                "wAVsD": {
+                  "content": "Ctrl"
                 }
-              ]
+              }
             },
             {
-              "type": "frame",
-              "id": "UIvKv",
-              "name": "sideCol",
-              "width": 344,
-              "height": "fill_container",
-              "layout": "vertical",
-              "gap": 16,
-              "children": [
-                {
-                  "id": "8CoNr",
-                  "type": "ref",
-                  "ref": "Lvc9t",
-                  "width": "fill_container",
-                  "name": "sessionCard",
-                  "x": 0,
-                  "y": 0,
-                  "height": "fit_content",
-                  "descendants": {
-                    "NPhrR": {
-                      "type": "frame",
-                      "id": "fJLx9",
-                      "name": "Session Header",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "gap": 2,
-                      "padding": 20,
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "LPV6R",
-                          "fill": "$--foreground",
-                          "content": "Session target",
-                          "fontFamily": "Inter",
-                          "fontSize": 18,
-                          "fontWeight": "600"
-                        },
-                        {
-                          "type": "text",
-                          "id": "xHhl7",
-                          "fill": "$--muted-foreground",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "The shell can attach to a worker runtime even when no project checkout is mounted.",
-                          "fontFamily": "Inter",
-                          "fontSize": 14,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    },
-                    "FRosU": {
-                      "type": "frame",
-                      "id": "eIBnJ",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "gap": 12,
-                      "padding": 20,
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "GW7nu",
-                          "width": "fill_container",
-                          "justifyContent": "space_between",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "Z1LwM",
-                              "fill": "$--muted-foreground",
-                              "content": "Worker",
-                              "fontFamily": "Inter",
-                              "fontSize": 14,
-                              "fontWeight": "normal"
-                            },
-                            {
-                              "type": "text",
-                              "id": "4xgTR",
-                              "fill": "$--foreground",
-                              "content": "runtime-04",
-                              "fontFamily": "Inter",
-                              "fontSize": 14,
-                              "fontWeight": "500"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "frame",
-                          "id": "VmDyr",
-                          "width": "fill_container",
-                          "justifyContent": "space_between",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "ZcbGd",
-                              "fill": "$--muted-foreground",
-                              "content": "Mode",
-                              "fontFamily": "Inter",
-                              "fontSize": 14,
-                              "fontWeight": "normal"
-                            },
-                            {
-                              "type": "text",
-                              "id": "lrm00",
-                              "fill": "$--foreground",
-                              "content": "Interactive PTY",
-                              "fontFamily": "Inter",
-                              "fontSize": 14,
-                              "fontWeight": "500"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "frame",
-                          "id": "Ea9kR",
-                          "width": "fill_container",
-                          "justifyContent": "space_between",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "t2UiC",
-                              "fill": "$--muted-foreground",
-                              "content": "Workspace",
-                              "fontFamily": "Inter",
-                              "fontSize": 14,
-                              "fontWeight": "normal"
-                            },
-                            {
-                              "type": "text",
-                              "id": "PEbIJ",
-                              "fill": "$--foreground",
-                              "content": "Run-bound workspace",
-                              "fontFamily": "Inter",
-                              "fontSize": 14,
-                              "fontWeight": "500"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "frame",
-                          "id": "NK6sz",
-                          "width": "fill_container",
-                          "justifyContent": "space_between",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "gkdxa",
-                              "fill": "$--muted-foreground",
-                              "content": "Last input",
-                              "fontFamily": "Inter",
-                              "fontSize": 14,
-                              "fontWeight": "normal"
-                            },
-                            {
-                              "type": "text",
-                              "id": "djOFJ",
-                              "fill": "$--foreground",
-                              "textGrowth": "fixed-width",
-                              "width": 170,
-                              "content": "tail -f /workspace/.ciborg/stdout.log",
-                              "fontFamily": "Inter",
-                              "fontSize": 14,
-                              "fontWeight": "500"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "frame",
-                          "id": "aB7aV",
-                          "width": "fill_container",
-                          "gap": 8,
-                          "children": [
-                            {
-                              "id": "k6TBq",
-                              "type": "ref",
-                              "ref": "zI9Ui",
-                              "width": "fit_content",
-                              "height": "fit_content",
-                              "x": 0,
-                              "y": 0,
-                              "descendants": {
-                                "9b8do": {
-                                  "content": "interactive",
-                                  "x": 8,
-                                  "y": 2
-                                }
-                              }
-                            },
-                            {
-                              "id": "4pkJy",
-                              "type": "ref",
-                              "ref": "qoSp4",
-                              "width": "fit_content",
-                              "height": "fit_content",
-                              "x": 86,
-                              "y": 0,
-                              "descendants": {
-                                "06Lq2": {
-                                  "content": "audited",
-                                  "x": 8,
-                                  "y": 2
-                                }
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    "aArwa": {
-                      "width": "fill_container",
-                      "enabled": false
-                    }
-                  }
+              "id": "RWSd0",
+              "type": "ref",
+              "ref": "der2o",
+              "name": "b2",
+              "x": 85,
+              "y": 8,
+              "descendants": {
+                "ultE2": {
+                  "enabled": false
                 },
-                {
-                  "id": "qxAap",
-                  "type": "ref",
-                  "ref": "Lvc9t",
-                  "width": "fill_container",
-                  "name": "guardCard",
-                  "x": 0,
-                  "y": 324,
-                  "height": "fit_content",
-                  "descendants": {
-                    "NPhrR": {
-                      "type": "frame",
-                      "id": "1AP7U",
-                      "name": "Guard Header",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "gap": 2,
-                      "padding": 20,
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "4WweK",
-                          "fill": "$--foreground",
-                          "content": "Execution guardrails",
-                          "fontFamily": "Inter",
-                          "fontSize": 18,
-                          "fontWeight": "600"
-                        },
-                        {
-                          "type": "text",
-                          "id": "oI5un",
-                          "fill": "$--muted-foreground",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "Interactive access stays fast, but risky actions still surface the same approval and audit boundaries.",
-                          "fontFamily": "Inter",
-                          "fontSize": 14,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    },
-                    "FRosU": {
-                      "type": "frame",
-                      "id": "vQwvF",
-                      "name": "Guard Content",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "gap": 10,
-                      "padding": 20,
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "Nh9f2",
-                          "gap": 12,
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "id": "CNiMJ",
-                              "type": "ref",
-                              "ref": "qoSp4",
-                              "width": "fit_content",
-                              "height": "fit_content",
-                              "x": 0,
-                              "y": 14,
-                              "descendants": {
-                                "06Lq2": {
-                                  "content": "Approval",
-                                  "x": 8,
-                                  "y": 2
-                                }
-                              }
-                            },
-                            {
-                              "type": "text",
-                              "id": "C18ah",
-                              "fill": "$--muted-foreground",
-                              "textGrowth": "fixed-width",
-                              "width": 220,
-                              "content": "Destructive commands pause for confirmation before stdin is forwarded to the worker.",
-                              "fontFamily": "Inter",
-                              "fontSize": 13,
-                              "fontWeight": "normal"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "frame",
-                          "id": "GHZDH",
-                          "gap": 12,
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "id": "6h3AC",
-                              "type": "ref",
-                              "ref": "qoSp4",
-                              "width": "fit_content",
-                              "height": "fit_content",
-                              "x": 0,
-                              "y": 22,
-                              "descendants": {
-                                "06Lq2": {
-                                  "content": "Network",
-                                  "x": 8,
-                                  "y": 2
-                                }
-                              }
-                            },
-                            {
-                              "type": "text",
-                              "id": "t2TQW",
-                              "fill": "$--muted-foreground",
-                              "textGrowth": "fixed-width",
-                              "width": 220,
-                              "content": "Outbound access follows the worker policy in effect for this session, not the browser environment.",
-                              "fontFamily": "Inter",
-                              "fontSize": 13,
-                              "fontWeight": "normal"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "frame",
-                          "id": "dKuJT",
-                          "gap": 12,
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "id": "LfexD",
-                              "type": "ref",
-                              "ref": "qoSp4",
-                              "width": "fit_content",
-                              "height": "fit_content",
-                              "x": 0,
-                              "y": 14,
-                              "descendants": {
-                                "06Lq2": {
-                                  "content": "Transcript",
-                                  "x": 8,
-                                  "y": 2
-                                }
-                              }
-                            },
-                            {
-                              "type": "text",
-                              "id": "vbkAO",
-                              "fill": "$--muted-foreground",
-                              "textGrowth": "fixed-width",
-                              "width": 220,
-                              "content": "Every command, keystroke boundary, and exit code is preserved in the session log.",
-                              "fontFamily": "Inter",
-                              "fontSize": 13,
-                              "fontWeight": "normal"
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    "aArwa": {
-                      "width": "fill_container",
-                      "enabled": false
-                    }
-                  }
+                "wAVsD": {
+                  "content": "Alt"
                 }
-              ]
+              }
+            },
+            {
+              "id": "FbzAw",
+              "type": "ref",
+              "ref": "der2o",
+              "name": "b3",
+              "x": 148,
+              "y": 8,
+              "descendants": {
+                "ultE2": {
+                  "enabled": false
+                },
+                "wAVsD": {
+                  "content": "Shift"
+                }
+              }
+            },
+            {
+              "id": "XJnLP",
+              "type": "ref",
+              "ref": "der2o",
+              "name": "b4",
+              "x": 223,
+              "y": 8,
+              "descendants": {
+                "ultE2": {
+                  "enabled": false
+                },
+                "wAVsD": {
+                  "content": "Tab"
+                }
+              }
+            },
+            {
+              "id": "x0mY0",
+              "type": "ref",
+              "ref": "der2o",
+              "name": "b5",
+              "x": 292,
+              "y": 8,
+              "descendants": {
+                "ultE2": {
+                  "enabled": false
+                },
+                "wAVsD": {
+                  "content": "Esc"
+                }
+              }
+            },
+            {
+              "id": "pZPuH",
+              "type": "ref",
+              "ref": "der2o",
+              "name": "b6",
+              "x": 361,
+              "y": 8,
+              "descendants": {
+                "ultE2": {
+                  "enabled": true
+                },
+                "oV5Hg": {
+                  "iconFontName": "chevron-down"
+                },
+                "wAVsD": {
+                  "enabled": false
+                }
+              }
             }
           ]
         }
