@@ -4664,16 +4664,20 @@
                   "id": "gxvJw",
                   "type": "ref",
                   "ref": "CjV3e",
-                  "width": "fill_container",
-                  "height": "fill_container",
+                  "width": 976,
+                  "height": 675,
                   "name": "tokenTable",
                   "x": 0,
                   "y": 221,
+                  "layout": "vertical",
+                  "justifyContent": "start",
+                  "alignItems": "center",
                   "descendants": {
                     "FgJKp": {
                       "width": "fill_container",
                       "y": 64.5,
-                      "height": "fit_content"
+                      "height": "fit_content",
+                      "enabled": false
                     },
                     "4qfVG": {
                       "height": "fit_content"
@@ -5238,7 +5242,7 @@
                     },
                     "v2LDy": {
                       "width": "fill_container",
-                      "y": 359.5,
+                      "y": 239,
                       "height": "fit_content"
                     },
                     "CU4c9": {
@@ -5271,149 +5275,6 @@
                     "f3vmu": {
                       "x": 54,
                       "y": 10
-                    }
-                  }
-                },
-                {
-                  "id": "VZzGh",
-                  "type": "ref",
-                  "ref": "Lvc9t",
-                  "width": "fill_container",
-                  "name": "rotateCard",
-                  "height": "fit_content",
-                  "x": 0,
-                  "y": 701,
-                  "descendants": {
-                    "NPhrR": {
-                      "type": "frame",
-                      "id": "ZnFSH",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "gap": 4,
-                      "padding": 24,
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "YTliI",
-                          "fill": "$--foreground",
-                          "content": "Rotation policy",
-                          "fontFamily": "Inter",
-                          "fontSize": 18,
-                          "fontWeight": "600"
-                        },
-                        {
-                          "type": "text",
-                          "id": "9QEff",
-                          "fill": "$--muted-foreground",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "Keep machine access short-lived and scoped to a single responsibility.",
-                          "fontFamily": "Inter",
-                          "fontSize": 14,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    },
-                    "FRosU": {
-                      "type": "frame",
-                      "id": "G80uz",
-                      "width": "fill_container",
-                      "gap": 8,
-                      "padding": [
-                        0,
-                        24,
-                        24,
-                        24
-                      ],
-                      "children": [
-                        {
-                          "id": "EscxB",
-                          "type": "ref",
-                          "ref": "qoSp4",
-                          "width": "fit_content",
-                          "x": 24,
-                          "y": 0,
-                          "height": "fit_content",
-                          "descendants": {
-                            "06Lq2": {
-                              "content": "Rotate every 30 days",
-                              "x": 8,
-                              "y": 2
-                            }
-                          }
-                        },
-                        {
-                          "id": "w4R2W",
-                          "type": "ref",
-                          "ref": "qoSp4",
-                          "width": "fit_content",
-                          "x": 171,
-                          "y": 0,
-                          "height": "fit_content",
-                          "descendants": {
-                            "06Lq2": {
-                              "content": "Scope once per token",
-                              "x": 8,
-                              "y": 2
-                            }
-                          }
-                        },
-                        {
-                          "id": "r1pf3",
-                          "type": "ref",
-                          "ref": "qoSp4",
-                          "width": "fit_content",
-                          "x": 322,
-                          "y": 0,
-                          "height": "fit_content",
-                          "descendants": {
-                            "06Lq2": {
-                              "content": "Audit every issuance",
-                              "x": 8,
-                              "y": 2
-                            }
-                          }
-                        }
-                      ]
-                    },
-                    "aArwa": {
-                      "type": "frame",
-                      "id": "SceTk",
-                      "width": "fill_container",
-                      "padding": [
-                        0,
-                        24,
-                        24,
-                        24
-                      ],
-                      "justifyContent": "end",
-                      "children": [
-                        {
-                          "id": "chamz",
-                          "type": "ref",
-                          "ref": "QUgPD",
-                          "width": "fit_content",
-                          "x": 806,
-                          "y": 0,
-                          "height": "fit_content",
-                          "descendants": {
-                            "V8u8q": {
-                              "x": 16,
-                              "y": 8,
-                              "enabled": true
-                            },
-                            "wevbQ": {
-                              "enabled": true,
-                              "iconFontName": "refresh-cw"
-                            },
-                            "brqte": {
-                              "content": "Rotate oldest",
-                              "x": 42,
-                              "y": 8
-                            }
-                          }
-                        }
-                      ]
                     }
                   }
                 }
