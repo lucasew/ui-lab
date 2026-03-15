@@ -534,155 +534,88 @@
                       }
                     },
                     {
-                      "id": "5nLJy",
-                      "type": "ref",
-                      "ref": "Lvc9t",
+                      "type": "frame",
+                      "id": "YHdkQ",
+                      "name": "Frame 1",
                       "width": "fill_container",
-                      "name": "composerCard",
-                      "x": 0,
-                      "y": 791,
-                      "fill": "$--card",
-                      "stroke": {
-                        "align": "inside",
-                        "thickness": 1,
-                        "fill": "$--border"
-                      },
-                      "height": "fit_content",
-                      "descendants": {
-                        "NPhrR": {
-                          "type": "frame",
-                          "id": "8lyHL",
-                          "name": "composeHeader",
+                      "height": "fit_content(43)",
+                      "children": [
+                        {
+                          "id": "SC4M9",
+                          "type": "ref",
+                          "ref": "SAwyp",
                           "width": "fill_container",
+                          "name": "composerInput",
+                          "x": 0,
+                          "y": 0,
+                          "height": "fill_container",
+                          "flipX": false,
+                          "flipY": false,
                           "layout": "vertical",
-                          "gap": 4,
-                          "padding": [
-                            20,
-                            24,
-                            0,
-                            24
-                          ],
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "eBhZ2",
-                              "fill": "$--card-foreground",
-                              "content": "Compose message",
-                              "fontFamily": "Inter",
-                              "fontSize": 16,
-                              "fontWeight": "600"
-                            },
-                            {
-                              "type": "text",
-                              "id": "UPbOf",
-                              "fill": "$--muted-foreground",
-                              "content": "Describe the outcome you want. Add repositories, documents, or links as optional context instead of required setup.",
-                              "fontFamily": "Inter",
-                              "fontSize": 13,
-                              "fontWeight": "normal"
-                            }
-                          ]
-                        },
-                        "FRosU": {
-                          "width": "fill_container",
-                          "layout": "vertical",
-                          "gap": 12,
-                          "padding": [
-                            16,
-                            24,
-                            0,
-                            24
-                          ],
-                          "y": 59,
-                          "children": [
-                            {
-                              "id": "SC4M9",
-                              "type": "ref",
-                              "ref": "SAwyp",
+                          "justifyContent": "center",
+                          "alignItems": "start",
+                          "descendants": {
+                            "IsNet": {
                               "width": "fill_container",
-                              "name": "composerInput",
-                              "x": 24,
-                              "y": -11,
                               "height": "fit_content",
-                              "descendants": {
-                                "IsNet": {
-                                  "width": "fill_container",
-                                  "height": "fit_content"
-                                },
-                                "syTRz": {
-                                  "content": "Message",
-                                  "width": "fill_container"
-                                },
-                                "IbiFq": {
-                                  "width": "fill_container",
-                                  "fill": "$--background",
-                                  "stroke": {
-                                    "align": "inside",
-                                    "thickness": 1,
-                                    "fill": "$--border"
-                                  },
-                                  "y": 26
-                                },
-                                "xZ6h2": {
-                                  "content": "Ask for a plan, request a review, or describe a task...",
-                                  "fill": "$--muted-foreground",
-                                  "x": 12,
-                                  "y": 8
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        "aArwa": {
-                          "width": "fill_container",
-                          "justifyContent": "space_between",
-                          "padding": [
-                            16,
-                            24,
-                            24,
-                            24
-                          ],
-                          "y": 127,
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "1sEmo",
-                              "name": "modeLabel",
-                              "fill": "$--muted-foreground",
-                              "content": "Tool use stays confirmation-based when a chat asks for actions.",
-                              "fontFamily": "Inter",
-                              "fontSize": 12,
-                              "fontWeight": "500"
+                              "enabled": false
                             },
-                            {
-                              "id": "wGLf7",
-                              "type": "ref",
-                              "ref": "QUgPD",
-                              "name": "sendBtn",
-                              "width": "fit_content",
-                              "x": 867,
-                              "y": 12,
-                              "fill": "$--primary",
-                              "height": "fit_content",
-                              "descendants": {
-                                "V8u8q": {
-                                  "x": 16,
-                                  "y": 8
-                                },
-                                "wevbQ": {
-                                  "iconFontName": "send-horizontal"
-                                },
-                                "brqte": {
-                                  "content": "Send",
-                                  "fill": "$--primary-foreground",
-                                  "x": 42,
-                                  "y": 8
-                                }
-                              }
+                            "syTRz": {
+                              "content": "Message",
+                              "width": "fill_container"
+                            },
+                            "IbiFq": {
+                              "width": "fill_container",
+                              "fill": "$--background",
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1,
+                                "fill": "$--border"
+                              },
+                              "y": 3.5,
+                              "height": 36,
+                              "padding": [
+                                0,
+                                12
+                              ]
+                            },
+                            "xZ6h2": {
+                              "content": "Ask for a plan, request a review, or describe a task...",
+                              "fill": "$--muted-foreground",
+                              "x": 12,
+                              "y": 0
                             }
-                          ]
+                          }
+                        },
+                        {
+                          "id": "wGLf7",
+                          "type": "ref",
+                          "ref": "QUgPD",
+                          "name": "sendBtn",
+                          "width": "fit_content",
+                          "x": 891,
+                          "y": 0,
+                          "fill": "$--primary",
+                          "height": "fill_container",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "descendants": {
+                            "V8u8q": {
+                              "x": 16,
+                              "y": 11.5
+                            },
+                            "wevbQ": {
+                              "iconFontName": "send-horizontal"
+                            },
+                            "brqte": {
+                              "content": "Send",
+                              "fill": "$--primary-foreground",
+                              "x": 42,
+                              "y": 11.5
+                            }
+                          }
                         }
-                      }
+                      ]
                     }
                   ]
                 }
@@ -962,23 +895,6 @@
                       }
                     }
                   ]
-                },
-                {
-                  "id": "qo1N8",
-                  "type": "ref",
-                  "ref": "qoSp4",
-                  "name": "summaryBadge",
-                  "width": "fit_content",
-                  "x": 756,
-                  "y": 10,
-                  "height": "fit_content",
-                  "descendants": {
-                    "06Lq2": {
-                      "content": "12 live sessions · specs unavailable",
-                      "x": 8,
-                      "y": 2
-                    }
-                  }
                 }
               ]
             },
@@ -990,140 +906,125 @@
               "gap": 16,
               "children": [
                 {
-                  "id": "ueP3l",
+                  "id": "wEQfk",
                   "type": "ref",
                   "ref": "uyEPe",
                   "width": "fill_container",
-                  "name": "metricA",
+                  "name": "card1",
                   "x": 0,
                   "y": 0,
-                  "height": "fit_content",
                   "descendants": {
                     "gyw3r": {
                       "width": "fill_container",
-                      "height": "fit_content"
+                      "padding": 16,
+                      "gap": 4
                     },
                     "E6lrs": {
-                      "content": "Live sessions",
                       "width": "fill_container",
-                      "x": 24,
-                      "y": 24
+                      "content": "Running jobs",
+                      "height": 0,
+                      "x": 16,
+                      "y": 16
                     },
                     "ulWvb": {
                       "width": "fill_container",
-                      "height": "fit_content",
-                      "y": 72
+                      "padding": 16,
+                      "gap": 4
                     },
                     "MaT7M": {
-                      "content": "12",
                       "width": "fill_container",
-                      "x": 24,
-                      "y": 24
+                      "content": "12",
+                      "fontSize": 20,
+                      "height": 0,
+                      "x": 16,
+                      "y": 16
                     },
                     "UP4jU": {
-                      "fill": "$--secondary",
-                      "width": "fit_content",
-                      "height": "fit_content",
+                      "enabled": false,
                       "x": 24,
                       "y": 68
-                    },
-                    "EiwtI": {
-                      "content": "ephemeral",
-                      "fill": "$--secondary-foreground",
-                      "x": 8,
-                      "y": 2
                     }
                   }
                 },
                 {
-                  "id": "PgT37",
+                  "id": "i8Z9k",
                   "type": "ref",
                   "ref": "uyEPe",
                   "width": "fill_container",
-                  "name": "metricB",
+                  "name": "card2",
                   "x": 330.6666666666667,
                   "y": 0,
-                  "height": "fit_content",
                   "descendants": {
                     "gyw3r": {
                       "width": "fill_container",
-                      "height": "fit_content"
+                      "padding": 16,
+                      "gap": 4
                     },
                     "E6lrs": {
-                      "content": "Running jobs",
                       "width": "fill_container",
-                      "x": 24,
-                      "y": 24
+                      "content": "Queued jobs",
+                      "height": 0,
+                      "x": 16,
+                      "y": 16
                     },
                     "ulWvb": {
                       "width": "fill_container",
-                      "height": "fit_content",
-                      "y": 72
+                      "padding": 16,
+                      "gap": 4
                     },
                     "MaT7M": {
-                      "content": "28",
                       "width": "fill_container",
-                      "x": 24,
-                      "y": 24
+                      "content": "34",
+                      "fontSize": 20,
+                      "height": 0,
+                      "x": 16,
+                      "y": 16
                     },
                     "UP4jU": {
-                      "fill": "$--secondary",
-                      "width": "fit_content",
-                      "height": "fit_content",
+                      "enabled": false,
                       "x": 24,
                       "y": 68
-                    },
-                    "EiwtI": {
-                      "content": "queue visible",
-                      "fill": "$--secondary-foreground",
-                      "x": 8,
-                      "y": 2
                     }
                   }
                 },
                 {
-                  "id": "3BxyI",
+                  "id": "6RKfv",
                   "type": "ref",
                   "ref": "uyEPe",
                   "width": "fill_container",
-                  "name": "metricC",
+                  "name": "card3",
                   "x": 661.3333333333334,
                   "y": 0,
-                  "height": "fit_content",
                   "descendants": {
                     "gyw3r": {
                       "width": "fill_container",
-                      "height": "fit_content"
+                      "padding": 16,
+                      "gap": 4
                     },
                     "E6lrs": {
-                      "content": "Specs reported",
                       "width": "fill_container",
-                      "x": 24,
-                      "y": 24
+                      "content": "Connected workers",
+                      "height": 0,
+                      "x": 16,
+                      "y": 16
                     },
                     "ulWvb": {
                       "width": "fill_container",
-                      "height": "fit_content",
-                      "y": 72
+                      "padding": 16,
+                      "gap": 4
                     },
                     "MaT7M": {
-                      "content": "0",
                       "width": "fill_container",
-                      "x": 24,
-                      "y": 24
+                      "content": "8",
+                      "fontSize": 20,
+                      "height": 0,
+                      "x": 16,
+                      "y": 16
                     },
                     "UP4jU": {
-                      "fill": "$--secondary",
-                      "width": "fit_content",
-                      "height": "fit_content",
+                      "enabled": false,
                       "x": 24,
                       "y": 68
-                    },
-                    "EiwtI": {
-                      "content": "not exposed",
-                      "fill": "$--secondary-foreground",
-                      "x": 8,
-                      "y": 2
                     }
                   }
                 }
@@ -1153,7 +1054,7 @@
                       "width": "fill_container",
                       "layout": "vertical",
                       "gap": 4,
-                      "padding": 24,
+                      "padding": 16,
                       "children": [
                         {
                           "type": "frame",
@@ -1178,7 +1079,7 @@
                               "ref": "l1hLr",
                               "width": "fit_content",
                               "height": "fit_content",
-                              "x": 373,
+                              "x": 389,
                               "y": 1,
                               "descendants": {
                                 "NytVC": {
@@ -1207,8 +1108,8 @@
                       "width": "fill_container",
                       "layout": "vertical",
                       "gap": 12,
-                      "padding": 24,
-                      "y": 108,
+                      "padding": 16,
+                      "y": 92,
                       "children": [
                         {
                           "type": "frame",
@@ -1241,18 +1142,6 @@
                               "fontFamily": "Inter",
                               "fontSize": 14,
                               "fontWeight": "normal"
-                            },
-                            {
-                              "type": "text",
-                              "id": "2RoWP",
-                              "name": "extraA",
-                              "fill": "$--muted-foreground",
-                              "textGrowth": "fixed-width",
-                              "width": "fill_container",
-                              "content": "Metadata available: worker name, connection state, job counts, and heartbeat timing.",
-                              "fontFamily": "Inter",
-                              "fontSize": 14,
-                              "fontWeight": "normal"
                             }
                           ]
                         }
@@ -1265,6 +1154,7 @@
                       "justifyContent": "end",
                       "alignItems": "center",
                       "y": 176,
+                      "enabled": false,
                       "children": [
                         {
                           "id": "m0ix6",
@@ -1335,7 +1225,7 @@
                       "width": "fill_container",
                       "layout": "vertical",
                       "gap": 4,
-                      "padding": 24,
+                      "padding": 16,
                       "children": [
                         {
                           "type": "frame",
@@ -1360,7 +1250,7 @@
                               "ref": "zI9Ui",
                               "width": "fit_content",
                               "height": "fit_content",
-                              "x": 387,
+                              "x": 403,
                               "y": 1,
                               "descendants": {
                                 "9b8do": {
@@ -1389,8 +1279,8 @@
                       "width": "fill_container",
                       "layout": "vertical",
                       "gap": 12,
-                      "padding": 24,
-                      "y": 108,
+                      "padding": 16,
+                      "y": 92,
                       "children": [
                         {
                           "type": "frame",
@@ -1423,18 +1313,6 @@
                               "fontFamily": "Inter",
                               "fontSize": 14,
                               "fontWeight": "normal"
-                            },
-                            {
-                              "type": "text",
-                              "id": "c9F3V",
-                              "name": "extraB",
-                              "fill": "$--muted-foreground",
-                              "textGrowth": "fixed-width",
-                              "width": "fill_container",
-                              "content": "Metadata available: worker name, connection state, queue counts, and transient activity only.",
-                              "fontFamily": "Inter",
-                              "fontSize": 14,
-                              "fontWeight": "normal"
                             }
                           ]
                         }
@@ -1447,6 +1325,7 @@
                       "justifyContent": "end",
                       "alignItems": "center",
                       "y": 176,
+                      "enabled": false,
                       "children": [
                         {
                           "id": "acpxW",
@@ -1509,8 +1388,8 @@
               "width": "fill_container",
               "name": "activity",
               "x": 24,
-              "y": 662,
-              "height": "fit_content",
+              "y": 512,
+              "height": 330,
               "flipX": false,
               "flipY": false,
               "descendants": {
@@ -1521,7 +1400,7 @@
                   "width": "fill_container",
                   "layout": "vertical",
                   "gap": 4,
-                  "padding": 24,
+                  "padding": 16,
                   "children": [
                     {
                       "type": "text",
@@ -1547,10 +1426,16 @@
                   "width": "fill_container",
                   "layout": "vertical",
                   "gap": 12,
-                  "padding": 24,
-                  "y": 91,
+                  "padding": 16,
+                  "y": 75,
                   "enabled": true,
-                  "height": "fit_content",
+                  "height": "fill_container",
+                  "flipX": false,
+                  "flipY": false,
+                  "x": 0,
+                  "textGrowth": "auto",
+                  "justifyContent": "start",
+                  "alignItems": "center",
                   "children": [
                     {
                       "type": "frame",
@@ -1615,7 +1500,7 @@
                               "ref": "zI9Ui",
                               "name": "row1Badge",
                               "width": "fit_content",
-                              "x": 853,
+                              "x": 869,
                               "y": 19.5,
                               "fill": "$--secondary",
                               "height": "fit_content",
@@ -1684,7 +1569,7 @@
                               "ref": "l1hLr",
                               "name": "row2Badge",
                               "width": "fit_content",
-                              "x": 867,
+                              "x": 883,
                               "y": 19.5,
                               "fill": "$--primary",
                               "height": "fit_content",
@@ -1753,7 +1638,7 @@
                               "ref": "aCGyY",
                               "name": "row3Badge",
                               "width": "fit_content",
-                              "x": 859,
+                              "x": 875,
                               "y": 19.5,
                               "fill": "$--destructive",
                               "height": "fit_content",
@@ -1969,12 +1854,14 @@
               "id": "8BwPK",
               "name": "summary",
               "width": "fill_container",
+              "height": "fit_content(126)",
               "gap": 16,
               "children": [
                 {
                   "type": "frame",
                   "id": "mOtd3",
                   "width": "fill_container",
+                  "height": "fill_container",
                   "fill": "$--card",
                   "cornerRadius": 10,
                   "stroke": {
@@ -2020,6 +1907,7 @@
                   "type": "frame",
                   "id": "DDsfe",
                   "width": "fill_container",
+                  "height": "fill_container",
                   "fill": "$--card",
                   "cornerRadius": 10,
                   "stroke": {
@@ -2065,6 +1953,7 @@
                   "type": "frame",
                   "id": "mQeNK",
                   "width": "fill_container",
+                  "height": "fill_container",
                   "fill": "$--card",
                   "cornerRadius": 10,
                   "stroke": {
