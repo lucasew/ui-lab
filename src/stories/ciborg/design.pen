@@ -196,7 +196,7 @@
               "type": "frame",
               "id": "UnFHV",
               "name": "columns",
-              "width": "fill_container",
+              "width": 983,
               "height": "fill_container",
               "gap": 24,
               "children": [
@@ -207,7 +207,6 @@
                   "width": "fill_container",
                   "height": "fill_container",
                   "layout": "vertical",
-                  "gap": 16,
                   "children": [
                     {
                       "id": "MKPhF",
@@ -289,7 +288,7 @@
                               "fill": "$--secondary",
                               "width": "fit_content",
                               "height": "fit_content",
-                              "x": 891,
+                              "x": 890,
                               "y": 34,
                               "descendants": {
                                 "NytVC": {
@@ -536,9 +535,18 @@
                     {
                       "type": "frame",
                       "id": "YHdkQ",
-                      "name": "Frame 1",
+                      "name": "chatEntry",
                       "width": "fill_container",
                       "height": "fit_content(43)",
+                      "fill": "$--background",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "align": "outside",
+                        "thickness": 1,
+                        "fill": "$--border"
+                      },
+                      "justifyContent": "center",
+                      "alignItems": "center",
                       "children": [
                         {
                           "id": "SC4M9",
@@ -553,7 +561,7 @@
                           "flipY": false,
                           "layout": "vertical",
                           "justifyContent": "center",
-                          "alignItems": "start",
+                          "alignItems": "center",
                           "descendants": {
                             "IsNet": {
                               "width": "fill_container",
@@ -566,18 +574,18 @@
                             },
                             "IbiFq": {
                               "width": "fill_container",
-                              "fill": "$--background",
+                              "fill": [],
                               "stroke": {
                                 "align": "inside",
-                                "thickness": 1,
-                                "fill": "$--border"
+                                "thickness": 1
                               },
-                              "y": 3.5,
-                              "height": 36,
+                              "y": 0,
+                              "height": "fill_container",
                               "padding": [
                                 0,
                                 12
-                              ]
+                              ],
+                              "cornerRadius": 0
                             },
                             "xZ6h2": {
                               "content": "Ask for a plan, request a review, or describe a task...",
@@ -593,12 +601,18 @@
                           "ref": "QUgPD",
                           "name": "sendBtn",
                           "width": "fit_content",
-                          "x": 891,
+                          "x": 931,
                           "y": 0,
                           "fill": "$--primary",
                           "height": "fill_container",
                           "justifyContent": "center",
                           "alignItems": "center",
+                          "cornerRadius": [
+                            0,
+                            8,
+                            8,
+                            0
+                          ],
                           "descendants": {
                             "V8u8q": {
                               "x": 16,
@@ -611,7 +625,8 @@
                               "content": "Send",
                               "fill": "$--primary-foreground",
                               "x": 42,
-                              "y": 11.5
+                              "y": 11.5,
+                              "enabled": false
                             }
                           }
                         }
