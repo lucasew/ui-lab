@@ -30,6 +30,9 @@
           "width": 256,
           "height": "fill_container",
           "descendants": {
+            "SpcJN/V2YHu": {
+              "enabled": false
+            },
             "xwVeL": {
               "id": "SUU9Q",
               "type": "ref",
@@ -41,10 +44,25 @@
                 "Rab5P": {
                   "content": "Chats"
                 },
+                "9llEg": {
+                  "enabled": false
+                },
                 "rvV8D": {
                   "content": "⌘2"
                 }
               }
+            },
+            "rX0Mc/V2YHu": {
+              "enabled": false
+            },
+            "gbpvB/V2YHu": {
+              "enabled": false
+            },
+            "D1ibg/V2YHu": {
+              "enabled": false
+            },
+            "f0JsZ/V2YHu": {
+              "enabled": false
             }
           }
         },
@@ -260,7 +278,7 @@
                               "fill": "$--secondary",
                               "width": "fit_content",
                               "height": "fit_content",
-                              "x": 547,
+                              "x": 891,
                               "y": 34,
                               "descendants": {
                                 "NytVC": {
@@ -631,7 +649,7 @@
                               "ref": "QUgPD",
                               "name": "sendBtn",
                               "width": "fit_content",
-                              "x": 523,
+                              "x": 867,
                               "y": 12,
                               "fill": "$--primary",
                               "height": "fit_content",
@@ -652,271 +670,6 @@
                               }
                             }
                           ]
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "Gz2bl",
-                  "name": "right",
-                  "width": 320,
-                  "height": "fill_container",
-                  "layout": "vertical",
-                  "gap": 16,
-                  "children": [
-                    {
-                      "id": "79hen",
-                      "type": "ref",
-                      "ref": "Lvc9t",
-                      "width": "fill_container",
-                      "name": "metaCard",
-                      "x": 0,
-                      "y": 0,
-                      "fill": "$--card",
-                      "stroke": {
-                        "align": "inside",
-                        "thickness": 1,
-                        "fill": "$--border"
-                      },
-                      "height": "fit_content",
-                      "descendants": {
-                        "NPhrR": {
-                          "type": "frame",
-                          "id": "BC0Ne",
-                          "name": "metaHeader",
-                          "width": "fill_container",
-                          "layout": "vertical",
-                          "gap": 4,
-                          "padding": 24,
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "UneIm",
-                              "fill": "$--card-foreground",
-                              "content": "Conversation profile",
-                              "fontFamily": "Inter",
-                              "fontSize": 16,
-                              "fontWeight": "600"
-                            },
-                            {
-                              "type": "text",
-                              "id": "QWFZQ",
-                              "fill": "$--muted-foreground",
-                              "content": "Portable context that travels with this chat whether or not a project is attached.",
-                              "fontFamily": "Inter",
-                              "fontSize": 13,
-                              "fontWeight": "normal"
-                            }
-                          ]
-                        },
-                        "FRosU": {
-                          "type": "frame",
-                          "id": "pGACl",
-                          "name": "metaContent",
-                          "width": "fill_container",
-                          "layout": "vertical",
-                          "gap": 12,
-                          "padding": [
-                            0,
-                            24,
-                            24,
-                            24
-                          ],
-                          "children": [
-                            {
-                              "type": "frame",
-                              "id": "v9J2X",
-                              "layout": "vertical",
-                              "gap": 6,
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "JflKj",
-                                  "fill": "$--muted-foreground",
-                                  "content": "Agent",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 12,
-                                  "fontWeight": "500"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "Eq3zX",
-                                  "fill": "$--foreground",
-                                  "content": "Design partner",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 14,
-                                  "fontWeight": "600"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "id": "y56UV",
-                              "layout": "vertical",
-                              "gap": 6,
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "w8ZNo",
-                                  "fill": "$--muted-foreground",
-                                  "content": "Context sources",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 12,
-                                  "fontWeight": "500"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "iOOau",
-                                  "fill": "$--foreground",
-                                  "content": "No repository attached",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 14,
-                                  "fontWeight": "600"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "id": "oCER0",
-                              "layout": "vertical",
-                              "gap": 6,
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "eR20A",
-                                  "fill": "$--muted-foreground",
-                                  "content": "Current status",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 12,
-                                  "fontWeight": "500"
-                                },
-                                {
-                                  "id": "FxtGt",
-                                  "type": "ref",
-                                  "ref": "aCGyY",
-                                  "fill": "$--secondary",
-                                  "width": "fit_content",
-                                  "height": "fit_content",
-                                  "x": 0,
-                                  "y": 21,
-                                  "descendants": {
-                                    "1XHm6": {
-                                      "content": "Waiting for input",
-                                      "fill": "$--secondary-foreground",
-                                      "x": 8,
-                                      "y": 2
-                                    }
-                                  }
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        "aArwa": {
-                          "width": "fill_container",
-                          "enabled": false
-                        }
-                      }
-                    },
-                    {
-                      "id": "Iz4kt",
-                      "type": "ref",
-                      "ref": "Lvc9t",
-                      "width": "fill_container",
-                      "name": "queueCard",
-                      "x": 0,
-                      "y": 268,
-                      "fill": "$--card",
-                      "stroke": {
-                        "align": "inside",
-                        "thickness": 1,
-                        "fill": "$--border"
-                      },
-                      "height": "fit_content",
-                      "descendants": {
-                        "NPhrR": {
-                          "type": "frame",
-                          "id": "zRd0G",
-                          "name": "queueHeader",
-                          "width": "fill_container",
-                          "layout": "vertical",
-                          "gap": 4,
-                          "padding": 24,
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "yntpU",
-                              "fill": "$--card-foreground",
-                              "content": "Suggested prompts",
-                              "fontFamily": "Inter",
-                              "fontSize": 16,
-                              "fontWeight": "600"
-                            },
-                            {
-                              "type": "text",
-                              "id": "0SbJd",
-                              "fill": "$--muted-foreground",
-                              "content": "Quick ways to steer the chat without assuming a code project.",
-                              "fontFamily": "Inter",
-                              "fontSize": 13,
-                              "fontWeight": "normal"
-                            }
-                          ]
-                        },
-                        "FRosU": {
-                          "type": "frame",
-                          "id": "qepxB",
-                          "name": "fixedQueue",
-                          "width": "fill_container",
-                          "layout": "vertical",
-                          "gap": 10,
-                          "padding": [
-                            0,
-                            24,
-                            24,
-                            24
-                          ],
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "Quqzu",
-                              "fill": "$--foreground",
-                              "textGrowth": "fixed-width",
-                              "width": "fill_container",
-                              "content": "Draft a rollout plan for a new agent feature and call out the biggest risks.",
-                              "fontFamily": "Inter",
-                              "fontSize": 14,
-                              "fontWeight": "normal"
-                            },
-                            {
-                              "type": "text",
-                              "id": "bQUDY",
-                              "fill": "$--foreground",
-                              "textGrowth": "fixed-width",
-                              "width": "fill_container",
-                              "content": "Summarize this meeting transcript into decisions, open questions, and next steps.",
-                              "fontFamily": "Inter",
-                              "fontSize": 14,
-                              "fontWeight": "normal"
-                            },
-                            {
-                              "type": "text",
-                              "id": "rlL9S",
-                              "fill": "$--foreground",
-                              "textGrowth": "fixed-width",
-                              "width": "fill_container",
-                              "content": "Help me turn a rough idea into a product spec, then list the follow-up context you need.",
-                              "fontFamily": "Inter",
-                              "fontSize": 14,
-                              "fontWeight": "normal"
-                            }
-                          ]
-                        },
-                        "aArwa": {
-                          "width": "fill_container",
-                          "enabled": false
                         }
                       }
                     }
@@ -954,6 +707,12 @@
           "width": 256,
           "height": "fill_container",
           "descendants": {
+            "SpcJN/PHWHh": {
+              "enabled": false
+            },
+            "xwVeL/PHWHh": {
+              "enabled": false
+            },
             "rX0Mc": {
               "id": "W1kEn",
               "type": "ref",
@@ -965,10 +724,22 @@
                 "Rab5P": {
                   "content": "Workers"
                 },
+                "hgwNt": {
+                  "enabled": false
+                },
                 "rvV8D": {
                   "content": "⌘4"
                 }
               }
+            },
+            "gbpvB/PHWHh": {
+              "enabled": false
+            },
+            "D1ibg/PHWHh": {
+              "enabled": false
+            },
+            "f0JsZ/PHWHh": {
+              "enabled": false
             }
           }
         },
@@ -1715,6 +1486,8 @@
               "x": 24,
               "y": 662,
               "height": "fit_content",
+              "flipX": false,
+              "flipY": false,
               "descendants": {
                 "NPhrR": {
                   "type": "frame",
@@ -1751,12 +1524,15 @@
                   "gap": 12,
                   "padding": 24,
                   "y": 91,
+                  "enabled": true,
+                  "height": "fit_content",
                   "children": [
                     {
                       "type": "frame",
                       "id": "2EJco",
                       "name": "activityList",
                       "width": "fill_container",
+                      "height": 41,
                       "layout": "vertical",
                       "gap": 12,
                       "children": [
@@ -2008,6 +1784,9 @@
           "width": 256,
           "height": "fill_container",
           "descendants": {
+            "SpcJN/PHWHh": {
+              "enabled": false
+            },
             "xwVeL": {
               "id": "0wz6U",
               "type": "ref",
@@ -2019,10 +1798,28 @@
                 "Rab5P": {
                   "content": "Chats"
                 },
+                "hgwNt": {
+                  "enabled": false
+                },
                 "rvV8D": {
                   "content": "⌘2"
                 }
               }
+            },
+            "rX0Mc/PHWHh": {
+              "enabled": false
+            },
+            "gbpvB/PHWHh": {
+              "enabled": false
+            },
+            "D1ibg/PHWHh": {
+              "enabled": false
+            },
+            "f0JsZ/PHWHh": {
+              "enabled": false
+            },
+            "f0JsZ/af3zh": {
+              "content": "⌘7"
             }
           }
         },
@@ -3166,15 +2963,21 @@
       },
       "children": [
         {
-          "id": "STMrg",
+          "id": "teqX8",
           "type": "ref",
           "ref": "2ygrZ",
           "name": "sidebar",
           "width": 256,
           "height": "fill_container",
           "descendants": {
+            "SpcJN/PHWHh": {
+              "enabled": false
+            },
+            "xwVeL/PHWHh": {
+              "enabled": false
+            },
             "svYXR": {
-              "id": "xhsPX",
+              "id": "cxFTZ",
               "type": "ref",
               "ref": "5GgOn",
               "descendants": {
@@ -3184,10 +2987,28 @@
                 "Rab5P": {
                   "content": "Runs"
                 },
+                "hgwNt": {
+                  "enabled": false
+                },
                 "rvV8D": {
                   "content": "⌘3"
                 }
               }
+            },
+            "rX0Mc/PHWHh": {
+              "enabled": false
+            },
+            "gbpvB/PHWHh": {
+              "enabled": false
+            },
+            "D1ibg/PHWHh": {
+              "enabled": false
+            },
+            "f0JsZ/PHWHh": {
+              "enabled": false
+            },
+            "f0JsZ/af3zh": {
+              "content": "⌘7"
             }
           }
         },
@@ -3803,7 +3624,7 @@
                               "ref": "qoSp4",
                               "width": "fit_content",
                               "height": "fit_content",
-                              "x": 533,
+                              "x": 877,
                               "y": 35.5,
                               "descendants": {
                                 "06Lq2": {
@@ -4173,8 +3994,8 @@
                               "ref": "der2o",
                               "width": "fit_content",
                               "height": "fit_content",
-                              "x": 449,
-                              "y": 36,
+                              "x": 793,
+                              "y": 27.5,
                               "descendants": {
                                 "ultE2": {
                                   "x": 16,
@@ -4362,889 +4183,6 @@
                       ]
                     }
                   ]
-                },
-                {
-                  "type": "frame",
-                  "id": "toDLc",
-                  "name": "rightCol",
-                  "width": 320,
-                  "height": "fill_container",
-                  "layout": "vertical",
-                  "gap": 24,
-                  "children": [
-                    {
-                      "type": "frame",
-                      "id": "9YYO1",
-                      "name": "shellCard",
-                      "width": "fill_container",
-                      "fill": "#0f172a",
-                      "cornerRadius": 8,
-                      "stroke": {
-                        "align": "inside",
-                        "thickness": 1,
-                        "fill": "#ffffff1a"
-                      },
-                      "effect": {
-                        "type": "shadow",
-                        "shadowType": "outer",
-                        "color": "#0000000d",
-                        "offset": {
-                          "x": 0,
-                          "y": 1
-                        },
-                        "blur": 1.75
-                      },
-                      "layout": "vertical",
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "tAkb8",
-                          "name": "shellHeader",
-                          "width": "fill_container",
-                          "layout": "vertical",
-                          "gap": 8,
-                          "padding": 24,
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "eDzIL",
-                              "fill": "#fafafa",
-                              "content": "Interactive shell",
-                              "fontFamily": "Inter",
-                              "fontSize": 18,
-                              "fontWeight": "600"
-                            },
-                            {
-                              "type": "text",
-                              "id": "T8vaW",
-                              "fill": "#94a3b8",
-                              "textGrowth": "fixed-width",
-                              "width": "fill_container",
-                              "content": "Open a live PTY on the current worker without leaving the run detail view. The session attaches to this run and keeps command history auditable.",
-                              "fontFamily": "Inter",
-                              "fontSize": 14,
-                              "fontWeight": "normal"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "frame",
-                          "id": "ztHPB",
-                          "name": "shellMeta",
-                          "width": "fill_container",
-                          "layout": "vertical",
-                          "gap": 12,
-                          "padding": [
-                            0,
-                            24,
-                            20,
-                            24
-                          ],
-                          "children": [
-                            {
-                              "type": "frame",
-                              "id": "xrxAc",
-                              "name": "row1",
-                              "width": "fill_container",
-                              "justifyContent": "space_between",
-                              "alignItems": "center",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "XAklY",
-                                  "fill": "#94a3b8",
-                                  "content": "Worker",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 14,
-                                  "fontWeight": "normal"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "wKNgK",
-                                  "fill": "#fafafa",
-                                  "content": "worker-sfo-03",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 14,
-                                  "fontWeight": "500"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "id": "pm9cW",
-                              "name": "row2",
-                              "width": "fill_container",
-                              "justifyContent": "space_between",
-                              "alignItems": "center",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "eBWpK",
-                                  "fill": "#94a3b8",
-                                  "content": "Entry shell",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 14,
-                                  "fontWeight": "normal"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "24TQ6",
-                                  "fill": "#fafafa",
-                                  "content": "bash --login",
-                                  "fontFamily": "JetBrains Mono",
-                                  "fontSize": 13,
-                                  "fontWeight": "normal"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "id": "kqLpM",
-                              "name": "badgeRow",
-                              "width": "fill_container",
-                              "gap": 8,
-                              "children": [
-                                {
-                                  "type": "frame",
-                                  "id": "KJmxI",
-                                  "name": "readyBadge",
-                                  "fill": "#1d4ed8",
-                                  "cornerRadius": 16,
-                                  "padding": [
-                                    2,
-                                    8
-                                  ],
-                                  "justifyContent": "center",
-                                  "alignItems": "center",
-                                  "children": [
-                                    {
-                                      "type": "text",
-                                      "id": "jZMcc",
-                                      "fill": "#eff6ff",
-                                      "content": "ready",
-                                      "fontFamily": "Inter",
-                                      "fontSize": 12,
-                                      "fontWeight": "600"
-                                    }
-                                  ]
-                                },
-                                {
-                                  "type": "frame",
-                                  "id": "NqRKI",
-                                  "name": "ptyBadge",
-                                  "cornerRadius": 16,
-                                  "stroke": {
-                                    "align": "inside",
-                                    "thickness": 1,
-                                    "fill": "#ffffff1a"
-                                  },
-                                  "padding": [
-                                    2,
-                                    8
-                                  ],
-                                  "justifyContent": "center",
-                                  "alignItems": "center",
-                                  "children": [
-                                    {
-                                      "type": "text",
-                                      "id": "A2z1R",
-                                      "fill": "#fafafa",
-                                      "content": "pty websocket",
-                                      "fontFamily": "Inter",
-                                      "fontSize": 12,
-                                      "fontWeight": "600"
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "frame",
-                          "id": "lJmwu",
-                          "name": "actions",
-                          "width": "fill_container",
-                          "gap": 12,
-                          "padding": [
-                            0,
-                            24,
-                            24,
-                            24
-                          ],
-                          "children": [
-                            {
-                              "id": "3ln2Q",
-                              "type": "ref",
-                              "ref": "QUgPD",
-                              "width": "fit_content",
-                              "fill": "#1d4ed8",
-                              "padding": [
-                                8,
-                                16
-                              ],
-                              "x": 24,
-                              "y": 0,
-                              "height": "fit_content",
-                              "descendants": {
-                                "V8u8q": {
-                                  "enabled": true,
-                                  "x": 16,
-                                  "y": 8
-                                },
-                                "wevbQ": {
-                                  "iconFontName": "play",
-                                  "fill": "#eff6ff"
-                                },
-                                "brqte": {
-                                  "content": "Launch shell",
-                                  "fill": "#eff6ff",
-                                  "x": 42,
-                                  "y": 8
-                                }
-                              }
-                            },
-                            {
-                              "id": "bbzfU",
-                              "type": "ref",
-                              "ref": "UtGbc",
-                              "width": "fit_content",
-                              "fill": "#020617",
-                              "stroke": {
-                                "align": "inside",
-                                "thickness": 1,
-                                "fill": "#ffffff1a"
-                              },
-                              "padding": [
-                                8,
-                                16
-                              ],
-                              "x": 179,
-                              "y": 0,
-                              "height": "fit_content",
-                              "descendants": {
-                                "dY0ci": {
-                                  "enabled": true,
-                                  "x": 16,
-                                  "y": 8
-                                },
-                                "gSpOI": {
-                                  "iconFontName": "copy",
-                                  "fill": "#fafafa"
-                                },
-                                "z9nqe": {
-                                  "content": "Copy session link",
-                                  "fill": "#fafafa",
-                                  "x": 42,
-                                  "y": 8
-                                }
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "QU8zf",
-                      "name": "statusCard",
-                      "width": "fill_container",
-                      "fill": "$--card",
-                      "cornerRadius": 8,
-                      "stroke": {
-                        "align": "inside",
-                        "thickness": 1,
-                        "fill": "$--border"
-                      },
-                      "effect": {
-                        "type": "shadow",
-                        "shadowType": "outer",
-                        "color": "#0000000d",
-                        "offset": {
-                          "x": 0,
-                          "y": 1
-                        },
-                        "blur": 1.75
-                      },
-                      "layout": "vertical",
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "irYfQ",
-                          "width": "fill_container",
-                          "layout": "vertical",
-                          "gap": 12,
-                          "padding": 24,
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "BR5pm",
-                              "fill": "$--foreground",
-                              "content": "Status",
-                              "fontFamily": "Inter",
-                              "fontSize": 18,
-                              "fontWeight": "600"
-                            },
-                            {
-                              "id": "sBnJV",
-                              "type": "ref",
-                              "ref": "zI9Ui",
-                              "width": "fit_content",
-                              "height": "fit_content",
-                              "x": 24,
-                              "y": 58,
-                              "descendants": {
-                                "9b8do": {
-                                  "content": "Running",
-                                  "x": 8,
-                                  "y": 2
-                                }
-                              }
-                            },
-                            {
-                              "type": "text",
-                              "id": "tbTf3",
-                              "fill": "$--muted-foreground",
-                              "textGrowth": "fixed-width",
-                              "width": "fill_container",
-                              "content": "The run is active on worker-sfo-03 and emitting output.",
-                              "fontFamily": "Inter",
-                              "fontSize": 14,
-                              "fontWeight": "normal"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "frame",
-                          "id": "sXAsq",
-                          "width": "fill_container",
-                          "layout": "vertical",
-                          "children": [
-                            {
-                              "type": "frame",
-                              "id": "kCEy0",
-                              "width": "fill_container",
-                              "stroke": {
-                                "align": "inside",
-                                "thickness": {
-                                  "top": 1
-                                },
-                                "fill": "$--border"
-                              },
-                              "padding": [
-                                12,
-                                24
-                              ],
-                              "justifyContent": "space_between",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "q7Q6i",
-                                  "fill": "$--muted-foreground",
-                                  "content": "Queue position",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 14,
-                                  "fontWeight": "normal"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "JrLuP",
-                                  "fill": "$--foreground",
-                                  "content": "0",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 14,
-                                  "fontWeight": "500"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "id": "r7vGf",
-                              "width": "fill_container",
-                              "stroke": {
-                                "align": "inside",
-                                "thickness": {
-                                  "top": 1
-                                },
-                                "fill": "$--border"
-                              },
-                              "padding": [
-                                12,
-                                24
-                              ],
-                              "justifyContent": "space_between",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "caeR1",
-                                  "fill": "$--muted-foreground",
-                                  "content": "Attempts",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 14,
-                                  "fontWeight": "normal"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "zpNmz",
-                                  "fill": "$--foreground",
-                                  "content": "1 of 3",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 14,
-                                  "fontWeight": "500"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "id": "VPuC2",
-                              "width": "fill_container",
-                              "stroke": {
-                                "align": "inside",
-                                "thickness": {
-                                  "top": 1
-                                },
-                                "fill": "$--border"
-                              },
-                              "padding": [
-                                12,
-                                24
-                              ],
-                              "justifyContent": "space_between",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "3iGX2",
-                                  "fill": "$--muted-foreground",
-                                  "content": "Cancellation",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 14,
-                                  "fontWeight": "normal"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "ynqSi",
-                                  "fill": "$--foreground",
-                                  "content": "Allowed",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 14,
-                                  "fontWeight": "500"
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "o3JF7",
-                      "name": "targetCard",
-                      "width": "fill_container",
-                      "fill": "$--card",
-                      "cornerRadius": 8,
-                      "stroke": {
-                        "align": "inside",
-                        "thickness": 1,
-                        "fill": "$--border"
-                      },
-                      "effect": {
-                        "type": "shadow",
-                        "shadowType": "outer",
-                        "color": "#0000000d",
-                        "offset": {
-                          "x": 0,
-                          "y": 1
-                        },
-                        "blur": 1.75
-                      },
-                      "layout": "vertical",
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "5X2vM",
-                          "width": "fill_container",
-                          "layout": "vertical",
-                          "gap": 8,
-                          "padding": 24,
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "uLdk5",
-                              "fill": "$--foreground",
-                              "content": "Target context",
-                              "fontFamily": "Inter",
-                              "fontSize": 18,
-                              "fontWeight": "600"
-                            },
-                            {
-                              "type": "text",
-                              "id": "LSFPT",
-                              "fill": "$--muted-foreground",
-                              "textGrowth": "fixed-width",
-                              "width": "fill_container",
-                              "content": "Repository details are intentionally absent here. The target can be a workspace, an environment, or another execution surface.",
-                              "fontFamily": "Inter",
-                              "fontSize": 14,
-                              "fontWeight": "normal"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "frame",
-                          "id": "L2XpL",
-                          "width": "fill_container",
-                          "layout": "vertical",
-                          "gap": 12,
-                          "padding": [
-                            0,
-                            24,
-                            24,
-                            24
-                          ],
-                          "children": [
-                            {
-                              "type": "frame",
-                              "id": "6u8wU",
-                              "width": "fill_container",
-                              "layout": "vertical",
-                              "gap": 4,
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "Em3i8",
-                                  "fill": "$--muted-foreground",
-                                  "content": "Target ID",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 12,
-                                  "fontWeight": "500"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "M0g0t",
-                                  "fill": "$--foreground",
-                                  "content": "target_default_smoke_suite",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 14,
-                                  "fontWeight": "normal"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "id": "uuG2P",
-                              "width": "fill_container",
-                              "layout": "vertical",
-                              "gap": 4,
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "z1jRP",
-                                  "fill": "$--muted-foreground",
-                                  "content": "Entrypoint",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 12,
-                                  "fontWeight": "500"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "qUfPl",
-                                  "fill": "$--foreground",
-                                  "content": "mise run smoke",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 14,
-                                  "fontWeight": "normal"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "id": "BrdpJ",
-                              "width": "fill_container",
-                              "layout": "vertical",
-                              "gap": 4,
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "ge2Eo",
-                                  "fill": "$--muted-foreground",
-                                  "content": "Initiator",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 12,
-                                  "fontWeight": "500"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "TPAWB",
-                                  "fill": "$--foreground",
-                                  "content": "lucasew via UI dispatch",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 14,
-                                  "fontWeight": "normal"
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "n1RJf",
-                      "name": "artifactsCard",
-                      "width": "fill_container",
-                      "fill": "$--card",
-                      "cornerRadius": 8,
-                      "stroke": {
-                        "align": "inside",
-                        "thickness": 1,
-                        "fill": "$--border"
-                      },
-                      "effect": {
-                        "type": "shadow",
-                        "shadowType": "outer",
-                        "color": "#0000000d",
-                        "offset": {
-                          "x": 0,
-                          "y": 1
-                        },
-                        "blur": 1.75
-                      },
-                      "layout": "vertical",
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "qAQRR",
-                          "width": "fill_container",
-                          "padding": 24,
-                          "justifyContent": "space_between",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "BsEO3",
-                              "fill": "$--foreground",
-                              "content": "Artifacts",
-                              "fontFamily": "Inter",
-                              "fontSize": 18,
-                              "fontWeight": "600"
-                            },
-                            {
-                              "id": "J8FyR",
-                              "type": "ref",
-                              "ref": "qoSp4",
-                              "width": "fit_content",
-                              "height": "fit_content",
-                              "x": 244,
-                              "y": 25,
-                              "descendants": {
-                                "06Lq2": {
-                                  "content": "3 files",
-                                  "x": 8,
-                                  "y": 2
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "frame",
-                          "id": "JCoSI",
-                          "width": "fill_container",
-                          "layout": "vertical",
-                          "children": [
-                            {
-                              "type": "frame",
-                              "id": "bmRFd",
-                              "width": "fill_container",
-                              "padding": [
-                                14,
-                                24
-                              ],
-                              "justifyContent": "space_between",
-                              "alignItems": "center",
-                              "children": [
-                                {
-                                  "type": "frame",
-                                  "id": "L9tV5",
-                                  "width": "fill_container",
-                                  "layout": "vertical",
-                                  "gap": 2,
-                                  "children": [
-                                    {
-                                      "type": "text",
-                                      "id": "FLt7a",
-                                      "fill": "$--foreground",
-                                      "content": "coverage.lcov",
-                                      "fontFamily": "Inter",
-                                      "fontSize": 14,
-                                      "fontWeight": "500"
-                                    },
-                                    {
-                                      "type": "text",
-                                      "id": "jcGeN",
-                                      "fill": "$--muted-foreground",
-                                      "content": "Generated 2 minutes ago",
-                                      "fontFamily": "Inter",
-                                      "fontSize": 12,
-                                      "fontWeight": "normal"
-                                    }
-                                  ]
-                                },
-                                {
-                                  "id": "IhKQT",
-                                  "type": "ref",
-                                  "ref": "ONDvW",
-                                  "width": "fit_content",
-                                  "height": "fit_content",
-                                  "x": 256,
-                                  "y": 14,
-                                  "descendants": {
-                                    "d9ct0": {
-                                      "x": 8,
-                                      "y": 8
-                                    },
-                                    "DLwjK": {
-                                      "iconFontName": "download"
-                                    }
-                                  }
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "id": "x0Qg6",
-                              "width": "fill_container",
-                              "stroke": {
-                                "align": "inside",
-                                "thickness": {
-                                  "top": 1
-                                },
-                                "fill": "$--border"
-                              },
-                              "padding": [
-                                14,
-                                24
-                              ],
-                              "justifyContent": "space_between",
-                              "alignItems": "center",
-                              "children": [
-                                {
-                                  "type": "frame",
-                                  "id": "DFeXd",
-                                  "width": "fill_container",
-                                  "layout": "vertical",
-                                  "gap": 2,
-                                  "children": [
-                                    {
-                                      "type": "text",
-                                      "id": "DTuxu",
-                                      "fill": "$--foreground",
-                                      "content": "summary.json",
-                                      "fontFamily": "Inter",
-                                      "fontSize": 14,
-                                      "fontWeight": "500"
-                                    },
-                                    {
-                                      "type": "text",
-                                      "id": "FG9lq",
-                                      "fill": "$--muted-foreground",
-                                      "content": "Structured execution report",
-                                      "fontFamily": "Inter",
-                                      "fontSize": 12,
-                                      "fontWeight": "normal"
-                                    }
-                                  ]
-                                },
-                                {
-                                  "id": "tDTHs",
-                                  "type": "ref",
-                                  "ref": "ONDvW",
-                                  "width": "fit_content",
-                                  "height": "fit_content",
-                                  "x": 256,
-                                  "y": 14,
-                                  "descendants": {
-                                    "d9ct0": {
-                                      "x": 8,
-                                      "y": 8
-                                    },
-                                    "DLwjK": {
-                                      "iconFontName": "download"
-                                    }
-                                  }
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "id": "rxvAH",
-                              "width": "fill_container",
-                              "stroke": {
-                                "align": "inside",
-                                "thickness": {
-                                  "top": 1
-                                },
-                                "fill": "$--border"
-                              },
-                              "padding": [
-                                14,
-                                24
-                              ],
-                              "justifyContent": "space_between",
-                              "alignItems": "center",
-                              "children": [
-                                {
-                                  "type": "frame",
-                                  "id": "NwNEb",
-                                  "width": "fill_container",
-                                  "layout": "vertical",
-                                  "gap": 2,
-                                  "children": [
-                                    {
-                                      "type": "text",
-                                      "id": "KlG8D",
-                                      "fill": "$--foreground",
-                                      "content": "stdout.tail.txt",
-                                      "fontFamily": "Inter",
-                                      "fontSize": 14,
-                                      "fontWeight": "500"
-                                    },
-                                    {
-                                      "type": "text",
-                                      "id": "PAaHi",
-                                      "fill": "$--muted-foreground",
-                                      "content": "Latest streamed log excerpt",
-                                      "fontFamily": "Inter",
-                                      "fontSize": 12,
-                                      "fontWeight": "normal"
-                                    }
-                                  ]
-                                },
-                                {
-                                  "id": "KHU7V",
-                                  "type": "ref",
-                                  "ref": "ONDvW",
-                                  "width": "fit_content",
-                                  "height": "fit_content",
-                                  "x": 256,
-                                  "y": 14,
-                                  "descendants": {
-                                    "d9ct0": {
-                                      "x": 8,
-                                      "y": 8
-                                    },
-                                    "DLwjK": {
-                                      "iconFontName": "download"
-                                    }
-                                  }
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
                 }
               ]
             }
@@ -5279,21 +4217,23 @@
           "width": 256,
           "height": "fill_container",
           "descendants": {
-            "gbpvB": {
-              "id": "WzXjl",
-              "type": "ref",
-              "ref": "5GgOn",
-              "descendants": {
-                "LTmGt": {
-                  "iconFontName": "key-round"
-                },
-                "Rab5P": {
-                  "content": "Tokens"
-                },
-                "rvV8D": {
-                  "content": "⌘5"
-                }
-              }
+            "SpcJN/PHWHh": {
+              "enabled": false
+            },
+            "xwVeL/PHWHh": {
+              "enabled": false
+            },
+            "rX0Mc/PHWHh": {
+              "enabled": false
+            },
+            "gbpvB/PHWHh": {
+              "enabled": false
+            },
+            "D1ibg/PHWHh": {
+              "enabled": false
+            },
+            "f0JsZ": {
+              "enabled": false
             }
           }
         },
@@ -6460,6 +5400,18 @@
           "width": 256,
           "height": "fill_container",
           "descendants": {
+            "SpcJN/PHWHh": {
+              "enabled": false
+            },
+            "xwVeL/PHWHh": {
+              "enabled": false
+            },
+            "rX0Mc/PHWHh": {
+              "enabled": false
+            },
+            "gbpvB/PHWHh": {
+              "enabled": false
+            },
             "D1ibg": {
               "id": "7CVgs",
               "type": "ref",
@@ -6471,10 +5423,16 @@
                 "Rab5P": {
                   "content": "Issues"
                 },
+                "hgwNt": {
+                  "enabled": false
+                },
                 "rvV8D": {
                   "content": "⌘6"
                 }
               }
+            },
+            "f0JsZ/PHWHh": {
+              "enabled": false
             }
           }
         },
@@ -7618,6 +6576,21 @@
           "width": 256,
           "height": "fill_container",
           "descendants": {
+            "SpcJN/PHWHh": {
+              "enabled": false
+            },
+            "xwVeL/PHWHh": {
+              "enabled": false
+            },
+            "rX0Mc/PHWHh": {
+              "enabled": false
+            },
+            "gbpvB/PHWHh": {
+              "enabled": false
+            },
+            "D1ibg/PHWHh": {
+              "enabled": false
+            },
             "f0JsZ": {
               "id": "b0aBv",
               "type": "ref",
@@ -7629,8 +6602,14 @@
                 "Rab5P": {
                   "content": "Settings"
                 },
+                "9llEg": {
+                  "enabled": false
+                },
+                "hgwNt": {
+                  "enabled": false
+                },
                 "rvV8D": {
-                  "content": "⌘8"
+                  "content": "⌘7"
                 }
               }
             }
@@ -9390,28 +8369,36 @@
       "fill": "$--background",
       "children": [
         {
-          "id": "3rUNM",
+          "id": "7XCLV",
           "type": "ref",
           "ref": "2ygrZ",
           "name": "sidebar",
           "width": 256,
           "height": "fill_container",
+          "x": 0,
+          "y": 0,
           "descendants": {
-            "HCbFz": {
-              "id": "SO0yR",
+            "SpcJN": {
+              "id": "PYN3c",
               "type": "ref",
               "ref": "5GgOn",
               "descendants": {
                 "LTmGt": {
-                  "iconFontName": "terminal"
+                  "iconFontName": "layout-dashboard"
                 },
                 "Rab5P": {
-                  "content": "Shell"
+                  "content": "Overview"
+                },
+                "hgwNt": {
+                  "enabled": false
                 },
                 "rvV8D": {
-                  "content": "⌘7"
+                  "content": "⌘1"
                 }
               }
+            },
+            "xwVeL/PHWHh": {
+              "enabled": false
             }
           }
         },
@@ -9419,7 +8406,7 @@
           "type": "frame",
           "id": "ny7Pe",
           "name": "main",
-          "width": "fill_container",
+          "width": 1024,
           "height": "fill_container",
           "fill": "$--background",
           "layout": "vertical",
@@ -10425,6 +9412,37 @@
               ]
             }
           ]
+        },
+        {
+          "id": "mxtfK",
+          "type": "ref",
+          "ref": "cuneA",
+          "x": 1280,
+          "y": 0,
+          "width": 56,
+          "height": 56,
+          "cornerRadius": 28,
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#00000040",
+            "offset": {
+              "x": 0,
+              "y": 4
+            },
+            "blur": 12
+          },
+          "name": "fab1",
+          "descendants": {
+            "hfDr3": {
+              "x": 16,
+              "y": 16
+            },
+            "x68wn": {
+              "width": 24,
+              "height": 24
+            }
+          }
         }
       ]
     },
@@ -10649,8 +9667,16 @@
                     "Mb0uQ": {
                       "content": "Runs"
                     },
+                    "V2YHu": {
+                      "enabled": false
+                    },
+                    "PHWHh": {
+                      "iconFontName": "chevron-down",
+                      "enabled": false
+                    },
                     "af3zh": {
-                      "content": "⌘3"
+                      "content": "⌘3",
+                      "enabled": true
                     }
                   }
                 },
@@ -10674,25 +9700,12 @@
                   }
                 },
                 {
-                  "id": "wNyrQ",
-                  "type": "ref",
-                  "ref": "nEfgI",
-                  "name": "Section Operations",
-                  "x": 0,
-                  "y": 170,
-                  "descendants": {
-                    "lWoKq": {
-                      "content": "Operations"
-                    }
-                  }
-                },
-                {
                   "id": "gbpvB",
                   "type": "ref",
                   "ref": "2FjPR",
                   "name": "Nav Tokens",
                   "x": 0,
-                  "y": 204,
+                  "y": 170,
                   "descendants": {
                     "d01ru": {
                       "iconFontName": "key-round"
@@ -10711,7 +9724,7 @@
                   "ref": "2FjPR",
                   "name": "Nav Issues",
                   "x": 0,
-                  "y": 238,
+                  "y": 204,
                   "descendants": {
                     "d01ru": {
                       "iconFontName": "circle-alert"
@@ -10725,31 +9738,12 @@
                   }
                 },
                 {
-                  "id": "HCbFz",
-                  "type": "ref",
-                  "ref": "2FjPR",
-                  "name": "Nav Shell",
-                  "x": 0,
-                  "y": 272,
-                  "descendants": {
-                    "d01ru": {
-                      "iconFontName": "terminal"
-                    },
-                    "Mb0uQ": {
-                      "content": "Shell"
-                    },
-                    "af3zh": {
-                      "content": "⌘7"
-                    }
-                  }
-                },
-                {
                   "id": "f0JsZ",
                   "type": "ref",
                   "ref": "2FjPR",
                   "name": "Nav Settings",
                   "x": 0,
-                  "y": 306,
+                  "y": 238,
                   "descendants": {
                     "d01ru": {
                       "iconFontName": "settings-2"
@@ -10758,7 +9752,7 @@
                       "content": "Settings"
                     },
                     "af3zh": {
-                      "content": "⌘8"
+                      "content": "⌘7"
                     }
                   }
                 }
@@ -17651,6 +16645,7 @@
                   "type": "frame",
                   "id": "9llEg",
                   "name": "Trailing Icon",
+                  "enabled": false,
                   "width": 16,
                   "height": 16,
                   "stroke": {
@@ -17765,6 +16760,7 @@
                   "type": "frame",
                   "id": "V2YHu",
                   "name": "Trailing Icon",
+                  "enabled": false,
                   "width": 16,
                   "height": 16,
                   "stroke": {
@@ -19841,6 +18837,249 @@
                           "y": 0
                         }
                       ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "sgQ66",
+      "x": 6954,
+      "y": 1320,
+      "name": "Screen / New Run",
+      "theme": {
+        "Mode": "Dark"
+      },
+      "width": 1280,
+      "height": 980,
+      "fill": "$--background",
+      "cornerRadius": 18,
+      "stroke": {
+        "thickness": 1,
+        "fill": "$--border"
+      },
+      "children": [
+        {
+          "id": "3aCuy",
+          "type": "ref",
+          "ref": "2ygrZ",
+          "name": "sidebar",
+          "width": 256,
+          "height": "fill_container",
+          "x": 0,
+          "y": 0,
+          "descendants": {
+            "IJQKi": {
+              "height": "fill_container"
+            },
+            "SpcJN/PHWHh": {
+              "enabled": false
+            },
+            "xwVeL/PHWHh": {
+              "enabled": false
+            },
+            "svYXR": {
+              "id": "zXw63",
+              "type": "ref",
+              "ref": "5GgOn",
+              "x": 0,
+              "y": 102,
+              "descendants": {
+                "5NVMH": {
+                  "width": "fit_content"
+                },
+                "LTmGt": {
+                  "iconFontName": "circle-play"
+                },
+                "Rab5P": {
+                  "content": "Runs"
+                },
+                "jgKYT": {
+                  "width": "fit_content",
+                  "x": 212
+                },
+                "hgwNt": {
+                  "enabled": false
+                },
+                "rvV8D": {
+                  "content": "⌘3"
+                }
+              }
+            },
+            "rX0Mc/PHWHh": {
+              "enabled": false
+            },
+            "gbpvB/PHWHh": {
+              "enabled": false
+            },
+            "D1ibg/PHWHh": {
+              "enabled": false
+            },
+            "f0JsZ/PHWHh": {
+              "enabled": false
+            },
+            "HMyI3": {
+              "y": 916
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "pWvxs",
+          "name": "main",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 32,
+          "children": [
+            {
+              "type": "frame",
+              "id": "VbBLm",
+              "name": "header",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 6,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "1FVgn",
+                  "fill": "$--foreground",
+                  "content": "New Run",
+                  "fontFamily": "Inter",
+                  "fontSize": 30,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "w2FdF",
+                  "fill": "$--muted-foreground",
+                  "content": "Start a new task or conversation with an agent.",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "AstnW",
+              "name": "form",
+              "width": 600,
+              "fill": "$--card",
+              "cornerRadius": 10,
+              "stroke": {
+                "thickness": 1,
+                "fill": "$--border"
+              },
+              "layout": "vertical",
+              "gap": 24,
+              "padding": 32,
+              "children": [
+                {
+                  "id": "JIAne",
+                  "type": "ref",
+                  "ref": "HyG6Y",
+                  "width": "fill_container",
+                  "x": 32.160669376255086,
+                  "y": 32,
+                  "descendants": {
+                    "fWGQk": {
+                      "width": "fill_container"
+                    },
+                    "P3cY9": {
+                      "content": "Target Agent",
+                      "width": "fill_container"
+                    },
+                    "TiIWC": {
+                      "width": "fill_container"
+                    },
+                    "zEx3n": {
+                      "content": "Select agent or workspace...",
+                      "width": "fill_container"
+                    },
+                    "RJlem": {
+                      "x": 508
+                    }
+                  }
+                },
+                {
+                  "id": "gVbiI",
+                  "type": "ref",
+                  "ref": "SAwyp",
+                  "width": "fill_container",
+                  "height": 160,
+                  "x": 32,
+                  "y": 123.30463452014196,
+                  "descendants": {
+                    "IsNet": {
+                      "width": "fill_container"
+                    },
+                    "syTRz": {
+                      "content": "Initial Prompt",
+                      "width": "fill_container"
+                    },
+                    "IbiFq": {
+                      "width": "fill_container"
+                    },
+                    "xZ6h2": {
+                      "content": "Describe the task..."
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "qlZVK",
+                  "name": "actions",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "padding": [
+                    16,
+                    0,
+                    0,
+                    0
+                  ],
+                  "justifyContent": "end",
+                  "children": [
+                    {
+                      "id": "B0OEz",
+                      "type": "ref",
+                      "ref": "0K9qW",
+                      "name": "cancel",
+                      "x": 325,
+                      "y": 16,
+                      "descendants": {
+                        "FZjSD": {
+                          "enabled": false
+                        },
+                        "ecAix": {
+                          "content": "Cancel"
+                        }
+                      }
+                    },
+                    {
+                      "id": "dN98t",
+                      "type": "ref",
+                      "ref": "QUgPD",
+                      "name": "start",
+                      "x": 416,
+                      "y": 16,
+                      "descendants": {
+                        "V8u8q": {
+                          "enabled": true
+                        },
+                        "wevbQ": {
+                          "iconFontName": "play"
+                        },
+                        "brqte": {
+                          "content": "Start Run"
+                        }
+                      }
                     }
                   ]
                 }
