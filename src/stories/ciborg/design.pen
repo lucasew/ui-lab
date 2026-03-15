@@ -29,7 +29,12 @@
           "name": "sidebar",
           "width": 256,
           "height": "fill_container",
+          "x": 0,
+          "y": 0,
           "descendants": {
+            "IJQKi": {
+              "height": "fill_container"
+            },
             "SpcJN/V2YHu": {
               "enabled": false
             },
@@ -37,12 +42,21 @@
               "id": "SUU9Q",
               "type": "ref",
               "ref": "5GgOn",
+              "x": 0,
+              "y": 34,
               "descendants": {
+                "5NVMH": {
+                  "width": "fit_content"
+                },
                 "LTmGt": {
                   "iconFontName": "messages-square"
                 },
                 "Rab5P": {
                   "content": "Chats"
+                },
+                "jgKYT": {
+                  "width": "fit_content",
+                  "x": 212
                 },
                 "9llEg": {
                   "enabled": false
@@ -58,11 +72,8 @@
             "gbpvB/V2YHu": {
               "enabled": false
             },
-            "D1ibg/V2YHu": {
-              "enabled": false
-            },
-            "f0JsZ/V2YHu": {
-              "enabled": false
+            "HMyI3": {
+              "y": 1056
             }
           }
         },
@@ -706,7 +717,12 @@
           "name": "sidebar",
           "width": 256,
           "height": "fill_container",
+          "x": 0,
+          "y": 0,
           "descendants": {
+            "IJQKi": {
+              "height": "fill_container"
+            },
             "SpcJN/PHWHh": {
               "enabled": false
             },
@@ -717,12 +733,21 @@
               "id": "W1kEn",
               "type": "ref",
               "ref": "5GgOn",
+              "x": 0,
+              "y": 102,
               "descendants": {
+                "5NVMH": {
+                  "width": "fit_content"
+                },
                 "LTmGt": {
                   "iconFontName": "bot"
                 },
                 "Rab5P": {
                   "content": "Workers"
+                },
+                "jgKYT": {
+                  "width": "fit_content",
+                  "x": 212
                 },
                 "hgwNt": {
                   "enabled": false
@@ -735,11 +760,8 @@
             "gbpvB/PHWHh": {
               "enabled": false
             },
-            "D1ibg/PHWHh": {
-              "enabled": false
-            },
-            "f0JsZ/PHWHh": {
-              "enabled": false
+            "HMyI3": {
+              "y": 916
             }
           }
         },
@@ -1783,7 +1805,12 @@
           "name": "sidebar",
           "width": 256,
           "height": "fill_container",
+          "x": 0,
+          "y": 0,
           "descendants": {
+            "IJQKi": {
+              "height": "fill_container"
+            },
             "SpcJN/PHWHh": {
               "enabled": false
             },
@@ -1791,12 +1818,21 @@
               "id": "0wz6U",
               "type": "ref",
               "ref": "5GgOn",
+              "x": 0,
+              "y": 34,
               "descendants": {
+                "5NVMH": {
+                  "width": "fit_content"
+                },
                 "LTmGt": {
                   "iconFontName": "messages-square"
                 },
                 "Rab5P": {
                   "content": "Chats"
+                },
+                "jgKYT": {
+                  "width": "fit_content",
+                  "x": 212
                 },
                 "hgwNt": {
                   "enabled": false
@@ -1812,14 +1848,8 @@
             "gbpvB/PHWHh": {
               "enabled": false
             },
-            "D1ibg/PHWHh": {
-              "enabled": false
-            },
-            "f0JsZ/PHWHh": {
-              "enabled": false
-            },
-            "f0JsZ/af3zh": {
-              "content": "⌘7"
+            "HMyI3": {
+              "y": 936
             }
           }
         },
@@ -2969,7 +2999,12 @@
           "name": "sidebar",
           "width": 256,
           "height": "fill_container",
+          "x": 0,
+          "y": 0,
           "descendants": {
+            "IJQKi": {
+              "height": "fill_container"
+            },
             "SpcJN/PHWHh": {
               "enabled": false
             },
@@ -2980,12 +3015,21 @@
               "id": "cxFTZ",
               "type": "ref",
               "ref": "5GgOn",
+              "x": 0,
+              "y": 68,
               "descendants": {
+                "5NVMH": {
+                  "width": "fit_content"
+                },
                 "LTmGt": {
                   "iconFontName": "circle-play"
                 },
                 "Rab5P": {
                   "content": "Runs"
+                },
+                "jgKYT": {
+                  "width": "fit_content",
+                  "x": 212
                 },
                 "hgwNt": {
                   "enabled": false
@@ -3001,14 +3045,8 @@
             "gbpvB/PHWHh": {
               "enabled": false
             },
-            "D1ibg/PHWHh": {
-              "enabled": false
-            },
-            "f0JsZ/PHWHh": {
-              "enabled": false
-            },
-            "f0JsZ/af3zh": {
-              "content": "⌘7"
+            "HMyI3": {
+              "y": 1056
             }
           }
         },
@@ -4216,7 +4254,12 @@
           "name": "sidebar",
           "width": 256,
           "height": "fill_container",
+          "x": 0,
+          "y": 0,
           "descendants": {
+            "IJQKi": {
+              "height": "fill_container"
+            },
             "SpcJN/PHWHh": {
               "enabled": false
             },
@@ -4229,11 +4272,8 @@
             "gbpvB/PHWHh": {
               "enabled": false
             },
-            "D1ibg/PHWHh": {
-              "enabled": false
-            },
-            "f0JsZ": {
-              "enabled": false
+            "HMyI3": {
+              "y": 980
             }
           }
         },
@@ -5399,7 +5439,12 @@
           "name": "sidebar",
           "width": 256,
           "height": "fill_container",
+          "x": 0,
+          "y": 0,
           "descendants": {
+            "IJQKi": {
+              "height": "fill_container"
+            },
             "SpcJN/PHWHh": {
               "enabled": false
             },
@@ -5412,27 +5457,8 @@
             "gbpvB/PHWHh": {
               "enabled": false
             },
-            "D1ibg": {
-              "id": "7CVgs",
-              "type": "ref",
-              "ref": "5GgOn",
-              "descendants": {
-                "LTmGt": {
-                  "iconFontName": "circle-alert"
-                },
-                "Rab5P": {
-                  "content": "Issues"
-                },
-                "hgwNt": {
-                  "enabled": false
-                },
-                "rvV8D": {
-                  "content": "⌘6"
-                }
-              }
-            },
-            "f0JsZ/PHWHh": {
-              "enabled": false
+            "HMyI3": {
+              "y": 916
             }
           }
         },
@@ -6575,7 +6601,12 @@
           "name": "sidebar",
           "width": 256,
           "height": "fill_container",
+          "x": 0,
+          "y": 0,
           "descendants": {
+            "IJQKi": {
+              "height": "fill_container"
+            },
             "SpcJN/PHWHh": {
               "enabled": false
             },
@@ -6588,30 +6619,8 @@
             "gbpvB/PHWHh": {
               "enabled": false
             },
-            "D1ibg/PHWHh": {
-              "enabled": false
-            },
-            "f0JsZ": {
-              "id": "b0aBv",
-              "type": "ref",
-              "ref": "5GgOn",
-              "descendants": {
-                "LTmGt": {
-                  "iconFontName": "settings-2"
-                },
-                "Rab5P": {
-                  "content": "Settings"
-                },
-                "9llEg": {
-                  "enabled": false
-                },
-                "hgwNt": {
-                  "enabled": false
-                },
-                "rvV8D": {
-                  "content": "⌘7"
-                }
-              }
+            "HMyI3": {
+              "y": 1036
             }
           }
         },
@@ -8378,16 +8387,28 @@
           "x": 0,
           "y": 0,
           "descendants": {
+            "IJQKi": {
+              "height": "fill_container"
+            },
             "SpcJN": {
               "id": "PYN3c",
               "type": "ref",
               "ref": "5GgOn",
+              "x": 0,
+              "y": 0,
               "descendants": {
+                "5NVMH": {
+                  "width": "fit_content"
+                },
                 "LTmGt": {
                   "iconFontName": "layout-dashboard"
                 },
                 "Rab5P": {
                   "content": "Overview"
+                },
+                "jgKYT": {
+                  "width": "fit_content",
+                  "x": 215
                 },
                 "hgwNt": {
                   "enabled": false
@@ -8399,6 +8420,9 @@
             },
             "xwVeL/PHWHh": {
               "enabled": false
+            },
+            "HMyI3": {
+              "y": 916
             }
           }
         },
@@ -9603,25 +9627,12 @@
               "gap": 2,
               "children": [
                 {
-                  "id": "YfR7E",
-                  "type": "ref",
-                  "ref": "nEfgI",
-                  "name": "Section Workspace",
-                  "x": 0,
-                  "y": 0,
-                  "descendants": {
-                    "lWoKq": {
-                      "content": "Workspace"
-                    }
-                  }
-                },
-                {
                   "id": "SpcJN",
                   "type": "ref",
                   "ref": "2FjPR",
                   "name": "Nav Overview",
                   "x": 0,
-                  "y": 34,
+                  "y": 0,
                   "descendants": {
                     "d01ru": {
                       "iconFontName": "layout-dashboard"
@@ -9640,13 +9651,13 @@
                   "ref": "2FjPR",
                   "name": "Nav Chats",
                   "x": 0,
-                  "y": 68,
+                  "y": 34,
                   "descendants": {
                     "d01ru": {
-                      "iconFontName": "messages-square"
+                      "iconFontName": "circle-play"
                     },
                     "Mb0uQ": {
-                      "content": "Chats"
+                      "content": "Runs"
                     },
                     "af3zh": {
                       "content": "⌘2"
@@ -9659,13 +9670,13 @@
                   "ref": "2FjPR",
                   "name": "Nav Runs",
                   "x": 0,
-                  "y": 102,
+                  "y": 68,
                   "descendants": {
                     "d01ru": {
-                      "iconFontName": "circle-play"
+                      "iconFontName": "messages-square"
                     },
                     "Mb0uQ": {
-                      "content": "Runs"
+                      "content": "Chats"
                     },
                     "V2YHu": {
                       "enabled": false
@@ -9686,13 +9697,13 @@
                   "ref": "2FjPR",
                   "name": "Nav Workers",
                   "x": 0,
-                  "y": 136,
+                  "y": 102,
                   "descendants": {
                     "d01ru": {
                       "iconFontName": "bot"
                     },
                     "Mb0uQ": {
-                      "content": "Workers"
+                      "content": "Agents"
                     },
                     "af3zh": {
                       "content": "⌘4"
@@ -9705,7 +9716,7 @@
                   "ref": "2FjPR",
                   "name": "Nav Tokens",
                   "x": 0,
-                  "y": 170,
+                  "y": 136,
                   "descendants": {
                     "d01ru": {
                       "iconFontName": "key-round"
@@ -9715,44 +9726,6 @@
                     },
                     "af3zh": {
                       "content": "⌘5"
-                    }
-                  }
-                },
-                {
-                  "id": "D1ibg",
-                  "type": "ref",
-                  "ref": "2FjPR",
-                  "name": "Nav Issues",
-                  "x": 0,
-                  "y": 204,
-                  "descendants": {
-                    "d01ru": {
-                      "iconFontName": "circle-alert"
-                    },
-                    "Mb0uQ": {
-                      "content": "Issues"
-                    },
-                    "af3zh": {
-                      "content": "⌘6"
-                    }
-                  }
-                },
-                {
-                  "id": "f0JsZ",
-                  "type": "ref",
-                  "ref": "2FjPR",
-                  "name": "Nav Settings",
-                  "x": 0,
-                  "y": 238,
-                  "descendants": {
-                    "d01ru": {
-                      "iconFontName": "settings-2"
-                    },
-                    "Mb0uQ": {
-                      "content": "Settings"
-                    },
-                    "af3zh": {
-                      "content": "⌘7"
                     }
                   }
                 }
@@ -18888,7 +18861,7 @@
               "type": "ref",
               "ref": "5GgOn",
               "x": 0,
-              "y": 102,
+              "y": 68,
               "descendants": {
                 "5NVMH": {
                   "width": "fit_content"
@@ -18915,12 +18888,6 @@
               "enabled": false
             },
             "gbpvB/PHWHh": {
-              "enabled": false
-            },
-            "D1ibg/PHWHh": {
-              "enabled": false
-            },
-            "f0JsZ/PHWHh": {
               "enabled": false
             },
             "HMyI3": {
