@@ -35,33 +35,36 @@
             "IJQKi": {
               "height": "fill_container"
             },
-            "SpcJN/V2YHu": {
-              "enabled": false
-            },
-            "xwVeL": {
-              "id": "SUU9Q",
+            "SpcJN": {
+              "id": "Lf8V1",
               "type": "ref",
               "ref": "5GgOn",
-              "x": 0,
-              "y": 34,
+              "name": "navOverview",
               "descendants": {
-                "5NVMH": {
-                  "width": "fit_content"
-                },
                 "LTmGt": {
                   "iconFontName": "layout-dashboard"
                 },
                 "Rab5P": {
                   "content": "Overview"
                 },
-                "jgKYT": {
-                  "width": "fit_content",
-                  "x": 212
-                },
-                "9llEg": {
-                  "enabled": false
-                },
                 "rvV8D": {
+                  "content": "⌘1"
+                }
+              }
+            },
+            "xwVeL": {
+              "id": "v9S0k",
+              "type": "ref",
+              "ref": "2FjPR",
+              "name": "navChats",
+              "descendants": {
+                "d01ru": {
+                  "iconFontName": "messages-square"
+                },
+                "Mb0uQ": {
+                  "content": "Chats"
+                },
+                "af3zh": {
                   "content": "⌘2"
                 }
               }
@@ -677,27 +680,16 @@
               "enabled": false
             },
             "rX0Mc": {
-              "id": "W1kEn",
+              "id": "bhkdy",
               "type": "ref",
               "ref": "5GgOn",
-              "x": 0,
-              "y": 102,
+              "name": "navWorkers",
               "descendants": {
-                "5NVMH": {
-                  "width": "fit_content"
-                },
                 "LTmGt": {
                   "iconFontName": "bot"
                 },
                 "Rab5P": {
                   "content": "Workers"
-                },
-                "jgKYT": {
-                  "width": "fit_content",
-                  "x": 212
-                },
-                "hgwNt": {
-                  "enabled": false
                 },
                 "rvV8D": {
                   "content": "⌘4"
@@ -1706,27 +1698,16 @@
               "enabled": false
             },
             "xwVeL": {
-              "id": "0wz6U",
+              "id": "L57T4",
               "type": "ref",
               "ref": "5GgOn",
-              "x": 0,
-              "y": 34,
+              "name": "navChatsActive",
               "descendants": {
-                "5NVMH": {
-                  "width": "fit_content"
-                },
                 "LTmGt": {
-                  "iconFontName": "circle-play"
+                  "iconFontName": "messages-square"
                 },
                 "Rab5P": {
-                  "content": "Runs"
-                },
-                "jgKYT": {
-                  "width": "fit_content",
-                  "x": 212
-                },
-                "hgwNt": {
-                  "enabled": false
+                  "content": "Chats"
                 },
                 "rvV8D": {
                   "content": "⌘2"
@@ -2916,27 +2897,16 @@
               "enabled": false
             },
             "svYXR": {
-              "id": "cxFTZ",
+              "id": "ADsCx",
               "type": "ref",
               "ref": "5GgOn",
-              "x": 0,
-              "y": 68,
+              "name": "navRunsActive",
               "descendants": {
-                "5NVMH": {
-                  "width": "fit_content"
-                },
                 "LTmGt": {
-                  "iconFontName": "messages-square"
+                  "iconFontName": "circle-play"
                 },
                 "Rab5P": {
-                  "content": "Chats"
-                },
-                "jgKYT": {
-                  "width": "fit_content",
-                  "x": 212
-                },
-                "hgwNt": {
-                  "enabled": false
+                  "content": "Runs"
                 },
                 "rvV8D": {
                   "content": "⌘3"
@@ -4183,10 +4153,21 @@
               "enabled": false
             },
             "gbpvB": {
-              "fill": "$--sidebar-accent"
-            },
-            "gbpvB/PHWHh": {
-              "enabled": false
+              "id": "eqjbQ",
+              "type": "ref",
+              "ref": "5GgOn",
+              "name": "navTokensActive",
+              "descendants": {
+                "LTmGt": {
+                  "iconFontName": "key-round"
+                },
+                "Rab5P": {
+                  "content": "Tokens"
+                },
+                "rvV8D": {
+                  "content": "⌘5"
+                }
+              }
             },
             "A7tfE/1kZ1y": {
               "width": "fit_content"
@@ -5253,14 +5234,21 @@
               "enabled": false
             },
             "A7tfE": {
-              "fill": "$--sidebar-accent"
-            },
-            "A7tfE/1kZ1y": {
-              "width": "fit_content"
-            },
-            "A7tfE/JuyDl": {
-              "width": "fit_content",
-              "x": 212
+              "id": "Zl7Xm",
+              "type": "ref",
+              "ref": "5GgOn",
+              "name": "navIssuesActive",
+              "descendants": {
+                "LTmGt": {
+                  "iconFontName": "alert-circle"
+                },
+                "Rab5P": {
+                  "content": "Issues"
+                },
+                "rvV8D": {
+                  "content": "⌘6"
+                }
+              }
             },
             "HMyI3": {
               "y": 916
@@ -6630,10 +6618,21 @@
               "enabled": false
             },
             "rX0Mc": {
-              "fill": "$--sidebar-accent"
-            },
-            "rX0Mc/PHWHh": {
-              "enabled": false
+              "id": "QWoEJ",
+              "type": "ref",
+              "ref": "5GgOn",
+              "name": "navWorkersActive",
+              "descendants": {
+                "LTmGt": {
+                  "iconFontName": "bot"
+                },
+                "Rab5P": {
+                  "content": "Workers"
+                },
+                "rvV8D": {
+                  "content": "⌘4"
+                }
+              }
             },
             "gbpvB/PHWHh": {
               "enabled": false
@@ -7646,27 +7645,16 @@
               "height": "fill_container"
             },
             "SpcJN": {
-              "id": "PYN3c",
+              "id": "oPmeq",
               "type": "ref",
               "ref": "5GgOn",
-              "x": 0,
-              "y": 0,
+              "name": "navMainActive",
               "descendants": {
-                "5NVMH": {
-                  "width": "fit_content"
-                },
                 "LTmGt": {
                   "iconFontName": "layout-dashboard"
                 },
                 "Rab5P": {
                   "content": "Overview"
-                },
-                "jgKYT": {
-                  "width": "fit_content",
-                  "x": 215
-                },
-                "hgwNt": {
-                  "enabled": false
                 },
                 "rvV8D": {
                   "content": "⌘1"
@@ -8621,10 +8609,10 @@
                   "y": 34,
                   "descendants": {
                     "d01ru": {
-                      "iconFontName": "circle-play"
+                      "iconFontName": "messages-square"
                     },
                     "Mb0uQ": {
-                      "content": "Runs"
+                      "content": "Chats"
                     },
                     "af3zh": {
                       "content": "⌘2"
@@ -8640,10 +8628,10 @@
                   "y": 68,
                   "descendants": {
                     "d01ru": {
-                      "iconFontName": "messages-square"
+                      "iconFontName": "circle-play"
                     },
                     "Mb0uQ": {
-                      "content": "Chats"
+                      "content": "Runs"
                     },
                     "V2YHu": {
                       "enabled": false
@@ -8670,7 +8658,7 @@
                       "iconFontName": "bot"
                     },
                     "Mb0uQ": {
-                      "content": "Agents"
+                      "content": "Workers"
                     },
                     "af3zh": {
                       "content": "⌘4"
@@ -17853,27 +17841,16 @@
               "enabled": false
             },
             "svYXR": {
-              "id": "zXw63",
+              "id": "2kM6x",
               "type": "ref",
               "ref": "5GgOn",
-              "x": 0,
-              "y": 68,
+              "name": "navNewRunActive",
               "descendants": {
-                "5NVMH": {
-                  "width": "fit_content"
-                },
                 "LTmGt": {
-                  "iconFontName": "messages-square"
+                  "iconFontName": "circle-play"
                 },
                 "Rab5P": {
-                  "content": "Chats"
-                },
-                "jgKYT": {
-                  "width": "fit_content",
-                  "x": 212
-                },
-                "hgwNt": {
-                  "enabled": false
+                  "content": "Runs"
                 },
                 "rvV8D": {
                   "content": "⌘3"
@@ -18219,27 +18196,16 @@
               "enabled": false
             },
             "svYXR": {
-              "id": "4z5Qi",
+              "id": "idi7S",
               "type": "ref",
               "ref": "5GgOn",
-              "x": 0,
-              "y": 68,
+              "name": "navNewRunActive2",
               "descendants": {
-                "5NVMH": {
-                  "width": "fit_content"
-                },
                 "LTmGt": {
                   "iconFontName": "circle-play"
                 },
                 "Rab5P": {
                   "content": "Runs"
-                },
-                "jgKYT": {
-                  "width": "fit_content",
-                  "x": 212
-                },
-                "hgwNt": {
-                  "enabled": false
                 },
                 "rvV8D": {
                   "content": "⌘3"
@@ -18346,7 +18312,7 @@
               "name": "form",
               "width": "fill_container",
               "height": "fill_container",
-              "fill": "$--card",
+              "fill": "$--secondary",
               "cornerRadius": 10,
               "stroke": {
                 "thickness": 1,
@@ -18524,27 +18490,16 @@
               "enabled": false
             },
             "svYXR": {
-              "id": "xXUC1",
+              "id": "Ekg1O",
               "type": "ref",
               "ref": "5GgOn",
-              "x": 0,
-              "y": 68,
+              "name": "navScriptEditorActive",
               "descendants": {
-                "5NVMH": {
-                  "width": "fit_content"
-                },
                 "LTmGt": {
-                  "iconFontName": "messages-square"
+                  "iconFontName": "circle-play"
                 },
                 "Rab5P": {
-                  "content": "Chats"
-                },
-                "jgKYT": {
-                  "width": "fit_content",
-                  "x": 212
-                },
-                "hgwNt": {
-                  "enabled": false
+                  "content": "Runs"
                 },
                 "rvV8D": {
                   "content": "⌘3"
