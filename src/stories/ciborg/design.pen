@@ -6595,7 +6595,7 @@
                           "ref": "Lvc9t",
                           "width": "fill_container",
                           "height": "fit_content",
-                          "x": 308,
+                          "x": 496,
                           "y": 0,
                           "descendants": {
                             "NPhrR": {
@@ -6805,7 +6805,7 @@
                               "type": "ref",
                               "ref": "UtGbc",
                               "width": "fit_content",
-                              "x": 261,
+                              "x": 637,
                               "y": 0,
                               "height": "fit_content",
                               "descendants": {
@@ -6830,7 +6830,7 @@
                               "type": "ref",
                               "ref": "QUgPD",
                               "width": "fit_content",
-                              "x": 411,
+                              "x": 787,
                               "y": 0,
                               "height": "fit_content",
                               "descendants": {
@@ -7015,209 +7015,6 @@
                         },
                         "aArwa": {
                           "enabled": false
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "531Oz",
-                  "name": "rsSideCol",
-                  "width": 360,
-                  "height": "fill_container",
-                  "layout": "vertical",
-                  "gap": 16,
-                  "children": [
-                    {
-                      "id": "m5jyr",
-                      "type": "ref",
-                      "ref": "Lvc9t",
-                      "width": "fill_container",
-                      "name": "policyCard",
-                      "height": "fit_content",
-                      "x": 0,
-                      "y": 0,
-                      "descendants": {
-                        "NPhrR": {
-                          "type": "frame",
-                          "id": "CErMt",
-                          "width": "fill_container",
-                          "layout": "vertical",
-                          "gap": 4,
-                          "padding": 24,
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "2PsXS",
-                              "fill": "$--foreground",
-                              "content": "Behavior toggles",
-                              "fontFamily": "Inter",
-                              "fontSize": 18,
-                              "fontWeight": "600"
-                            },
-                            {
-                              "type": "text",
-                              "id": "G99ag",
-                              "fill": "$--muted-foreground",
-                              "textGrowth": "fixed-width",
-                              "width": "fill_container",
-                              "content": "Operator-facing safeguards that shape the agent default behavior.",
-                              "fontFamily": "Inter",
-                              "fontSize": 14,
-                              "fontWeight": "normal"
-                            }
-                          ]
-                        },
-                        "FRosU": {
-                          "type": "frame",
-                          "id": "4ZrbF",
-                          "width": "fill_container",
-                          "layout": "vertical",
-                          "gap": 12,
-                          "padding": [
-                            0,
-                            24,
-                            24,
-                            24
-                          ],
-                          "children": [
-                            {
-                              "id": "rj4RW",
-                              "type": "ref",
-                              "ref": "qoSp4",
-                              "width": "fit_content",
-                              "x": 24,
-                              "y": 0,
-                              "height": "fit_content",
-                              "descendants": {
-                                "06Lq2": {
-                                  "content": "Ask before destructive tools",
-                                  "x": 8,
-                                  "y": 2
-                                }
-                              }
-                            },
-                            {
-                              "id": "a86H8",
-                              "type": "ref",
-                              "ref": "qoSp4",
-                              "width": "fit_content",
-                              "x": 24,
-                              "y": 32,
-                              "height": "fit_content",
-                              "descendants": {
-                                "06Lq2": {
-                                  "content": "Fallback on provider mismatch",
-                                  "x": 8,
-                                  "y": 2
-                                }
-                              }
-                            },
-                            {
-                              "id": "spXJ4",
-                              "type": "ref",
-                              "ref": "qoSp4",
-                              "width": "fit_content",
-                              "x": 24,
-                              "y": 64,
-                              "height": "fit_content",
-                              "descendants": {
-                                "06Lq2": {
-                                  "content": "Persist transcript metadata",
-                                  "x": 8,
-                                  "y": 2
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        "aArwa": {
-                          "enabled": false
-                        }
-                      }
-                    },
-                    {
-                      "id": "rafgk",
-                      "type": "ref",
-                      "ref": "Lvc9t",
-                      "width": "fill_container",
-                      "name": "notesCard",
-                      "height": "fit_content",
-                      "x": 0,
-                      "y": 232,
-                      "descendants": {
-                        "NPhrR": {
-                          "type": "frame",
-                          "id": "zDYlt",
-                          "width": "fill_container",
-                          "layout": "vertical",
-                          "gap": 4,
-                          "padding": 24,
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "8Nj1o",
-                              "fill": "$--foreground",
-                              "content": "Recommended next step",
-                              "fontFamily": "Inter",
-                              "fontSize": 18,
-                              "fontWeight": "600"
-                            },
-                            {
-                              "type": "text",
-                              "id": "0t4da",
-                              "fill": "$--muted-foreground",
-                              "textGrowth": "fixed-width",
-                              "width": "fill_container",
-                              "content": "Review the incident response preset before the next on-call handoff and confirm approval gates still match policy.",
-                              "fontFamily": "Inter",
-                              "fontSize": 14,
-                              "fontWeight": "normal"
-                            }
-                          ]
-                        },
-                        "FRosU": {
-                          "enabled": false
-                        },
-                        "aArwa": {
-                          "type": "frame",
-                          "id": "kJemg",
-                          "width": "fill_container",
-                          "padding": [
-                            0,
-                            24,
-                            24,
-                            24
-                          ],
-                          "justifyContent": "end",
-                          "children": [
-                            {
-                              "id": "GZlGK",
-                              "type": "ref",
-                              "ref": "QUgPD",
-                              "width": "fit_content",
-                              "x": 183,
-                              "y": 0,
-                              "height": "fit_content",
-                              "descendants": {
-                                "V8u8q": {
-                                  "x": 16,
-                                  "y": 8,
-                                  "enabled": true
-                                },
-                                "wevbQ": {
-                                  "enabled": true,
-                                  "iconFontName": "search"
-                                },
-                                "brqte": {
-                                  "content": "Review preset",
-                                  "x": 42,
-                                  "y": 8
-                                }
-                              }
-                            }
-                          ]
                         }
                       }
                     }
