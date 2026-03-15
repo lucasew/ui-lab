@@ -699,13 +699,16 @@
       "y": 1320,
       "name": "Screen / Workers",
       "theme": {
+        "Accent": "Blue",
+        "Base": "Slate",
         "Mode": "Dark"
       },
       "width": 1280,
       "height": 980,
       "fill": "$--background",
-      "cornerRadius": 20,
+      "cornerRadius": 18,
       "stroke": {
+        "align": "inside",
         "thickness": 1,
         "fill": "$--border"
       },
@@ -1786,14 +1789,16 @@
       "y": 1320,
       "name": "Screen / Chats",
       "theme": {
-        "Mode": "Dark",
-        "Base": "Zinc"
+        "Accent": "Blue",
+        "Base": "Slate",
+        "Mode": "Dark"
       },
       "width": 1280,
       "height": 1000,
       "fill": "$--background",
-      "cornerRadius": 20,
+      "cornerRadius": 18,
       "stroke": {
+        "align": "inside",
         "thickness": 1,
         "fill": "$--border"
       },
@@ -4237,14 +4242,16 @@
       "y": 1320,
       "name": "Screen / Tokens",
       "theme": {
-        "Mode": "Dark",
-        "Base": "Zinc"
+        "Accent": "Blue",
+        "Base": "Slate",
+        "Mode": "Dark"
       },
       "width": 1280,
       "height": 1044,
       "fill": "$--background",
-      "cornerRadius": 20,
+      "cornerRadius": 18,
       "stroke": {
+        "align": "inside",
         "thickness": 1,
         "fill": "$--border"
       },
@@ -5291,12 +5298,14 @@
       "y": 1320,
       "name": "Screen / Issues",
       "theme": {
+        "Accent": "Blue",
+        "Base": "Slate",
         "Mode": "Dark"
       },
       "width": 1280,
       "height": 980,
       "fill": "$--background",
-      "cornerRadius": 28,
+      "cornerRadius": 18,
       "stroke": {
         "align": "inside",
         "thickness": 1,
@@ -6457,16 +6466,18 @@
       "y": 1320,
       "name": "Screen / Agent Settings",
       "theme": {
-        "Mode": "Dark",
-        "Base": "Zinc"
+        "Accent": "Blue",
+        "Base": "Slate",
+        "Mode": "Dark"
       },
       "width": 1280,
       "height": 1100,
       "fill": "$--background",
-      "cornerRadius": 20,
+      "cornerRadius": 18,
       "stroke": {
+        "align": "inside",
         "thickness": 1,
-        "fill": "#27272a"
+        "fill": "$--border"
       },
       "children": [
         {
@@ -7650,11 +7661,19 @@
       "y": 1320,
       "name": "Screen / Main",
       "theme": {
+        "Accent": "Blue",
+        "Base": "Slate",
         "Mode": "Dark"
       },
       "width": 1280,
       "height": 980,
       "fill": "$--background",
+      "cornerRadius": 18,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1,
+        "fill": "$--border"
+      },
       "children": [
         {
           "id": "7XCLV",
@@ -18113,6 +18132,8 @@
       "y": 1320,
       "name": "Screen / New Run",
       "theme": {
+        "Accent": "Blue",
+        "Base": "Slate",
         "Mode": "Dark"
       },
       "width": 1280,
@@ -18120,6 +18141,7 @@
       "fill": "$--background",
       "cornerRadius": 18,
       "stroke": {
+        "align": "inside",
         "thickness": 1,
         "fill": "$--border"
       },
