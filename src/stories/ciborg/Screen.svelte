@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
 	import Sidebar from './Sidebar.svelte';
-	import IconButton from './IconButton.svelte';
+	import { Button } from '$lib/shadcn/ui/button';
 
 	interface SidebarItem {
 		label: string;
@@ -16,6 +16,7 @@
 		user?: { name: string; avatar?: string };
 		children?: Snippet;
 		fab?: boolean;
+		mainWidth?: string;
 		class?: string;
 	}
 
@@ -25,18 +26,30 @@
 		user,
 		children,
 		fab = false,
+		mainWidth = 'full',
 		class: className = ''
 	}: Props = $props();
 </script>
 
 <div
-	class="border-border bg-background flex h-full w-full overflow-hidden rounded-xl border {className}"
+	class="border-border bg-background relative flex h-[980px] w-[1280px] overflow-hidden rounded-xl border {className}"
 >
 	<Sidebar {user} items={sidebarItems} />
-	<main class="flex flex-1 flex-col gap-6 p-6">
+	<main
+		class="flex flex-1 flex-col gap-6 p-6"
+		style="width: {mainWidth === '1024' ? '1024px' : '100%'};"
+	>
 		{@render children?.()}
 	</main>
 	{#if fab}
-		<IconButton icon="plus" class="fixed right-6 bottom-6" />
+		<Button
+			size="icon"
+			class="absolute h-14 w-14 rounded-[28px] shadow-lg"
+			style="right: 0; top: 0; margin: 16px;"
+		>
+			<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+			</svg>
+		</Button>
 	{/if}
 </div>

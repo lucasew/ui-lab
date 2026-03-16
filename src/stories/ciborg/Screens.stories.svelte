@@ -61,45 +61,57 @@
 </script>
 
 <Story name="Main">
-	<Screen {sidebarItems} activeNav="Overview" user={{ name: 'User' }} fab={true}>
+	<Screen {sidebarItems} activeNav="Overview" user={{ name: 'User' }} fab={true} mainWidth="1024">
 		<div class="space-y-6">
 			<div class="flex items-center justify-between">
 				<div class="space-y-1">
-					<h1 class="text-3xl font-bold">Control plane overview</h1>
+					<h1 class="text-[30px] leading-tight font-bold">Control plane overview</h1>
 					<p class="text-muted-foreground text-sm">
 						Track workers, queue depth, and recent executions from a single entry point.
 					</p>
 				</div>
 				<div class="flex gap-3">
 					<Button variant="outline">View queue</Button>
-					<Button>New run</Button>
+					<Button
+						><svg class="mr-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+							><path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+							/><path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+							/></svg
+						>New run</Button
+					>
 				</div>
 			</div>
 			<div class="grid grid-cols-3 gap-4">
-				<Card
-					><CardContent class="pt-6"
-						><div class="text-muted-foreground text-sm">Pending jobs</div>
-						<div class="mt-1 text-3xl font-bold">14</div></CardContent
-					></Card
+				<Card class="p-4"
+					><div class="text-muted-foreground text-sm">Pending jobs</div>
+					<div class="mt-1 text-2xl font-bold">14</div></Card
 				>
-				<Card
-					><CardContent class="pt-6"
-						><div class="text-muted-foreground text-sm">Workers online</div>
-						<div class="mt-1 text-3xl font-bold">8</div></CardContent
-					></Card
+				<Card class="p-4"
+					><div class="text-muted-foreground text-sm">Workers online</div>
+					<div class="mt-1 text-2xl font-bold">8</div></Card
 				>
-				<Card
-					><CardContent class="pt-6"
-						><div class="text-muted-foreground text-sm">Success rate</div>
-						<div class="mt-1 text-3xl font-bold">98.4%</div></CardContent
-					></Card
+				<Card class="p-4"
+					><div class="text-muted-foreground text-sm">Success rate</div>
+					<div class="mt-1 text-2xl font-bold">98.4%</div></Card
 				>
 			</div>
 			<Card>
 				<CardHeader>
 					<div class="flex items-center justify-between">
 						<CardTitle>Showing 4 recent runs</CardTitle>
-						<Button variant="ghost" size="sm">Dispatch</Button>
+						<div class="flex gap-2">
+							<Input placeholder="Filter recent runs" class="h-8 w-48" />
+							<Button variant="ghost" size="icon">+</Button>
+							<Button variant="ghost" size="sm">Dispatch</Button>
+						</div>
 					</div>
 				</CardHeader>
 				<CardContent>
@@ -125,41 +137,93 @@
 
 <Story name="Chats">
 	<Screen {sidebarItems} activeNav="Chats" user={{ name: 'User' }}>
-		<div class="space-y-6">
+		<div class="space-y-5">
 			<div class="flex items-center justify-between">
 				<div class="space-y-1">
-					<h1 class="text-3xl font-bold">Chats</h1>
-					<p class="text-muted-foreground text-sm">Interactive conversations with your agents.</p>
+					<h1 class="text-[30px] leading-tight font-bold">Agent chats</h1>
+					<p class="text-muted-foreground max-w-xl text-sm">
+						Persistent threads for coding help, reviews, and operations. Attach a project only when
+						the conversation actually needs repository context.
+					</p>
 				</div>
-				<Button>New Chat</Button>
+				<div class="flex gap-2">
+					<Button variant="outline">View queue</Button>
+					<Button
+						><svg class="mr-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+							><path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M12 4v16m8-8H4"
+							/></svg
+						>New chat</Button
+					>
+				</div>
 			</div>
 			<div class="grid grid-cols-3 gap-4">
-				<Card class="col-span-2">
-					<CardHeader><CardTitle>Select a conversation</CardTitle></CardHeader>
-					<CardContent class="text-muted-foreground flex h-96 items-center justify-center">
-						Choose a conversation from the sidebar
-					</CardContent>
-				</Card>
-				<Card>
-					<CardHeader><CardTitle>Recent</CardTitle></CardHeader>
-					<CardContent class="space-y-3">
-						<div class="hover:bg-muted flex cursor-pointer items-center gap-3 rounded-lg p-2">
-							<Avatar name="User 1" size="sm" />
-							<div class="min-w-0 flex-1">
-								<p class="truncate text-sm font-medium">Project Alpha Discussion</p>
-								<p class="text-muted-foreground text-xs">2 messages</p>
-							</div>
-						</div>
-						<div class="hover:bg-muted flex cursor-pointer items-center gap-3 rounded-lg p-2">
-							<Avatar name="User 2" size="sm" />
-							<div class="min-w-0 flex-1">
-								<p class="truncate text-sm font-medium">Bug Report #123</p>
-								<p class="text-muted-foreground text-xs">5 messages</p>
-							</div>
-						</div>
-					</CardContent>
-				</Card>
+				<Card class="p-4"
+					><div class="text-muted-foreground text-sm">Open threads</div>
+					<div class="mt-1 text-3xl font-bold">18</div>
+					<p class="text-muted-foreground mt-1 text-xs">
+						Across coding, review, and ops workflows.
+					</p></Card
+				>
+				<Card class="p-4"
+					><div class="text-muted-foreground text-sm">Waiting on user</div>
+					<div class="mt-1 text-3xl font-bold">5</div>
+					<p class="text-muted-foreground mt-1 text-xs">
+						Threads paused on approvals, replies, or missing details.
+					</p></Card
+				>
+				<Card class="p-4"
+					><div class="text-muted-foreground text-sm">Project-linked</div>
+					<div class="mt-1 text-3xl font-bold">7</div>
+					<p class="text-muted-foreground mt-1 text-xs">
+						Optional context, not the default starting point.
+					</p></Card
+				>
 			</div>
+			<Card>
+				<CardHeader class="pb-2">
+					<div class="flex items-center justify-between">
+						<Tabs
+							tabs={[
+								{ label: 'All threads', active: true },
+								{ label: 'Needs reply' },
+								{ label: 'Detached' },
+								{ label: 'Project-linked' }
+							]}
+						/>
+					</div>
+					<div class="mt-2 flex items-center gap-2">
+						<Badge variant="secondary">Default view: detached-friendly</Badge>
+						<Button variant="ghost" size="sm">Filters</Button>
+					</div>
+				</CardHeader>
+				<CardContent class="space-y-3">
+					<Card class="p-4"
+						><div class="flex items-center justify-between">
+							<span class="font-medium"
+								>Review the migration plan for the relay artifact cleanup...</span
+							><Badge variant="outline">coding</Badge>
+						</div></Card
+					>
+					<Card class="p-4"
+						><div class="flex items-center justify-between">
+							<span class="font-medium"
+								>Summarize the behavioural risks in the shell approval changes...</span
+							><Badge variant="outline">review</Badge>
+						</div></Card
+					>
+					<Card class="p-4"
+						><div class="flex items-center justify-between">
+							<span class="font-medium"
+								>Check the flaky image pipeline in infra / worker-images...</span
+							><Badge variant="outline">ops</Badge>
+						</div></Card
+					>
+				</CardContent>
+			</Card>
 		</div>
 	</Screen>
 </Story>
@@ -383,14 +447,14 @@
 
 <Story name="Run">
 	<Screen {sidebarItems} activeNav="Runs" user={{ name: 'User' }}>
-		<div class="space-y-6">
+		<div class="space-y-6 p-8">
 			<div class="flex items-center justify-between">
 				<div class="space-y-2">
 					<div class="text-muted-foreground flex items-center gap-2 text-sm">
 						<span>Runs</span><span>/</span><span class="text-foreground">Run detail</span>
 					</div>
 					<div class="flex items-center gap-3">
-						<h1 class="text-3xl font-bold">Run 01JX4W2R9V8N6M3K1T5P7Q4A2B</h1>
+						<h1 class="text-[30px] font-bold">Run 01JX4W2R9V8N6M3K1T5P7Q4A2B</h1>
 						<Badge>Running</Badge>
 					</div>
 					<p class="text-muted-foreground text-sm">
@@ -401,12 +465,12 @@
 				<div class="flex gap-3">
 					<Button variant="outline">Copy ID</Button>
 					<Button variant="outline">Rerun</Button>
-					<Button>Open shell</Button>
+					<Button class="bg-blue-600 hover:bg-blue-700">Open shell</Button>
 				</div>
 			</div>
 			<Tabs tabs={[{ label: 'Overview', active: true }, { label: 'Events' }, { label: 'Logs' }]} />
-			<div class="grid grid-cols-3 gap-4">
-				<Card
+			<div class="grid grid-cols-3 gap-6">
+				<Card class="shadow-sm"
 					><CardHeader><CardTitle>Run Summary</CardTitle></CardHeader><CardContent class="space-y-2"
 						><div class="flex justify-between text-sm">
 							<span>Status</span><Badge>Running</Badge>
@@ -417,7 +481,7 @@
 						</div></CardContent
 					></Card
 				>
-				<Card
+				<Card class="shadow-sm"
 					><CardHeader><CardTitle>Stages</CardTitle></CardHeader><CardContent class="space-y-3"
 						><div class="space-y-2">
 							<div class="flex justify-between text-sm">
@@ -437,7 +501,7 @@
 						</div></CardContent
 					></Card
 				>
-				<Card
+				<Card class="shadow-sm"
 					><CardHeader><CardTitle>Events</CardTitle></CardHeader><CardContent class="space-y-2"
 						><div class="text-muted-foreground text-sm">No events yet</div></CardContent
 					></Card
