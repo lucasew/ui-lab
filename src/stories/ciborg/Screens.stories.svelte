@@ -54,112 +54,247 @@
 	const { Story } = defineMeta({
 		title: 'Ciborg/Screens',
 		tags: ['autodocs'],
-		parameters: {
-			layout: 'fullscreen'
-		}
+		parameters: { layout: 'fullscreen' }
 	});
 </script>
 
 <Story name="Main">
 	<Screen {sidebarItems} activeNav="Overview" user={{ name: 'User' }} fab={true}>
-		<div class="flex items-center justify-between">
-			<h1 class="text-2xl font-semibold">Dashboard</h1>
+		<div class="space-y-6">
+			<div class="flex items-center justify-between">
+				<div class="space-y-1">
+					<h1 class="text-3xl font-bold">Control plane overview</h1>
+					<p class="text-muted-foreground text-sm">
+						Track workers, queue depth, and recent executions from a single entry point.
+					</p>
+				</div>
+				<div class="flex gap-3">
+					<Button variant="outline">View queue</Button>
+					<Button>New run</Button>
+				</div>
+			</div>
+			<div class="grid grid-cols-3 gap-4">
+				<Card
+					><CardContent class="pt-6"
+						><div class="text-muted-foreground text-sm">Pending jobs</div>
+						<div class="mt-1 text-3xl font-bold">14</div></CardContent
+					></Card
+				>
+				<Card
+					><CardContent class="pt-6"
+						><div class="text-muted-foreground text-sm">Workers online</div>
+						<div class="mt-1 text-3xl font-bold">8</div></CardContent
+					></Card
+				>
+				<Card
+					><CardContent class="pt-6"
+						><div class="text-muted-foreground text-sm">Success rate</div>
+						<div class="mt-1 text-3xl font-bold">98.4%</div></CardContent
+					></Card
+				>
+			</div>
+			<Card>
+				<CardHeader>
+					<div class="flex items-center justify-between">
+						<CardTitle>Showing 4 recent runs</CardTitle>
+						<Button variant="ghost" size="sm">Dispatch</Button>
+					</div>
+				</CardHeader>
+				<CardContent>
+					<Table
+						columns={[
+							{ key: 'id', label: 'ID' },
+							{ key: 'status', label: 'Status' },
+							{ key: 'duration', label: 'Duration' },
+							{ key: 'trigger', label: 'Trigger' }
+						]}
+						data={[
+							{ id: 'run-001', status: 'Completed', duration: '2m 34s', trigger: 'Manual' },
+							{ id: 'run-002', status: 'Running', duration: '1m 12s', trigger: 'Webhook' },
+							{ id: 'run-003', status: 'Failed', duration: '45s', trigger: 'Schedule' },
+							{ id: 'run-004', status: 'Completed', duration: '3m 21s', trigger: 'Manual' }
+						]}
+					/>
+				</CardContent>
+			</Card>
 		</div>
-		<div class="grid grid-cols-3 gap-4">
-			<Card>
-				<CardHeader>
-					<CardTitle>Active Rovers</CardTitle>
-				</CardHeader>
-				<CardContent class="flex items-center gap-2">
-					<span class="text-2xl font-medium">1,280</span>
-					<Badge variant="destructive">-12%</Badge>
-				</CardContent>
-			</Card>
-			<Card>
-				<CardHeader>
-					<CardTitle>Tasks</CardTitle>
-				</CardHeader>
-				<CardContent>
-					<span class="text-2xl font-medium">847</span>
-				</CardContent>
-			</Card>
-			<Card>
-				<CardHeader>
-					<CardTitle>Uptime</CardTitle>
-				</CardHeader>
-				<CardContent>
-					<span class="text-2xl font-medium">99.2%</span>
-				</CardContent>
-			</Card>
+	</Screen>
+</Story>
+
+<Story name="Chats">
+	<Screen {sidebarItems} activeNav="Chats" user={{ name: 'User' }}>
+		<div class="space-y-6">
+			<div class="flex items-center justify-between">
+				<div class="space-y-1">
+					<h1 class="text-3xl font-bold">Chats</h1>
+					<p class="text-muted-foreground text-sm">Interactive conversations with your agents.</p>
+				</div>
+				<Button>New Chat</Button>
+			</div>
+			<div class="grid grid-cols-3 gap-4">
+				<Card class="col-span-2">
+					<CardHeader><CardTitle>Select a conversation</CardTitle></CardHeader>
+					<CardContent class="text-muted-foreground flex h-96 items-center justify-center">
+						Choose a conversation from the sidebar
+					</CardContent>
+				</Card>
+				<Card>
+					<CardHeader><CardTitle>Recent</CardTitle></CardHeader>
+					<CardContent class="space-y-3">
+						<div class="hover:bg-muted flex cursor-pointer items-center gap-3 rounded-lg p-2">
+							<Avatar name="User 1" size="sm" />
+							<div class="min-w-0 flex-1">
+								<p class="truncate text-sm font-medium">Project Alpha Discussion</p>
+								<p class="text-muted-foreground text-xs">2 messages</p>
+							</div>
+						</div>
+						<div class="hover:bg-muted flex cursor-pointer items-center gap-3 rounded-lg p-2">
+							<Avatar name="User 2" size="sm" />
+							<div class="min-w-0 flex-1">
+								<p class="truncate text-sm font-medium">Bug Report #123</p>
+								<p class="text-muted-foreground text-xs">5 messages</p>
+							</div>
+						</div>
+					</CardContent>
+				</Card>
+			</div>
 		</div>
 	</Screen>
 </Story>
 
 <Story name="Workers">
 	<Screen {sidebarItems} activeNav="Workers" user={{ name: 'User' }}>
-		<div class="flex items-center justify-between">
-			<h1 class="text-2xl font-semibold">Workers</h1>
-			<Button>Add Worker</Button>
-		</div>
-		<div class="grid grid-cols-2 gap-4">
-			<Card>
-				<CardHeader>
-					<CardTitle>Online</CardTitle>
-				</CardHeader>
-				<CardContent>
-					<span class="text-3xl font-semibold">12</span>
-				</CardContent>
-			</Card>
-			<Card>
-				<CardHeader>
-					<CardTitle>Offline</CardTitle>
-				</CardHeader>
-				<CardContent>
-					<span class="text-3xl font-semibold">3</span>
-				</CardContent>
-			</Card>
-		</div>
-	</Screen>
-</Story>
-
-<Story name="Runs">
-	<Screen {sidebarItems} activeNav="Runs" user={{ name: 'User' }}>
-		<div class="flex items-center justify-between">
-			<h1 class="text-2xl font-semibold">Runs</h1>
-			<Button>New Run</Button>
-		</div>
-		<Tabs tabs={[{ label: 'Overview', active: true }, { label: 'Events' }, { label: 'Logs' }]} />
-		<Card>
-			<CardHeader>
-				<CardTitle>Progress</CardTitle>
-			</CardHeader>
-			<CardContent class="space-y-4">
-				<div class="space-y-2">
-					<div class="flex justify-between text-sm"><span>Task 1</span><span>75%</span></div>
-					<Progress value={75} />
+		<div class="space-y-6">
+			<div class="flex items-center justify-between">
+				<div class="space-y-1">
+					<h1 class="text-3xl font-bold">Workers</h1>
+					<p class="text-muted-foreground text-sm">Manage your worker fleet.</p>
 				</div>
-				<div class="space-y-2">
-					<div class="flex justify-between text-sm"><span>Task 2</span><span>50%</span></div>
-					<Progress value={50} />
-				</div>
-			</CardContent>
-		</Card>
+				<Button>Add Worker</Button>
+			</div>
+			<Tabs
+				tabs={[{ label: 'All workers', active: true }, { label: 'Busy' }, { label: 'Waiting' }]}
+			/>
+			<div class="grid grid-cols-3 gap-4">
+				<Card
+					><CardContent class="pt-6"
+						><div class="text-muted-foreground text-sm">Running jobs</div>
+						<div class="mt-1 text-3xl font-bold">12</div></CardContent
+					></Card
+				>
+				<Card
+					><CardContent class="pt-6"
+						><div class="text-muted-foreground text-sm">Queued jobs</div>
+						<div class="mt-1 text-3xl font-bold">34</div></CardContent
+					></Card
+				>
+				<Card
+					><CardContent class="pt-6"
+						><div class="text-muted-foreground text-sm">Connected workers</div>
+						<div class="mt-1 text-3xl font-bold">8</div></CardContent
+					></Card
+				>
+			</div>
+			<div class="grid grid-cols-2 gap-4">
+				<Card>
+					<CardHeader>
+						<CardTitle>worker-sfo-03</CardTitle>
+						<CardDescription>Running 3 jobs</CardDescription>
+					</CardHeader>
+					<CardFooter class="gap-2">
+						<Button variant="outline" size="sm">Open shell</Button>
+						<Button size="sm">View state</Button>
+					</CardFooter>
+				</Card>
+				<Card>
+					<CardHeader>
+						<CardTitle>worker-nyc-01</CardTitle>
+						<CardDescription>Idle</CardDescription>
+					</CardHeader>
+					<CardFooter class="gap-2">
+						<Button variant="outline" size="sm">Drain</Button>
+						<Button variant="ghost" size="sm">Details</Button>
+					</CardFooter>
+				</Card>
+			</div>
+		</div>
 	</Screen>
 </Story>
 
 <Story name="Tokens">
 	<Screen {sidebarItems} activeNav="Tokens" user={{ name: 'User' }}>
-		<div class="flex items-center justify-between">
-			<h1 class="text-2xl font-semibold">Tokens</h1>
-		</div>
-		<div class="grid grid-cols-2 gap-4">
+		<div class="space-y-6">
+			<div class="flex items-center justify-between">
+				<div class="space-y-1">
+					<h1 class="text-3xl font-bold">Tokens</h1>
+					<p class="text-muted-foreground text-sm">Manage API tokens for programmatic access.</p>
+				</div>
+				<div class="flex gap-3">
+					<Button variant="ghost">?</Button>
+					<Button variant="outline">Create Token</Button>
+				</div>
+			</div>
+			<div class="grid grid-cols-3 gap-4">
+				<Card
+					><CardContent class="pt-6"
+						><div class="text-muted-foreground text-sm">Input tokens</div>
+						<div class="mt-1 text-3xl font-bold">1.2M</div></CardContent
+					></Card
+				>
+				<Card
+					><CardContent class="pt-6"
+						><div class="text-muted-foreground text-sm">Output tokens</div>
+						<div class="mt-1 text-3xl font-bold">850K</div></CardContent
+					></Card
+				>
+				<Card
+					><CardContent class="pt-6"
+						><div class="text-muted-foreground text-sm">Total</div>
+						<div class="mt-1 text-3xl font-bold">2.05M</div></CardContent
+					></Card
+				>
+			</div>
 			<Card>
-				<CardHeader><CardTitle>Input</CardTitle></CardHeader>
-				<CardContent><span class="text-3xl font-semibold">1.2M</span></CardContent>
-			</Card>
-			<Card>
-				<CardHeader><CardTitle>Output</CardTitle></CardHeader>
-				<CardContent><span class="text-3xl font-semibold">850K</span></CardContent>
+				<CardHeader>
+					<div class="flex items-center justify-between">
+						<div>
+							<CardTitle>Issued tokens</CardTitle><CardDescription
+								>Showing 3 tokens with 2 requiring rotation this month</CardDescription
+							>
+						</div>
+						<Button variant="destructive" size="sm">Revoke selected</Button>
+					</div>
+				</CardHeader>
+				<CardContent>
+					<Table
+						columns={[
+							{ key: 'name', label: 'Name' },
+							{ key: 'created', label: 'Created' },
+							{ key: 'expires', label: 'Expires' },
+							{ key: 'status', label: 'Status' }
+						]}
+						data={[
+							{
+								name: 'prod-deploy-key',
+								created: '2024-01-15',
+								expires: '2024-04-15',
+								status: 'Active'
+							},
+							{
+								name: 'ci-pipeline',
+								created: '2024-02-01',
+								expires: '2024-05-01',
+								status: 'Expires soon'
+							},
+							{
+								name: 'staging-access',
+								created: '2024-01-20',
+								expires: '2024-04-20',
+								status: 'Active'
+							}
+						]}
+					/>
+				</CardContent>
 			</Card>
 		</div>
 	</Screen>
@@ -167,17 +302,78 @@
 
 <Story name="Issues">
 	<Screen {sidebarItems} activeNav="Issues" user={{ name: 'User' }}>
-		<div class="flex items-center justify-between">
-			<h1 class="text-2xl font-semibold">Issues</h1>
-		</div>
-		<div class="grid grid-cols-2 gap-4">
+		<div class="space-y-6">
+			<div class="flex items-center justify-between">
+				<div class="space-y-1">
+					<h1 class="text-3xl font-bold">Issues</h1>
+					<p class="text-muted-foreground text-sm">
+						Track and resolve issues in your infrastructure.
+					</p>
+				</div>
+			</div>
+			<div class="grid grid-cols-3 gap-4">
+				<Card>
+					<CardHeader><CardDescription>Open findings</CardDescription></CardHeader>
+					<CardContent class="pt-2"
+						><div class="flex items-center gap-2">
+							<span class="text-4xl font-bold">12</span><Badge variant="destructive">+3 today</Badge
+							>
+						</div></CardContent
+					>
+				</Card>
+				<Card>
+					<CardHeader><CardDescription>Blocking issues</CardDescription></CardHeader>
+					<CardContent class="pt-2"
+						><div class="flex items-center gap-2">
+							<span class="text-4xl font-bold">4</span><Badge variant="destructive"
+								>2 critical</Badge
+							>
+						</div></CardContent
+					>
+				</Card>
+				<Card>
+					<CardHeader><CardDescription>Affected repos</CardDescription></CardHeader>
+					<CardContent class="pt-2"
+						><div class="flex items-center gap-2">
+							<span class="text-4xl font-bold">7</span><Badge variant="secondary"
+								>stable spread</Badge
+							>
+						</div></CardContent
+					>
+				</Card>
+			</div>
 			<Card>
-				<CardHeader><CardTitle>Open</CardTitle></CardHeader>
-				<CardContent><span class="text-3xl font-semibold">5</span></CardContent>
-			</Card>
-			<Card>
-				<CardHeader><CardTitle>Resolved</CardTitle></CardHeader>
-				<CardContent><span class="text-3xl font-semibold">12</span></CardContent>
+				<CardHeader><CardTitle>Issues</CardTitle></CardHeader>
+				<CardContent>
+					<Table
+						columns={[
+							{ key: 'severity', label: 'Severity' },
+							{ key: 'title', label: 'Title' },
+							{ key: 'repo', label: 'Repository' },
+							{ key: 'status', label: 'Status' }
+						]}
+						data={[
+							{
+								severity: 'Critical',
+								title: 'Memory leak in worker',
+								repo: 'worker-service',
+								status: 'Open'
+							},
+							{
+								severity: 'High',
+								title: 'API rate limit exceeded',
+								repo: 'api-gateway',
+								status: 'Open'
+							},
+							{
+								severity: 'Medium',
+								title: 'Slow query detected',
+								repo: 'database',
+								status: 'In Progress'
+							}
+						]}
+					/>
+				</CardContent>
 			</Card>
 		</div>
 	</Screen>
