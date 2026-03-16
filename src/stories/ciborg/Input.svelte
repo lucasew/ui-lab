@@ -29,7 +29,7 @@
 		{placeholder}
 		{disabled}
 		bind:value
-		class="w-full rounded-md border border-[#e5e5e5] bg-white px-3 py-2 text-sm text-[#0a0a0a] placeholder:text-[#737373] focus:ring-2 focus:ring-[#171717] focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 {variant ===
+		class="w-full rounded-md border border-[#e5e5e5] bg-[#fafafa] px-3 py-2.5 text-sm text-[#0a0a0a] placeholder:text-[#737373] focus:ring-2 focus:ring-[#171717] focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 {variant ===
 		'filled'
 			? 'bg-[#f5f5f5]'
 			: ''}"

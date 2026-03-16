@@ -27,7 +27,7 @@
 				: 'bg-[#e5e5e5]'}"
 		>
 			<span
-				class="absolute top-0.5 left-0.5 h-5 w-5 rounded-full bg-white shadow-[0_2px_4px_rgba(0,0,0,0.1),0_4px_8px_rgba(0,0,0,0.1)] transition-transform {checked
+				class="absolute top-0.5 left-0.5 h-5 w-5 rounded-full bg-white shadow-[0_2px_4px_rgba(0,0,0,0.05),0_4px_8px_rgba(0,0,0,0.1)] transition-transform {checked
 					? 'translate-x-5'
 					: 'translate-x-0'}"
 			></span>

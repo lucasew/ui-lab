@@ -19,7 +19,7 @@
 </script>
 
 <aside
-	class="flex h-full w-64 flex-col rounded-lg border-r border-[#e4e4e7] bg-[#fafafa] p-2 {className}"
+	class="flex h-[656px] w-64 flex-col rounded-lg border-r border-[#e4e4e7] bg-[#fafafa] p-2 {className}"
 >
 	<div class="flex items-center justify-between rounded-md px-2 py-2">
 		<div class="flex items-center gap-2">
