@@ -2,9 +2,16 @@
 	import { defineMeta } from '@storybook/addon-svelte-csf';
 	import '../../routes/layout.css';
 	import Screen from './Screen.svelte';
-	import Button from './Button.svelte';
-	import Card from './Card.svelte';
-	import Badge from './Badge.svelte';
+	import { Button } from '$lib/shadcn/ui/button';
+	import { Badge } from '$lib/shadcn/ui/badge';
+	import {
+		Card,
+		CardHeader,
+		CardTitle,
+		CardDescription,
+		CardContent,
+		CardFooter
+	} from '$lib/shadcn/ui/card';
 	import Tabs from './Tabs.svelte';
 	import Table from './Table.svelte';
 	import Progress from './Progress.svelte';
@@ -60,19 +67,29 @@
 		</div>
 		<div class="grid grid-cols-3 gap-4">
 			<Card>
-				{#snippet header()}<h3 class="text-base font-medium">Active Rovers</h3>{/snippet}
-				<div class="flex items-center gap-2">
+				<CardHeader>
+					<CardTitle>Active Rovers</CardTitle>
+				</CardHeader>
+				<CardContent class="flex items-center gap-2">
 					<span class="text-2xl font-medium">1,280</span>
-					<Badge label="-12%" variant="default" />
-				</div>
+					<Badge variant="destructive">-12%</Badge>
+				</CardContent>
 			</Card>
 			<Card>
-				{#snippet header()}<h3 class="text-base font-medium">Tasks</h3>{/snippet}
-				<span class="text-2xl font-medium">847</span>
+				<CardHeader>
+					<CardTitle>Tasks</CardTitle>
+				</CardHeader>
+				<CardContent>
+					<span class="text-2xl font-medium">847</span>
+				</CardContent>
 			</Card>
 			<Card>
-				{#snippet header()}<h3 class="text-base font-medium">Uptime</h3>{/snippet}
-				<span class="text-2xl font-medium">99.2%</span>
+				<CardHeader>
+					<CardTitle>Uptime</CardTitle>
+				</CardHeader>
+				<CardContent>
+					<span class="text-2xl font-medium">99.2%</span>
+				</CardContent>
 			</Card>
 		</div>
 	</Screen>
@@ -82,16 +99,24 @@
 	<Screen {sidebarItems} activeNav="Workers" user={{ name: 'User' }}>
 		<div class="flex items-center justify-between">
 			<h1 class="text-2xl font-semibold">Workers</h1>
-			<Button label="Add Worker" variant="default" />
+			<Button>Add Worker</Button>
 		</div>
 		<div class="grid grid-cols-2 gap-4">
 			<Card>
-				{#snippet header()}<h3 class="text-base font-medium">Online</h3>{/snippet}
-				<span class="text-3xl font-semibold">12</span>
+				<CardHeader>
+					<CardTitle>Online</CardTitle>
+				</CardHeader>
+				<CardContent>
+					<span class="text-3xl font-semibold">12</span>
+				</CardContent>
 			</Card>
 			<Card>
-				{#snippet header()}<h3 class="text-base font-medium">Offline</h3>{/snippet}
-				<span class="text-3xl font-semibold">3</span>
+				<CardHeader>
+					<CardTitle>Offline</CardTitle>
+				</CardHeader>
+				<CardContent>
+					<span class="text-3xl font-semibold">3</span>
+				</CardContent>
 			</Card>
 		</div>
 	</Screen>
@@ -101,12 +126,14 @@
 	<Screen {sidebarItems} activeNav="Runs" user={{ name: 'User' }}>
 		<div class="flex items-center justify-between">
 			<h1 class="text-2xl font-semibold">Runs</h1>
-			<Button label="New Run" variant="default" />
+			<Button>New Run</Button>
 		</div>
 		<Tabs tabs={[{ label: 'Overview', active: true }, { label: 'Events' }, { label: 'Logs' }]} />
 		<Card>
-			{#snippet header()}<h3 class="text-base font-medium">Progress</h3>{/snippet}
-			<div class="space-y-4">
+			<CardHeader>
+				<CardTitle>Progress</CardTitle>
+			</CardHeader>
+			<CardContent class="space-y-4">
 				<div class="space-y-2">
 					<div class="flex justify-between text-sm"><span>Task 1</span><span>75%</span></div>
 					<Progress value={75} />
@@ -115,7 +142,7 @@
 					<div class="flex justify-between text-sm"><span>Task 2</span><span>50%</span></div>
 					<Progress value={50} />
 				</div>
-			</div>
+			</CardContent>
 		</Card>
 	</Screen>
 </Story>
@@ -127,12 +154,12 @@
 		</div>
 		<div class="grid grid-cols-2 gap-4">
 			<Card>
-				{#snippet header()}<h3 class="text-base font-medium">Input</h3>{/snippet}
-				<span class="text-3xl font-semibold">1.2M</span>
+				<CardHeader><CardTitle>Input</CardTitle></CardHeader>
+				<CardContent><span class="text-3xl font-semibold">1.2M</span></CardContent>
 			</Card>
 			<Card>
-				{#snippet header()}<h3 class="text-base font-medium">Output</h3>{/snippet}
-				<span class="text-3xl font-semibold">850K</span>
+				<CardHeader><CardTitle>Output</CardTitle></CardHeader>
+				<CardContent><span class="text-3xl font-semibold">850K</span></CardContent>
 			</Card>
 		</div>
 	</Screen>
@@ -145,12 +172,12 @@
 		</div>
 		<div class="grid grid-cols-2 gap-4">
 			<Card>
-				{#snippet header()}<h3 class="text-base font-medium">Open</h3>{/snippet}
-				<span class="text-3xl font-semibold">5</span>
+				<CardHeader><CardTitle>Open</CardTitle></CardHeader>
+				<CardContent><span class="text-3xl font-semibold">5</span></CardContent>
 			</Card>
 			<Card>
-				{#snippet header()}<h3 class="text-base font-medium">Resolved</h3>{/snippet}
-				<span class="text-3xl font-semibold">12</span>
+				<CardHeader><CardTitle>Resolved</CardTitle></CardHeader>
+				<CardContent><span class="text-3xl font-semibold">12</span></CardContent>
 			</Card>
 		</div>
 	</Screen>

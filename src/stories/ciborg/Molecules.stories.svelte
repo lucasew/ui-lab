@@ -1,7 +1,14 @@
 <script module lang="ts">
 	import { defineMeta } from '@storybook/addon-svelte-csf';
 	import '../../routes/layout.css';
-	import Card from './Card.svelte';
+	import {
+		Card,
+		CardHeader,
+		CardTitle,
+		CardDescription,
+		CardContent,
+		CardFooter
+	} from '$lib/shadcn/ui/card';
 	import Sidebar from './Sidebar.svelte';
 
 	const { Story } = defineMeta({
@@ -16,10 +23,16 @@
 <Story name="Card">
 	<div class="p-4">
 		<Card>
-			{#snippet header()}
-				<h3 class="text-base font-medium">Card Title</h3>
-			{/snippet}
-			<p class="text-muted-foreground text-sm">Card content goes here.</p>
+			<CardHeader>
+				<CardTitle>Card Title</CardTitle>
+				<CardDescription>Card description goes here.</CardDescription>
+			</CardHeader>
+			<CardContent>
+				<p class="text-muted-foreground text-sm">Card content goes here.</p>
+			</CardContent>
+			<CardFooter>
+				<p class="text-muted-foreground text-xs">Card footer</p>
+			</CardFooter>
 		</Card>
 	</div>
 </Story>
