@@ -2,7 +2,7 @@
 	import type { Snippet } from 'svelte';
 
 	interface Props {
-		variant?: 'default' | 'secondary' | 'destructive' | 'outline' | 'ghost';
+		variant?: 'default' | 'outline' | 'ghost' | 'danger';
 		size?: 'default' | 'large';
 		label?: string;
 		icon?: string;
@@ -25,15 +25,15 @@
 <button
 	class="inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:ring-2 focus-visible:ring-[#171717] focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 {variant ===
 	'default'
-		? 'bg-[#171717] text-[#fafafa] hover:bg-[#404040]'
-		: ''} {variant === 'secondary'
-		? 'bg-[#f5f5f5] text-[#171717] hover:bg-[#e5e5e5]'
-		: ''} {variant === 'destructive'
-		? 'bg-[#e7000b] text-white hover:bg-[#cc000a]'
+		? 'border border-[var(--ciborg-primary)] bg-[var(--ciborg-primary)] text-[var(--ciborg-text)] hover:border-[var(--ciborg-primary-hover)] hover:bg-[var(--ciborg-primary-hover)]'
 		: ''} {variant === 'outline'
-		? 'border border-[#e5e5e5] bg-transparent text-[#171717] hover:bg-[#f5f5f5]'
-		: ''} {variant === 'ghost' ? 'bg-transparent text-[#171717] hover:bg-[#f5f5f5]' : ''} {size ===
-	'default'
+		? 'border border-[var(--ciborg-border-strong)] bg-transparent text-[var(--ciborg-text)] hover:bg-[var(--ciborg-panel-muted)]'
+		: ''} {variant === 'ghost'
+		? 'border border-transparent bg-transparent text-[var(--ciborg-text-soft)] hover:bg-[var(--ciborg-panel-muted)] hover:text-[var(--ciborg-text)]'
+		: ''} {variant === 'danger'
+		? 'border border-[var(--ciborg-danger)] bg-[var(--ciborg-danger)] text-[var(--ciborg-text)] hover:opacity-90'
+		: ''} {size ===
+		'default'
 		? 'gap-1.5 px-4 py-2 text-sm'
 		: ''} {size === 'large' ? 'gap-2 px-6 py-2 text-sm' : ''} {className}"
 	{disabled}

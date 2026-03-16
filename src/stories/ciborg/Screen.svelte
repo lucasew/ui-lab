@@ -32,18 +32,17 @@
 </script>
 
 <div
-	class="border-border bg-background relative flex h-[980px] w-[1280px] overflow-hidden rounded-xl border {className}"
+	class="ciborg-theme relative flex h-[980px] w-[1280px] overflow-hidden rounded-[18px] border border-[var(--ciborg-border)] bg-[var(--ciborg-canvas)] {className}"
 >
 	<Sidebar {user} items={sidebarItems} />
 	<main
-		class="flex flex-1 flex-col gap-6 p-6"
+		class="flex flex-1 flex-col gap-6 bg-[var(--ciborg-canvas)] p-6"
 		style="width: {mainWidth === '1024' ? '1024px' : '100%'};"
 	>
 		{@render children?.()}
 	</main>
 	{#if fab}
 		<Button
-			size="icon"
 			class="absolute h-14 w-14 rounded-[28px] shadow-lg"
 			style="right: 0; top: 0; margin: 16px;"
 		>

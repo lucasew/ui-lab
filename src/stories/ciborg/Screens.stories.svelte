@@ -1,23 +1,14 @@
 <script module lang="ts">
 	import { defineMeta } from '@storybook/addon-svelte-csf';
 	import '../../routes/layout.css';
+	import './ciborg.css';
 	import Screen from './Screen.svelte';
-	import { Button } from '$lib/shadcn/ui/button';
-	import { Badge } from '$lib/shadcn/ui/badge';
-	import {
-		Card,
-		CardHeader,
-		CardTitle,
-		CardDescription,
-		CardContent,
-		CardFooter
-	} from '$lib/shadcn/ui/card';
+	import Button from './Button.svelte';
+	import Badge from './Badge.svelte';
+	import Card from './Card.svelte';
 	import Tabs from './Tabs.svelte';
 	import Table from './Table.svelte';
-	import Progress from './Progress.svelte';
-	import Avatar from './Avatar.svelte';
-	import { Switch } from '$lib/shadcn/ui/switch';
-	import { Input } from '$lib/shadcn/ui/input';
+	import Input from './Input.svelte';
 
 	const sidebarItems = [
 		{
@@ -60,132 +51,100 @@
 	});
 </script>
 
-<Story name="Main">
-	<Screen {sidebarItems} activeNav="Overview" user={{ name: 'User' }} fab={true} mainWidth="1024">
+<Story name="Overview">
+	<Screen {sidebarItems} activeNav="Overview" user={{ name: 'John Doe' }} fab={true} mainWidth="1024">
 		<div class="space-y-6">
 			<div class="flex items-center justify-between">
 				<div class="space-y-1">
-					<h1 class="text-[30px] leading-tight font-bold">Control plane overview</h1>
-					<p class="text-muted-foreground text-sm">
+					<h1 class="text-[30px] font-bold text-[var(--ciborg-text)]">Control plane overview</h1>
+					<p class="text-sm text-[var(--ciborg-text-muted)]">
 						Track workers, queue depth, and recent executions from a single entry point.
 					</p>
 				</div>
 				<div class="flex gap-3">
 					<Button variant="outline">View queue</Button>
-					<Button
-						><svg class="mr-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-							><path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-							/><path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-							/></svg
-						>New run</Button
-					>
+					<Button>New run</Button>
 				</div>
 			</div>
 			<div class="grid grid-cols-3 gap-4">
-				<Card class="p-4"
-					><div class="text-muted-foreground text-sm">Pending jobs</div>
-					<div class="mt-1 text-2xl font-bold">14</div></Card
-				>
-				<Card class="p-4"
-					><div class="text-muted-foreground text-sm">Workers online</div>
-					<div class="mt-1 text-2xl font-bold">8</div></Card
-				>
-				<Card class="p-4"
-					><div class="text-muted-foreground text-sm">Success rate</div>
-					<div class="mt-1 text-2xl font-bold">98.4%</div></Card
-				>
+				{#each [
+					{ label: 'Pending jobs', value: '14' },
+					{ label: 'Workers online', value: '8' },
+					{ label: 'Success rate', value: '98.4%' }
+				] as metric}
+					<Card>
+						<div class="space-y-1">
+							<div class="text-sm text-[var(--ciborg-text-muted)]">{metric.label}</div>
+							<div class="text-3xl font-semibold text-[var(--ciborg-text)]">{metric.value}</div>
+						</div>
+					</Card>
+				{/each}
 			</div>
 			<Card>
-				<CardHeader>
-					<div class="flex items-center justify-between">
-						<CardTitle>Showing 4 recent runs</CardTitle>
+				{#snippet header()}
+					<div class="flex items-center justify-between gap-4">
+						<div>
+							<h2 class="text-lg font-semibold text-[var(--ciborg-text)]">Recent runs</h2>
+							<p class="text-sm text-[var(--ciborg-text-muted)]">Latest executions across manual, scheduled and webhook triggers.</p>
+						</div>
 						<div class="flex gap-2">
-							<Input placeholder="Filter recent runs" class="h-8 w-48" />
-							<Button variant="ghost" size="icon">+</Button>
-							<Button variant="ghost" size="sm">Dispatch</Button>
+							<Input placeholder="Filter recent runs" class="w-56" />
+							<Button variant="ghost">Dispatch</Button>
 						</div>
 					</div>
-				</CardHeader>
-				<CardContent>
-					<Table
-						columns={[
-							{ key: 'id', label: 'ID' },
-							{ key: 'status', label: 'Status' },
-							{ key: 'duration', label: 'Duration' },
-							{ key: 'trigger', label: 'Trigger' }
-						]}
-						data={[
-							{ id: 'run-001', status: 'Completed', duration: '2m 34s', trigger: 'Manual' },
-							{ id: 'run-002', status: 'Running', duration: '1m 12s', trigger: 'Webhook' },
-							{ id: 'run-003', status: 'Failed', duration: '45s', trigger: 'Schedule' },
-							{ id: 'run-004', status: 'Completed', duration: '3m 21s', trigger: 'Manual' }
-						]}
-					/>
-				</CardContent>
+				{/snippet}
+				<Table
+					columns={[
+						{ key: 'id', label: 'ID' },
+						{ key: 'status', label: 'Status' },
+						{ key: 'duration', label: 'Duration' },
+						{ key: 'trigger', label: 'Trigger' }
+					]}
+					data={[
+						{ id: 'run-001', status: 'Completed', duration: '2m 34s', trigger: 'Manual' },
+						{ id: 'run-002', status: 'Running', duration: '1m 12s', trigger: 'Webhook' },
+						{ id: 'run-003', status: 'Failed', duration: '45s', trigger: 'Schedule' },
+						{ id: 'run-004', status: 'Completed', duration: '3m 21s', trigger: 'Manual' }
+					]}
+				/>
 			</Card>
 		</div>
 	</Screen>
 </Story>
 
 <Story name="Chats">
-	<Screen {sidebarItems} activeNav="Chats" user={{ name: 'User' }}>
+	<Screen {sidebarItems} activeNav="Chats" user={{ name: 'John Doe' }}>
 		<div class="space-y-5">
 			<div class="flex items-center justify-between">
 				<div class="space-y-1">
-					<h1 class="text-[30px] leading-tight font-bold">Agent chats</h1>
-					<p class="text-muted-foreground max-w-xl text-sm">
-						Persistent threads for coding help, reviews, and operations. Attach a project only when
-						the conversation actually needs repository context.
+					<h1 class="text-[30px] font-bold text-[var(--ciborg-text)]">Agent chats</h1>
+					<p class="max-w-xl text-sm text-[var(--ciborg-text-muted)]">
+						Persistent threads for coding help, reviews, and operations. Attach a project only when the conversation actually needs repository context.
 					</p>
 				</div>
 				<div class="flex gap-2">
 					<Button variant="outline">View queue</Button>
-					<Button
-						><svg class="mr-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-							><path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								d="M12 4v16m8-8H4"
-							/></svg
-						>New chat</Button
-					>
+					<Button>New chat</Button>
 				</div>
 			</div>
 			<div class="grid grid-cols-3 gap-4">
-				<Card class="p-4"
-					><div class="text-muted-foreground text-sm">Open threads</div>
-					<div class="mt-1 text-3xl font-bold">18</div>
-					<p class="text-muted-foreground mt-1 text-xs">
-						Across coding, review, and ops workflows.
-					</p></Card
-				>
-				<Card class="p-4"
-					><div class="text-muted-foreground text-sm">Waiting on user</div>
-					<div class="mt-1 text-3xl font-bold">5</div>
-					<p class="text-muted-foreground mt-1 text-xs">
-						Threads paused on approvals, replies, or missing details.
-					</p></Card
-				>
-				<Card class="p-4"
-					><div class="text-muted-foreground text-sm">Project-linked</div>
-					<div class="mt-1 text-3xl font-bold">7</div>
-					<p class="text-muted-foreground mt-1 text-xs">
-						Optional context, not the default starting point.
-					</p></Card
-				>
+				{#each [
+					{ label: 'Open threads', value: '18', note: 'Across coding, review, and ops workflows.' },
+					{ label: 'Waiting on user', value: '5', note: 'Threads paused on approvals, replies, or missing details.' },
+					{ label: 'Project-linked', value: '7', note: 'Optional context, not the default starting point.' }
+				] as metric}
+					<Card>
+						<div class="space-y-1">
+							<div class="text-sm text-[var(--ciborg-text-muted)]">{metric.label}</div>
+							<div class="text-3xl font-semibold text-[var(--ciborg-text)]">{metric.value}</div>
+							<p class="text-xs text-[var(--ciborg-text-muted)]">{metric.note}</p>
+						</div>
+					</Card>
+				{/each}
 			</div>
 			<Card>
-				<CardHeader class="pb-2">
-					<div class="flex items-center justify-between">
+				{#snippet header()}
+					<div class="space-y-3">
 						<Tabs
 							tabs={[
 								{ label: 'All threads', active: true },
@@ -194,434 +153,119 @@
 								{ label: 'Project-linked' }
 							]}
 						/>
+						<div class="flex items-center gap-2">
+							<Badge label="Default view: detached-friendly" variant="neutral" />
+							<Button variant="ghost">Filters</Button>
+						</div>
 					</div>
-					<div class="mt-2 flex items-center gap-2">
-						<Badge variant="secondary">Default view: detached-friendly</Badge>
-						<Button variant="ghost" size="sm">Filters</Button>
-					</div>
-				</CardHeader>
-				<CardContent class="space-y-3">
-					<Card class="p-4"
-						><div class="flex items-center justify-between">
-							<span class="font-medium"
-								>Review the migration plan for the relay artifact cleanup...</span
-							><Badge variant="outline">coding</Badge>
-						</div></Card
-					>
-					<Card class="p-4"
-						><div class="flex items-center justify-between">
-							<span class="font-medium"
-								>Summarize the behavioural risks in the shell approval changes...</span
-							><Badge variant="outline">review</Badge>
-						</div></Card
-					>
-					<Card class="p-4"
-						><div class="flex items-center justify-between">
-							<span class="font-medium"
-								>Check the flaky image pipeline in infra / worker-images...</span
-							><Badge variant="outline">ops</Badge>
-						</div></Card
-					>
-				</CardContent>
+				{/snippet}
+				<div class="space-y-3">
+					{#each [
+						{ title: 'Review the migration plan for the relay artifact cleanup...', type: 'coding' },
+						{ title: 'Summarize the behavioural risks in the shell approval changes...', type: 'review' },
+						{ title: 'Check the flaky image pipeline in infra / worker-images...', type: 'ops' }
+					] as thread}
+						<div class="rounded-xl border border-[var(--ciborg-border)] bg-[var(--ciborg-panel-strong)] p-4">
+							<div class="flex items-center justify-between gap-3">
+								<span class="font-medium text-[var(--ciborg-text)]">{thread.title}</span>
+								<Badge label={thread.type} variant="outline" />
+							</div>
+						</div>
+					{/each}
+				</div>
 			</Card>
 		</div>
 	</Screen>
 </Story>
 
 <Story name="Workers">
-	<Screen {sidebarItems} activeNav="Workers" user={{ name: 'User' }}>
+	<Screen {sidebarItems} activeNav="Workers" user={{ name: 'John Doe' }}>
 		<div class="space-y-6">
 			<div class="flex items-center justify-between">
 				<div class="space-y-1">
-					<h1 class="text-3xl font-bold">Workers</h1>
-					<p class="text-muted-foreground text-sm">Manage your worker fleet.</p>
+					<h1 class="text-[30px] font-bold text-[var(--ciborg-text)]">Ephemeral workers</h1>
+					<p class="text-sm text-[var(--ciborg-text-muted)]">
+						Workers appear only while connected. Surface live status, queue pressure, and what the worker actually reports.
+					</p>
 				</div>
-				<Button>Add Worker</Button>
+				<div class="flex gap-3">
+					<Button variant="outline">Refresh</Button>
+					<Button>Connect worker</Button>
+				</div>
 			</div>
-			<Tabs
-				tabs={[{ label: 'All workers', active: true }, { label: 'Busy' }, { label: 'Waiting' }]}
-			/>
+			<Tabs tabs={[{ label: 'All workers', active: true }, { label: 'Busy' }, { label: 'Waiting' }]} />
 			<div class="grid grid-cols-3 gap-4">
-				<Card
-					><CardContent class="pt-6"
-						><div class="text-muted-foreground text-sm">Running jobs</div>
-						<div class="mt-1 text-3xl font-bold">12</div></CardContent
-					></Card
-				>
-				<Card
-					><CardContent class="pt-6"
-						><div class="text-muted-foreground text-sm">Queued jobs</div>
-						<div class="mt-1 text-3xl font-bold">34</div></CardContent
-					></Card
-				>
-				<Card
-					><CardContent class="pt-6"
-						><div class="text-muted-foreground text-sm">Connected workers</div>
-						<div class="mt-1 text-3xl font-bold">8</div></CardContent
-					></Card
-				>
+				{#each [
+					{ label: 'Running jobs', value: '12' },
+					{ label: 'Queued jobs', value: '34' },
+					{ label: 'Connected workers', value: '8' }
+				] as metric}
+					<Card>
+						<div class="space-y-1">
+							<div class="text-sm text-[var(--ciborg-text-muted)]">{metric.label}</div>
+							<div class="text-3xl font-semibold text-[var(--ciborg-text)]">{metric.value}</div>
+						</div>
+					</Card>
+				{/each}
 			</div>
 			<div class="grid grid-cols-2 gap-4">
-				<Card>
-					<CardHeader>
-						<CardTitle>worker-sfo-03</CardTitle>
-						<CardDescription>Running 3 jobs</CardDescription>
-					</CardHeader>
-					<CardFooter class="gap-2">
-						<Button variant="outline" size="sm">Open shell</Button>
-						<Button size="sm">View state</Button>
-					</CardFooter>
-				</Card>
-				<Card>
-					<CardHeader>
-						<CardTitle>worker-nyc-01</CardTitle>
-						<CardDescription>Idle</CardDescription>
-					</CardHeader>
-					<CardFooter class="gap-2">
-						<Button variant="outline" size="sm">Drain</Button>
-						<Button variant="ghost" size="sm">Details</Button>
-					</CardFooter>
-				</Card>
-			</div>
-		</div>
-	</Screen>
-</Story>
-
-<Story name="Tokens">
-	<Screen {sidebarItems} activeNav="Tokens" user={{ name: 'User' }}>
-		<div class="space-y-6">
-			<div class="flex items-center justify-between">
-				<div class="space-y-1">
-					<h1 class="text-3xl font-bold">Tokens</h1>
-					<p class="text-muted-foreground text-sm">Manage API tokens for programmatic access.</p>
-				</div>
-				<div class="flex gap-3">
-					<Button variant="ghost">?</Button>
-					<Button variant="outline">Create Token</Button>
-				</div>
-			</div>
-			<div class="grid grid-cols-3 gap-4">
-				<Card
-					><CardContent class="pt-6"
-						><div class="text-muted-foreground text-sm">Input tokens</div>
-						<div class="mt-1 text-3xl font-bold">1.2M</div></CardContent
-					></Card
-				>
-				<Card
-					><CardContent class="pt-6"
-						><div class="text-muted-foreground text-sm">Output tokens</div>
-						<div class="mt-1 text-3xl font-bold">850K</div></CardContent
-					></Card
-				>
-				<Card
-					><CardContent class="pt-6"
-						><div class="text-muted-foreground text-sm">Total</div>
-						<div class="mt-1 text-3xl font-bold">2.05M</div></CardContent
-					></Card
-				>
-			</div>
-			<Card>
-				<CardHeader>
-					<div class="flex items-center justify-between">
-						<div>
-							<CardTitle>Issued tokens</CardTitle><CardDescription
-								>Showing 3 tokens with 2 requiring rotation this month</CardDescription
-							>
-						</div>
-						<Button variant="destructive" size="sm">Revoke selected</Button>
-					</div>
-				</CardHeader>
-				<CardContent>
-					<Table
-						columns={[
-							{ key: 'name', label: 'Name' },
-							{ key: 'created', label: 'Created' },
-							{ key: 'expires', label: 'Expires' },
-							{ key: 'status', label: 'Status' }
-						]}
-						data={[
-							{
-								name: 'prod-deploy-key',
-								created: '2024-01-15',
-								expires: '2024-04-15',
-								status: 'Active'
-							},
-							{
-								name: 'ci-pipeline',
-								created: '2024-02-01',
-								expires: '2024-05-01',
-								status: 'Expires soon'
-							},
-							{
-								name: 'staging-access',
-								created: '2024-01-20',
-								expires: '2024-04-20',
-								status: 'Active'
-							}
-						]}
-					/>
-				</CardContent>
-			</Card>
-		</div>
-	</Screen>
-</Story>
-
-<Story name="Issues">
-	<Screen {sidebarItems} activeNav="Issues" user={{ name: 'User' }}>
-		<div class="space-y-6">
-			<div class="flex items-center justify-between">
-				<div class="space-y-1">
-					<h1 class="text-3xl font-bold">Issues</h1>
-					<p class="text-muted-foreground text-sm">
-						Track and resolve issues in your infrastructure.
-					</p>
-				</div>
-			</div>
-			<div class="grid grid-cols-3 gap-4">
-				<Card>
-					<CardHeader><CardDescription>Open findings</CardDescription></CardHeader>
-					<CardContent class="pt-2"
-						><div class="flex items-center gap-2">
-							<span class="text-4xl font-bold">12</span><Badge variant="destructive">+3 today</Badge
-							>
-						</div></CardContent
-					>
-				</Card>
-				<Card>
-					<CardHeader><CardDescription>Blocking issues</CardDescription></CardHeader>
-					<CardContent class="pt-2"
-						><div class="flex items-center gap-2">
-							<span class="text-4xl font-bold">4</span><Badge variant="destructive"
-								>2 critical</Badge
-							>
-						</div></CardContent
-					>
-				</Card>
-				<Card>
-					<CardHeader><CardDescription>Affected repos</CardDescription></CardHeader>
-					<CardContent class="pt-2"
-						><div class="flex items-center gap-2">
-							<span class="text-4xl font-bold">7</span><Badge variant="secondary"
-								>stable spread</Badge
-							>
-						</div></CardContent
-					>
-				</Card>
-			</div>
-			<Card>
-				<CardHeader><CardTitle>Issues</CardTitle></CardHeader>
-				<CardContent>
-					<Table
-						columns={[
-							{ key: 'severity', label: 'Severity' },
-							{ key: 'title', label: 'Title' },
-							{ key: 'repo', label: 'Repository' },
-							{ key: 'status', label: 'Status' }
-						]}
-						data={[
-							{
-								severity: 'Critical',
-								title: 'Memory leak in worker',
-								repo: 'worker-service',
-								status: 'Open'
-							},
-							{
-								severity: 'High',
-								title: 'API rate limit exceeded',
-								repo: 'api-gateway',
-								status: 'Open'
-							},
-							{
-								severity: 'Medium',
-								title: 'Slow query detected',
-								repo: 'database',
-								status: 'In Progress'
-							}
-						]}
-					/>
-				</CardContent>
-			</Card>
-		</div>
-	</Screen>
-</Story>
-
-<Story name="Run">
-	<Screen {sidebarItems} activeNav="Runs" user={{ name: 'User' }}>
-		<div class="space-y-6 p-8">
-			<div class="flex items-center justify-between">
-				<div class="space-y-2">
-					<div class="text-muted-foreground flex items-center gap-2 text-sm">
-						<span>Runs</span><span>/</span><span class="text-foreground">Run detail</span>
-					</div>
-					<div class="flex items-center gap-3">
-						<h1 class="text-[30px] font-bold">Run 01JX4W2R9V8N6M3K1T5P7Q4A2B</h1>
-						<Badge>Running</Badge>
-					</div>
-					<p class="text-muted-foreground text-sm">
-						Manual execution started by lucasew for the default workspace target. This run is shown
-						independently from any repository binding.
-					</p>
-				</div>
-				<div class="flex gap-3">
-					<Button variant="outline">Copy ID</Button>
-					<Button variant="outline">Rerun</Button>
-					<Button class="bg-blue-600 hover:bg-blue-700">Open shell</Button>
-				</div>
-			</div>
-			<Tabs tabs={[{ label: 'Overview', active: true }, { label: 'Events' }, { label: 'Logs' }]} />
-			<div class="grid grid-cols-3 gap-6">
-				<Card class="shadow-sm"
-					><CardHeader><CardTitle>Run Summary</CardTitle></CardHeader><CardContent class="space-y-2"
-						><div class="flex justify-between text-sm">
-							<span>Status</span><Badge>Running</Badge>
-						</div>
-						<div class="flex justify-between text-sm"><span>Duration</span><span>2m 34s</span></div>
-						<div class="flex justify-between text-sm">
-							<span>Worker</span><span>worker-sfo-03</span>
-						</div></CardContent
-					></Card
-				>
-				<Card class="shadow-sm"
-					><CardHeader><CardTitle>Stages</CardTitle></CardHeader><CardContent class="space-y-3"
-						><div class="space-y-2">
-							<div class="flex justify-between text-sm">
-								<span>Setup</span><span>Completed</span>
+				{#each [
+					{
+						name: 'worker-eu-central-1',
+						status: 'Waiting',
+						copy: 'Connected 19 minutes ago. This worker does not publish hardware specs.',
+						actions: ['Open shell', 'View state']
+					},
+					{
+						name: 'worker-us-east-gpu',
+						status: 'Busy',
+						copy: 'Connected 4 minutes ago. This worker reports 2 jobs with 1 more waiting in queue.',
+						actions: ['Drain', 'Queue details']
+					}
+				] as worker}
+					<Card>
+						{#snippet header()}
+							<div class="flex items-start justify-between gap-3">
+								<div class="space-y-1">
+									<h3 class="text-lg font-semibold text-[var(--ciborg-text)]">{worker.name}</h3>
+									<p class="text-sm text-[var(--ciborg-text-muted)]">{worker.copy}</p>
+								</div>
+								<Badge label={worker.status} variant={worker.status === 'Busy' ? 'default' : 'neutral'} />
 							</div>
-							<Progress value={100} />
-						</div>
-						<div class="space-y-2">
-							<div class="flex justify-between text-sm"><span>Build</span><span>Running</span></div>
-							<Progress value={65} />
-						</div>
-						<div class="space-y-2">
-							<div class="flex justify-between text-sm">
-								<span>Deploy</span><span>Pending</span>
+						{/snippet}
+						{#snippet footer()}
+							<div class="flex gap-3">
+								<Button variant="outline">{worker.actions[0]}</Button>
+								<Button variant={worker.status === 'Busy' ? 'ghost' : 'default'}>{worker.actions[1]}</Button>
 							</div>
-							<Progress value={0} />
-						</div></CardContent
-					></Card
-				>
-				<Card class="shadow-sm"
-					><CardHeader><CardTitle>Events</CardTitle></CardHeader><CardContent class="space-y-2"
-						><div class="text-muted-foreground text-sm">No events yet</div></CardContent
-					></Card
-				>
+						{/snippet}
+					</Card>
+				{/each}
 			</div>
-		</div>
-	</Screen>
-</Story>
-
-<Story name="InteractiveShell">
-	<div class="flex h-screen flex-col bg-black">
-		<div class="flex items-center justify-between border-b border-neutral-800 px-4 py-3">
-			<div class="font-mono text-sm text-neutral-400">Run: 01JX4W2R9V8N6M3K1T5P7Q4A2B</div>
-			<div class="flex items-center gap-3">
-				<Badge variant="outline">Connected</Badge>
-				<Badge variant="secondary">Running</Badge>
-				<Button variant="ghost" size="sm">Close</Button>
-			</div>
-		</div>
-		<div class="flex-1 overflow-auto p-4 font-mono text-sm">
-			<div class="text-neutral-400">
-				worker-sfo-03@run-01JX4W2R9V8N6M3K1T5P7Q4A2B:~$ env | grep CIBORG
-			</div>
-			<div class="text-neutral-500">CIBORG_RUN_ID=01JX4W2R9V8N6M3K1T5P7Q4A2B</div>
-			<div class="text-neutral-500">CIBORG_SESSION_ID=sh_01J_shell</div>
-			<div class="mt-2 text-neutral-400">
-				worker-sfo-03@run-01JX4W2R9V8N6M3K1T5P7Q4A2B:~$ tail -f /workspace/.ciborg/stdout.log
-			</div>
-			<div class="text-neutral-500">[14:23:11] hydrate-inputs completed</div>
-			<div class="text-neutral-400">
-				worker-sfo-03@run-01JX4W2R9V8N6M3K1T5P7Q4A2B:~$ <span class="animate-pulse">_</span>
-			</div>
-		</div>
-		<div
-			class="flex items-center justify-center gap-3 rounded-xl border border-neutral-700 bg-neutral-900 p-3"
-		>
-			<Button variant="ghost" size="sm">Ctrl</Button>
-			<Button variant="ghost" size="sm">Alt</Button>
-			<Button variant="ghost" size="sm">Shift</Button>
-			<Button variant="ghost" size="sm">Tab</Button>
-			<Button variant="ghost" size="sm">Esc</Button>
-			<Button variant="ghost" size="sm">▼</Button>
-		</div>
-	</div>
-</Story>
-
-<Story name="AgentSettings">
-	<Screen {sidebarItems} activeNav="Workers" user={{ name: 'User' }}>
-		<div class="space-y-6">
-			<div class="flex items-center justify-between">
-				<div class="space-y-1">
-					<h1 class="text-3xl font-bold">Agent settings</h1>
-					<p class="text-muted-foreground max-w-xl text-sm">
-						Tune execution defaults, routing behavior, and reusable presets from the standardized
-						control surface.
-					</p>
+			<Card>
+				{#snippet header()}
+					<div class="space-y-1">
+						<h2 class="text-lg font-semibold text-[var(--ciborg-text)]">Recent session changes</h2>
+						<p class="text-sm text-[var(--ciborg-text-muted)]">
+							Connection and drain events for ephemeral workers, without inferred hardware specs.
+						</p>
+					</div>
+				{/snippet}
+				<div class="space-y-3">
+					{#each [
+						{ title: 'worker-eu-central-1 connected from fra1', state: 'Waiting' },
+						{ title: 'worker-us-east-gpu picked up 2 queued jobs', state: 'Busy' },
+						{ title: 'worker-ap-south-1 drained and disconnected', state: 'Ended' }
+					] as event}
+						<div class="flex items-center justify-between rounded-lg bg-[var(--ciborg-panel-strong)] px-4 py-3">
+							<span class="text-sm text-[var(--ciborg-text-soft)]">{event.title}</span>
+							<Badge
+								label={event.state}
+								variant={event.state === 'Busy' ? 'default' : event.state === 'Ended' ? 'danger' : 'neutral'}
+							/>
+						</div>
+					{/each}
 				</div>
-				<div class="flex gap-3">
-					<Button variant="outline">Reset defaults</Button>
-					<Button>Save changes</Button>
-				</div>
-			</div>
-			<Card>
-				<CardHeader><CardTitle>Execution defaults</CardTitle></CardHeader>
-				<CardContent class="space-y-4">
-					<div class="grid grid-cols-2 gap-4">
-						<div class="space-y-2">
-							<label class="text-sm font-medium">Default timeout</label>
-							<Input placeholder="300" />
-						</div>
-						<div class="space-y-2">
-							<label class="text-sm font-medium">Max retries</label>
-							<Input placeholder="3" />
-						</div>
-					</div>
-					<div class="space-y-2">
-						<label class="text-sm font-medium">Environment variables</label>
-						<Input placeholder="KEY=value" />
-					</div>
-				</CardContent>
-			</Card>
-			<Card>
-				<CardHeader><CardTitle>Routing behavior</CardTitle></CardHeader>
-				<CardContent class="space-y-4">
-					<div class="flex items-center justify-between">
-						<div>
-							<p class="text-sm font-medium">Auto-scaling</p>
-							<p class="text-muted-foreground text-xs">
-								Automatically scale workers based on queue depth
-							</p>
-						</div>
-						<Switch checked />
-					</div>
-					<div class="flex items-center justify-between">
-						<div>
-							<p class="text-sm font-medium">Priority routing</p>
-							<p class="text-muted-foreground text-xs">
-								Route high-priority jobs to dedicated workers
-							</p>
-						</div>
-						<Switch />
-					</div>
-				</CardContent>
-			</Card>
-			<Card>
-				<CardHeader><CardTitle>Presets</CardTitle></CardHeader>
-				<CardContent>
-					<Table
-						columns={[
-							{ key: 'name', label: 'Name' },
-							{ key: 'type', label: 'Type' },
-							{ key: 'workers', label: 'Workers' }
-						]}
-						data={[
-							{ name: 'Default', type: 'Standard', workers: 'All' },
-							{ name: 'High Priority', type: 'Priority', workers: 'dedicated-1, dedicated-2' },
-							{ name: 'GPU', type: 'GPU', workers: 'gpu-1, gpu-2' }
-						]}
-					/>
-				</CardContent>
 			</Card>
 		</div>
 	</Screen>

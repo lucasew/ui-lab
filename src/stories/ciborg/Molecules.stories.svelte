@@ -1,15 +1,11 @@
 <script module lang="ts">
 	import { defineMeta } from '@storybook/addon-svelte-csf';
 	import '../../routes/layout.css';
-	import {
-		Card,
-		CardHeader,
-		CardTitle,
-		CardDescription,
-		CardContent,
-		CardFooter
-	} from '$lib/shadcn/ui/card';
+	import './ciborg.css';
+	import Card from './Card.svelte';
 	import Sidebar from './Sidebar.svelte';
+	import Button from './Button.svelte';
+	import Badge from './Badge.svelte';
 
 	const { Story } = defineMeta({
 		title: 'Ciborg/Molecules',
@@ -20,25 +16,53 @@
 	});
 </script>
 
-<Story name="Card">
-	<div class="p-4">
+<Story name="Metric Card">
+	<div class="ciborg-theme w-[360px] rounded-2xl bg-[var(--ciborg-canvas)] p-6">
 		<Card>
-			<CardHeader>
-				<CardTitle>Card Title</CardTitle>
-				<CardDescription>Card description goes here.</CardDescription>
-			</CardHeader>
-			<CardContent>
-				<p class="text-muted-foreground text-sm">Card content goes here.</p>
-			</CardContent>
-			<CardFooter>
-				<p class="text-muted-foreground text-xs">Card footer</p>
-			</CardFooter>
+			{#snippet header()}
+				<div class="space-y-1">
+					<div class="text-sm text-[var(--ciborg-text-muted)]">Connected workers</div>
+					<div class="text-3xl font-semibold text-[var(--ciborg-text)]">8</div>
+				</div>
+			{/snippet}
+			<div class="flex items-center justify-between">
+				<p class="text-sm text-[var(--ciborg-text-soft)]">Across all regions and ephemeral pools.</p>
+				<Badge label="Healthy" variant="success" />
+			</div>
+		</Card>
+	</div>
+</Story>
+
+<Story name="Worker Card">
+	<div class="ciborg-theme w-[480px] rounded-2xl bg-[var(--ciborg-canvas)] p-6">
+		<Card>
+			{#snippet header()}
+				<div class="flex items-start justify-between gap-4">
+					<div class="space-y-1">
+						<h3 class="text-lg font-semibold text-[var(--ciborg-text)]">worker-eu-central-1</h3>
+						<p class="text-sm text-[var(--ciborg-text-muted)]">
+							Connected 19 minutes ago. This worker does not publish hardware specs.
+						</p>
+					</div>
+					<Badge label="Waiting" variant="neutral" />
+				</div>
+			{/snippet}
+			<div class="space-y-2">
+				<p class="text-sm text-[var(--ciborg-text-soft)]">Status: idle until requested by the next claimed run.</p>
+				<p class="text-sm text-[var(--ciborg-text-muted)]">Queue: 0 queued, 3 pending jobs in the last 12h.</p>
+			</div>
+			{#snippet footer()}
+				<div class="flex gap-3">
+					<Button variant="outline">Open shell</Button>
+					<Button>View state</Button>
+				</div>
+			{/snippet}
 		</Card>
 	</div>
 </Story>
 
 <Story name="Sidebar">
-	<div class="h-96">
+	<div class="ciborg-theme h-[680px] w-[256px] overflow-hidden rounded-2xl bg-[var(--ciborg-canvas)]">
 		<Sidebar
 			items={[
 				{
@@ -61,14 +85,9 @@
 					label: 'Workers',
 					shortcut: '⌘4',
 					icon: 'M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z'
-				},
-				{
-					label: 'Tokens',
-					shortcut: '⌘5',
-					icon: 'M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z'
 				}
 			]}
-			user={{ name: 'User' }}
+			user={{ name: 'John Doe' }}
 		/>
 	</div>
 </Story>

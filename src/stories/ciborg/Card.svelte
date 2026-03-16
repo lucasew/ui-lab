@@ -11,19 +11,19 @@
 	let { children, header, footer, class: className = '' }: Props = $props();
 </script>
 
-<div class="rounded-lg border border-[#e5e5e5] bg-[#fafafa] shadow-sm {className}">
+<div class="ciborg-surface rounded-xl {className}">
 	{#if header}
-		<div class="gap-2 p-6">
+		<div class="gap-2 p-4 md:p-6">
 			{@render header()}
 		</div>
 	{/if}
 	{#if children}
-		<div class="gap-2 p-6">
+		<div class="gap-2 p-4 md:p-6">
 			{@render children()}
 		</div>
 	{/if}
 	{#if footer}
-		<div class="gap-2 p-6">
+		<div class="gap-2 p-4 md:p-6">
 			{@render footer()}
 		</div>
 	{/if}

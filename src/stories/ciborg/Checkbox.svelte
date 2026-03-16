@@ -21,15 +21,15 @@
 >
 	<input type="checkbox" {disabled} bind:checked class="sr-only" />
 	<div
-		class="flex h-4 w-4 items-center justify-center rounded border border-[#e5e5e5] {checked
-			? 'border-[#171717] bg-[#171717]'
-			: 'bg-[#fafafa]'}"
+		class="flex h-4 w-4 items-center justify-center rounded border border-[var(--ciborg-border-strong)] {checked
+			? 'border-[var(--ciborg-primary)] bg-[var(--ciborg-primary)]'
+			: 'bg-[var(--ciborg-panel)]'}"
 	>
 		{#if checked}
-			<svg class="h-3 w-3 text-[#fafafa]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+			<svg class="h-3 w-3 text-[var(--ciborg-text)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
 			</svg>
 		{/if}
 	</div>
-	<span class="text-sm font-medium text-[#0a0a0a]">{label}</span>
+	<span class="text-sm font-medium text-[var(--ciborg-text-soft)]">{label}</span>
 </label>

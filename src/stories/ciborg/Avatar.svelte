@@ -28,7 +28,7 @@
 	<img src={image} alt={name} class="rounded-full object-cover {sizes[size]} {className}" />
 {:else}
 	<div
-		class="flex items-center justify-center rounded-full bg-[#f5f5f5] font-medium text-[#171717] {sizes[
+		class="flex items-center justify-center rounded-full bg-[var(--ciborg-panel-muted)] font-medium text-[var(--ciborg-text)] {sizes[
 			size
 		]} {className}"
 	>

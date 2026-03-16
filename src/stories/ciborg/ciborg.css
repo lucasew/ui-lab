@@ -1,0 +1,30 @@
+.ciborg-theme {
+	--ciborg-canvas: #020617;
+	--ciborg-sidebar: #0b1220;
+	--ciborg-panel: #111a2e;
+	--ciborg-panel-strong: #0f172a;
+	--ciborg-panel-muted: #16223a;
+	--ciborg-border: rgba(255, 255, 255, 0.1);
+	--ciborg-border-strong: rgba(148, 163, 184, 0.28);
+	--ciborg-text: #f8fafc;
+	--ciborg-text-soft: #cbd5e1;
+	--ciborg-text-muted: #94a3b8;
+	--ciborg-primary: #2563eb;
+	--ciborg-primary-hover: #1d4ed8;
+	--ciborg-success: #22c55e;
+	--ciborg-warning: #f59e0b;
+	--ciborg-danger: #ef4444;
+	--ciborg-shadow: 0 20px 40px rgba(2, 6, 23, 0.28);
+	color: var(--ciborg-text);
+}
+
+.ciborg-theme .ciborg-surface {
+	background: var(--ciborg-panel);
+	border: 1px solid var(--ciborg-border);
+	box-shadow: var(--ciborg-shadow);
+}
+
+.ciborg-theme .ciborg-section {
+	background: var(--ciborg-panel-strong);
+	border: 1px solid var(--ciborg-border);
+}

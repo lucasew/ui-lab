@@ -1,8 +1,9 @@
 <script lang="ts">
 	interface Props {
 		icon?: string;
-		variant?: 'default' | 'secondary' | 'destructive' | 'outline' | 'ghost';
+		variant?: 'default' | 'outline' | 'ghost';
 		size?: 'default' | 'large';
+		ariaLabel?: string;
 		disabled?: boolean;
 		class?: string;
 	}
@@ -11,16 +12,18 @@
 		icon = 'plus',
 		variant = 'default',
 		size = 'default',
+		ariaLabel = 'Icon button',
 		disabled = false,
 		class: className = ''
 	}: Props = $props();
 
 	const variants = {
-		default: 'bg-[#171717] text-white hover:bg-[#404040]',
-		secondary: 'bg-[#f5f5f5] text-[#171717] hover:bg-[#e5e5e5]',
-		destructive: 'bg-[#e7000b] text-white hover:bg-[#cc000a]',
-		outline: 'border border-[#e5e5e5] bg-transparent text-[#171717] hover:bg-[#f5f5f5]',
-		ghost: 'bg-transparent text-[#171717] hover:bg-[#f5f5f5]'
+		default:
+			'border border-[var(--ciborg-primary)] bg-[var(--ciborg-primary)] text-[var(--ciborg-text)] hover:border-[var(--ciborg-primary-hover)] hover:bg-[var(--ciborg-primary-hover)]',
+		outline:
+			'border border-[var(--ciborg-border-strong)] bg-transparent text-[var(--ciborg-text)] hover:bg-[var(--ciborg-panel-muted)]',
+		ghost:
+			'border border-transparent bg-transparent text-[var(--ciborg-text-soft)] hover:bg-[var(--ciborg-panel-muted)] hover:text-[var(--ciborg-text)]'
 	};
 
 	const sizes = {
@@ -30,7 +33,8 @@
 </script>
 
 <button
-	class="inline-flex items-center justify-center rounded-full transition-colors focus-visible:ring-2 focus-visible:ring-[#171717] focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 {variants[
+	aria-label={ariaLabel}
+	class="inline-flex items-center justify-center rounded-full transition-colors focus-visible:ring-2 focus-visible:ring-[var(--ciborg-primary)] focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 {variants[
 		variant
 	]} {sizes[size]} {className}"
 	{disabled}

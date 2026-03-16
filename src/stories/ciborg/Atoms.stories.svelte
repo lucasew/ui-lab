@@ -1,23 +1,15 @@
 <script module lang="ts">
 	import { defineMeta } from '@storybook/addon-svelte-csf';
 	import '../../routes/layout.css';
-	import { Button } from '$lib/shadcn/ui/button';
-	import { Badge } from '$lib/shadcn/ui/badge';
-	import { Input } from '$lib/shadcn/ui/input';
-	import { Switch } from '$lib/shadcn/ui/switch';
-	import { Checkbox } from '$lib/shadcn/ui/checkbox';
-	import {
-		Card,
-		CardHeader,
-		CardTitle,
-		CardDescription,
-		CardContent,
-		CardFooter
-	} from '$lib/shadcn/ui/card';
+	import './ciborg.css';
+	import Button from './Button.svelte';
+	import Badge from './Badge.svelte';
+	import Input from './Input.svelte';
+	import Switch from './Switch.svelte';
+	import Checkbox from './Checkbox.svelte';
 	import Tabs from './Tabs.svelte';
 	import Avatar from './Avatar.svelte';
 	import Select from './Select.svelte';
-	import Dialog from './Dialog.svelte';
 	import Progress from './Progress.svelte';
 	import Pagination from './Pagination.svelte';
 	import Table from './Table.svelte';
@@ -31,121 +23,86 @@
 	});
 </script>
 
-<Story name="Button">
-	<div class="flex flex-wrap gap-3 p-4">
-		<Button variant="default">Default</Button>
-		<Button variant="secondary">Secondary</Button>
-		<Button variant="destructive">Destructive</Button>
-		<Button variant="outline">Outline</Button>
-		<Button variant="ghost">Ghost</Button>
+<Story name="Buttons">
+	<div class="ciborg-theme flex flex-wrap gap-3 rounded-2xl bg-[var(--ciborg-canvas)] p-6">
+		<Button>Primary action</Button>
+		<Button variant="outline">Secondary action</Button>
+		<Button variant="ghost">Ghost action</Button>
+		<Button variant="danger">Destructive action</Button>
+		<Button size="large">Connect worker</Button>
 	</div>
 </Story>
 
-<Story name="Button Large">
-	<div class="flex flex-wrap gap-3 p-4">
-		<Button size="lg">Large Default</Button>
-		<Button size="lg" variant="secondary">Large Secondary</Button>
+<Story name="Badges">
+	<div class="ciborg-theme flex flex-wrap gap-3 rounded-2xl bg-[var(--ciborg-canvas)] p-6">
+		<Badge label="Running" />
+		<Badge label="Queued" variant="warning" />
+		<Badge label="Healthy" variant="success" />
+		<Badge label="Failed" variant="danger" />
+		<Badge label="Detached" variant="outline" />
 	</div>
 </Story>
 
-<Story name="Badge">
-	<div class="flex flex-wrap gap-3 p-4">
-		<Badge>Default</Badge>
-		<Badge variant="secondary">Secondary</Badge>
-		<Badge variant="destructive">Destructive</Badge>
-		<Badge variant="outline">Outline</Badge>
-	</div>
-</Story>
-
-<Story name="Input">
-	<div class="w-72 p-4">
-		<Input placeholder="Placeholder" />
-	</div>
-</Story>
-
-<Story name="Input Filled">
-	<div class="w-72 p-4">
-		<Input placeholder="Placeholder" class="bg-muted" />
-	</div>
-</Story>
-
-<Story name="Switch">
-	<div class="flex flex-col gap-3 p-4">
-		<div class="flex items-center gap-2">
-			<Switch />
-			<span class="text-sm">Switch unchecked</span>
-		</div>
-		<div class="flex items-center gap-2">
-			<Switch checked />
-			<span class="text-sm">Switch checked</span>
-		</div>
-	</div>
-</Story>
-
-<Story name="Checkbox">
-	<div class="flex flex-col gap-3 p-4">
-		<div class="flex items-center gap-2">
-			<Checkbox />
-			<span class="text-sm">Unchecked</span>
-		</div>
-		<div class="flex items-center gap-2">
-			<Checkbox checked />
-			<span class="text-sm">Checked</span>
-		</div>
-	</div>
-</Story>
-
-<Story name="Tabs">
-	<div class="p-4">
-		<Tabs tabs={[{ label: 'Overview', active: true }, { label: 'Events' }, { label: 'Logs' }]} />
-	</div>
-</Story>
-
-<Story name="Avatar">
-	<div class="flex items-center gap-4 p-4">
-		<Avatar name="John Doe" size="sm" />
-		<Avatar name="Jane Doe" size="md" />
-		<Avatar name="Bob Smith" size="lg" />
-	</div>
-</Story>
-
-<Story name="Select">
-	<div class="w-72 p-4">
+<Story name="Inputs">
+	<div class="ciborg-theme grid w-[640px] gap-4 rounded-2xl bg-[var(--ciborg-canvas)] p-6 md:grid-cols-2">
+		<Input label="Filter recent runs" placeholder="run id, trigger, worker..." />
+		<Input label="Workspace" placeholder="default workspace" variant="subtle" />
 		<Select
-			label="Category"
-			placeholder="Select category"
-			options={['Option 1', 'Option 2', 'Option 3']}
+			label="Environment"
+			placeholder="Select environment"
+			options={['Production', 'Staging', 'Development']}
 		/>
 	</div>
 </Story>
 
-<Story name="Progress">
-	<div class="w-64 space-y-4 p-4">
-		<Progress value={25} />
-		<Progress value={50} />
-		<Progress value={75} />
-		<Progress value={100} />
+<Story name="Controls">
+	<div class="ciborg-theme flex flex-col gap-4 rounded-2xl bg-[var(--ciborg-canvas)] p-6">
+		<Switch label="Auto dispatch enabled" checked />
+		<Switch label="Drain worker on idle" />
+		<Checkbox label="Require explicit approval" checked />
+		<Checkbox label="Keep chat detached by default" />
 	</div>
 </Story>
 
-<Story name="Pagination">
-	<div class="p-4">
-		<Pagination page={1} total={10} />
+<Story name="Navigation">
+	<div class="ciborg-theme flex flex-col gap-4 rounded-2xl bg-[var(--ciborg-canvas)] p-6">
+		<Tabs
+			tabs={[
+				{ label: 'Overview', active: true },
+				{ label: 'Events' },
+				{ label: 'Logs' }
+			]}
+		/>
+		<Pagination page={2} total={8} />
 	</div>
 </Story>
 
-<Story name="Table">
-	<div class="p-4">
+<Story name="Status">
+	<div class="ciborg-theme flex w-[320px] flex-col gap-4 rounded-2xl bg-[var(--ciborg-canvas)] p-6">
+		<div class="space-y-2">
+			<div class="text-sm text-[var(--ciborg-text-soft)]">Queue utilization</div>
+			<Progress value={68} />
+		</div>
+		<div class="flex items-center gap-4">
+			<Avatar name="John Doe" size="sm" />
+			<Avatar name="Jane Doe" size="md" />
+			<Avatar name="Ops Bot" size="lg" />
+		</div>
+	</div>
+</Story>
+
+<Story name="Data Table">
+	<div class="ciborg-theme w-[720px] rounded-2xl bg-[var(--ciborg-canvas)] p-6">
 		<Table
 			columns={[
-				{ key: 'name', label: 'Name' },
+				{ key: 'stage', label: 'Stage' },
 				{ key: 'status', label: 'Status' },
-				{ key: 'role', label: 'Role' }
+				{ key: 'duration', label: 'Duration' }
 			]}
 			data={[
-				{ name: 'John Doe', status: 'Active', role: 'Admin' },
-				{ name: 'Jane Smith', status: 'Inactive', role: 'User' },
-				{ name: 'Bob Wilson', status: 'Active', role: 'Editor' }
+				{ stage: 'program-context', status: 'Done', duration: '11s' },
+				{ stage: 'hydrate-inputs', status: 'Running', duration: '2m 4s' },
+				{ stage: 'publish-results', status: 'Queued', duration: 'Pending' }
 			]}
 		/>
 	</div>
