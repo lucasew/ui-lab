@@ -16,6 +16,8 @@
 	import Table from './Table.svelte';
 	import Progress from './Progress.svelte';
 	import Avatar from './Avatar.svelte';
+	import { Switch } from '$lib/shadcn/ui/switch';
+	import { Input } from '$lib/shadcn/ui/input';
 
 	const sidebarItems = [
 		{
@@ -371,6 +373,188 @@
 								repo: 'database',
 								status: 'In Progress'
 							}
+						]}
+					/>
+				</CardContent>
+			</Card>
+		</div>
+	</Screen>
+</Story>
+
+<Story name="Run">
+	<Screen {sidebarItems} activeNav="Runs" user={{ name: 'User' }}>
+		<div class="space-y-6">
+			<div class="flex items-center justify-between">
+				<div class="space-y-2">
+					<div class="text-muted-foreground flex items-center gap-2 text-sm">
+						<span>Runs</span><span>/</span><span class="text-foreground">Run detail</span>
+					</div>
+					<div class="flex items-center gap-3">
+						<h1 class="text-3xl font-bold">Run 01JX4W2R9V8N6M3K1T5P7Q4A2B</h1>
+						<Badge>Running</Badge>
+					</div>
+					<p class="text-muted-foreground text-sm">
+						Manual execution started by lucasew for the default workspace target. This run is shown
+						independently from any repository binding.
+					</p>
+				</div>
+				<div class="flex gap-3">
+					<Button variant="outline">Copy ID</Button>
+					<Button variant="outline">Rerun</Button>
+					<Button>Open shell</Button>
+				</div>
+			</div>
+			<Tabs tabs={[{ label: 'Overview', active: true }, { label: 'Events' }, { label: 'Logs' }]} />
+			<div class="grid grid-cols-3 gap-4">
+				<Card
+					><CardHeader><CardTitle>Run Summary</CardTitle></CardHeader><CardContent class="space-y-2"
+						><div class="flex justify-between text-sm">
+							<span>Status</span><Badge>Running</Badge>
+						</div>
+						<div class="flex justify-between text-sm"><span>Duration</span><span>2m 34s</span></div>
+						<div class="flex justify-between text-sm">
+							<span>Worker</span><span>worker-sfo-03</span>
+						</div></CardContent
+					></Card
+				>
+				<Card
+					><CardHeader><CardTitle>Stages</CardTitle></CardHeader><CardContent class="space-y-3"
+						><div class="space-y-2">
+							<div class="flex justify-between text-sm">
+								<span>Setup</span><span>Completed</span>
+							</div>
+							<Progress value={100} />
+						</div>
+						<div class="space-y-2">
+							<div class="flex justify-between text-sm"><span>Build</span><span>Running</span></div>
+							<Progress value={65} />
+						</div>
+						<div class="space-y-2">
+							<div class="flex justify-between text-sm">
+								<span>Deploy</span><span>Pending</span>
+							</div>
+							<Progress value={0} />
+						</div></CardContent
+					></Card
+				>
+				<Card
+					><CardHeader><CardTitle>Events</CardTitle></CardHeader><CardContent class="space-y-2"
+						><div class="text-muted-foreground text-sm">No events yet</div></CardContent
+					></Card
+				>
+			</div>
+		</div>
+	</Screen>
+</Story>
+
+<Story name="InteractiveShell">
+	<div class="flex h-screen flex-col bg-black">
+		<div class="flex items-center justify-between border-b border-neutral-800 px-4 py-3">
+			<div class="font-mono text-sm text-neutral-400">Run: 01JX4W2R9V8N6M3K1T5P7Q4A2B</div>
+			<div class="flex items-center gap-3">
+				<Badge variant="outline">Connected</Badge>
+				<Badge variant="secondary">Running</Badge>
+				<Button variant="ghost" size="sm">Close</Button>
+			</div>
+		</div>
+		<div class="flex-1 overflow-auto p-4 font-mono text-sm">
+			<div class="text-neutral-400">
+				worker-sfo-03@run-01JX4W2R9V8N6M3K1T5P7Q4A2B:~$ env | grep CIBORG
+			</div>
+			<div class="text-neutral-500">CIBORG_RUN_ID=01JX4W2R9V8N6M3K1T5P7Q4A2B</div>
+			<div class="text-neutral-500">CIBORG_SESSION_ID=sh_01J_shell</div>
+			<div class="mt-2 text-neutral-400">
+				worker-sfo-03@run-01JX4W2R9V8N6M3K1T5P7Q4A2B:~$ tail -f /workspace/.ciborg/stdout.log
+			</div>
+			<div class="text-neutral-500">[14:23:11] hydrate-inputs completed</div>
+			<div class="text-neutral-400">
+				worker-sfo-03@run-01JX4W2R9V8N6M3K1T5P7Q4A2B:~$ <span class="animate-pulse">_</span>
+			</div>
+		</div>
+		<div
+			class="flex items-center justify-center gap-3 rounded-xl border border-neutral-700 bg-neutral-900 p-3"
+		>
+			<Button variant="ghost" size="sm">Ctrl</Button>
+			<Button variant="ghost" size="sm">Alt</Button>
+			<Button variant="ghost" size="sm">Shift</Button>
+			<Button variant="ghost" size="sm">Tab</Button>
+			<Button variant="ghost" size="sm">Esc</Button>
+			<Button variant="ghost" size="sm">▼</Button>
+		</div>
+	</div>
+</Story>
+
+<Story name="AgentSettings">
+	<Screen {sidebarItems} activeNav="Workers" user={{ name: 'User' }}>
+		<div class="space-y-6">
+			<div class="flex items-center justify-between">
+				<div class="space-y-1">
+					<h1 class="text-3xl font-bold">Agent settings</h1>
+					<p class="text-muted-foreground max-w-xl text-sm">
+						Tune execution defaults, routing behavior, and reusable presets from the standardized
+						control surface.
+					</p>
+				</div>
+				<div class="flex gap-3">
+					<Button variant="outline">Reset defaults</Button>
+					<Button>Save changes</Button>
+				</div>
+			</div>
+			<Card>
+				<CardHeader><CardTitle>Execution defaults</CardTitle></CardHeader>
+				<CardContent class="space-y-4">
+					<div class="grid grid-cols-2 gap-4">
+						<div class="space-y-2">
+							<label class="text-sm font-medium">Default timeout</label>
+							<Input placeholder="300" />
+						</div>
+						<div class="space-y-2">
+							<label class="text-sm font-medium">Max retries</label>
+							<Input placeholder="3" />
+						</div>
+					</div>
+					<div class="space-y-2">
+						<label class="text-sm font-medium">Environment variables</label>
+						<Input placeholder="KEY=value" />
+					</div>
+				</CardContent>
+			</Card>
+			<Card>
+				<CardHeader><CardTitle>Routing behavior</CardTitle></CardHeader>
+				<CardContent class="space-y-4">
+					<div class="flex items-center justify-between">
+						<div>
+							<p class="text-sm font-medium">Auto-scaling</p>
+							<p class="text-muted-foreground text-xs">
+								Automatically scale workers based on queue depth
+							</p>
+						</div>
+						<Switch checked />
+					</div>
+					<div class="flex items-center justify-between">
+						<div>
+							<p class="text-sm font-medium">Priority routing</p>
+							<p class="text-muted-foreground text-xs">
+								Route high-priority jobs to dedicated workers
+							</p>
+						</div>
+						<Switch />
+					</div>
+				</CardContent>
+			</Card>
+			<Card>
+				<CardHeader><CardTitle>Presets</CardTitle></CardHeader>
+				<CardContent>
+					<Table
+						columns={[
+							{ key: 'name', label: 'Name' },
+							{ key: 'type', label: 'Type' },
+							{ key: 'workers', label: 'Workers' }
+						]}
+						data={[
+							{ name: 'Default', type: 'Standard', workers: 'All' },
+							{ name: 'High Priority', type: 'Priority', workers: 'dedicated-1, dedicated-2' },
+							{ name: 'GPU', type: 'GPU', workers: 'gpu-1, gpu-2' }
 						]}
 					/>
 				</CardContent>
