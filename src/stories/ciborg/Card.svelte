@@ -1,4 +1,5 @@
 <script lang="ts">
+	import './ciborg.css';
 	import type { Snippet } from 'svelte';
 
 	interface Props {
@@ -11,7 +12,7 @@
 	let { children, header, footer, class: className = '' }: Props = $props();
 </script>
 
-<div class="ciborg-surface rounded-xl {className}">
+<div class="rounded-xl {className}">
 	{#if header}
 		<div class="gap-2 p-4 md:p-6">
 			{@render header()}

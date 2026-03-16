@@ -19,11 +19,11 @@
 
 	const variants = {
 		default:
-			'border border-[var(--ciborg-primary)] bg-[var(--ciborg-primary)] text-[var(--ciborg-text)] hover:border-[var(--ciborg-primary-hover)] hover:bg-[var(--ciborg-primary-hover)]',
+			'border border-[var(--primary)] bg-[var(--primary)] text-[var(--primary-foreground)] hover:opacity-90',
 		outline:
-			'border border-[var(--ciborg-border-strong)] bg-transparent text-[var(--ciborg-text)] hover:bg-[var(--ciborg-panel-muted)]',
+			'border border-[var(--input)] bg-transparent text-[var(--foreground)] hover:bg-[var(--accent)]',
 		ghost:
-			'border border-transparent bg-transparent text-[var(--ciborg-text-soft)] hover:bg-[var(--ciborg-panel-muted)] hover:text-[var(--ciborg-text)]'
+			'border border-transparent bg-transparent text-[var(--card-foreground)] hover:bg-[var(--accent)] hover:text-[var(--foreground)]'
 	};
 
 	const sizes = {
@@ -34,7 +34,7 @@
 
 <button
 	aria-label={ariaLabel}
-	class="inline-flex items-center justify-center rounded-full transition-colors focus-visible:ring-2 focus-visible:ring-[var(--ciborg-primary)] focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 {variants[
+	class="inline-flex items-center justify-center rounded-full transition-colors focus-visible:ring-2 focus-visible:ring-[var(--ring)] focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 {variants[
 		variant
 	]} {sizes[size]} {className}"
 	{disabled}

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import './ciborg.css';
 	import type { Snippet } from 'svelte';
 	import Sidebar from './Sidebar.svelte';
 	import { Button } from '$lib/shadcn/ui/button';
@@ -32,11 +33,11 @@
 </script>
 
 <div
-	class="ciborg-theme relative flex h-[980px] w-[1280px] overflow-hidden rounded-[18px] border border-[var(--ciborg-border)] bg-[var(--ciborg-canvas)] {className}"
+	class="relative flex h-[980px] w-[1280px] overflow-hidden rounded-[18px] border border-[var(--border)] bg-[var(--background)] text-[var(--foreground)] {className}"
 >
 	<Sidebar {user} items={sidebarItems} />
 	<main
-		class="flex flex-1 flex-col gap-6 bg-[var(--ciborg-canvas)] p-6"
+		class="flex flex-1 flex-col gap-6 bg-[var(--background)] p-6"
 		style="width: {mainWidth === '1024' ? '1024px' : '100%'};"
 	>
 		{@render children?.()}

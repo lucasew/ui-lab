@@ -13,12 +13,12 @@
 	let { columns = [], data = [], class: className = '' }: Props = $props();
 </script>
 
-<div class="w-full overflow-hidden rounded-xl border border-[var(--ciborg-border)] bg-[var(--ciborg-panel)] {className}">
+<div class="w-full overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--card)] {className}">
 	<table class="w-full">
-		<thead class="border-b border-[var(--ciborg-border)] bg-[var(--ciborg-panel-strong)]">
+		<thead class="border-b border-[var(--border)] bg-[var(--secondary)]">
 			<tr>
 				{#each columns as column}
-					<th class="px-4 py-3 text-left text-sm font-medium text-[var(--ciborg-text-soft)]">
+					<th class="px-4 py-3 text-left text-sm font-medium text-[var(--card-foreground)]">
 						{column.label}
 					</th>
 				{/each}
@@ -27,12 +27,12 @@
 		<tbody>
 			{#each data as row, i}
 				<tr
-					class="border-b border-[var(--ciborg-border)] {i % 2 === 0
-						? 'bg-[var(--ciborg-panel)]'
-						: 'bg-[var(--ciborg-panel-strong)]'}"
+					class="border-b border-[var(--border)] {i % 2 === 0
+						? 'bg-[var(--card)]'
+						: 'bg-[var(--secondary)]'}"
 				>
 					{#each columns as column}
-						<td class="px-4 py-3 text-sm text-[var(--ciborg-text)]">
+						<td class="px-4 py-3 text-sm text-[var(--foreground)]">
 							{row[column.key]}
 						</td>
 					{/each}

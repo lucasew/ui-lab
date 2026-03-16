@@ -24,7 +24,7 @@
 </script>
 
 <Story name="Buttons">
-	<div class="ciborg-theme flex flex-wrap gap-3 rounded-2xl bg-[var(--ciborg-canvas)] p-6">
+	<div class="flex flex-wrap gap-3 rounded-2xl bg-[var(--background)] p-6">
 		<Button>Primary action</Button>
 		<Button variant="outline">Secondary action</Button>
 		<Button variant="ghost">Ghost action</Button>
@@ -34,7 +34,7 @@
 </Story>
 
 <Story name="Badges">
-	<div class="ciborg-theme flex flex-wrap gap-3 rounded-2xl bg-[var(--ciborg-canvas)] p-6">
+	<div class="flex flex-wrap gap-3 rounded-2xl bg-[var(--background)] p-6">
 		<Badge label="Running" />
 		<Badge label="Queued" variant="warning" />
 		<Badge label="Healthy" variant="success" />
@@ -44,7 +44,7 @@
 </Story>
 
 <Story name="Inputs">
-	<div class="ciborg-theme grid w-[640px] gap-4 rounded-2xl bg-[var(--ciborg-canvas)] p-6 md:grid-cols-2">
+	<div class="grid w-[640px] gap-4 rounded-2xl bg-[var(--background)] p-6 md:grid-cols-2">
 		<Input label="Filter recent runs" placeholder="run id, trigger, worker..." />
 		<Input label="Workspace" placeholder="default workspace" variant="subtle" />
 		<Select
@@ -56,7 +56,7 @@
 </Story>
 
 <Story name="Controls">
-	<div class="ciborg-theme flex flex-col gap-4 rounded-2xl bg-[var(--ciborg-canvas)] p-6">
+	<div class="flex flex-col gap-4 rounded-2xl bg-[var(--background)] p-6">
 		<Switch label="Auto dispatch enabled" checked />
 		<Switch label="Drain worker on idle" />
 		<Checkbox label="Require explicit approval" checked />
@@ -65,7 +65,7 @@
 </Story>
 
 <Story name="Navigation">
-	<div class="ciborg-theme flex flex-col gap-4 rounded-2xl bg-[var(--ciborg-canvas)] p-6">
+	<div class="flex flex-col gap-4 rounded-2xl bg-[var(--background)] p-6">
 		<Tabs
 			tabs={[
 				{ label: 'Overview', active: true },
@@ -78,9 +78,9 @@
 </Story>
 
 <Story name="Status">
-	<div class="ciborg-theme flex w-[320px] flex-col gap-4 rounded-2xl bg-[var(--ciborg-canvas)] p-6">
+	<div class="flex w-[320px] flex-col gap-4 rounded-2xl bg-[var(--background)] p-6">
 		<div class="space-y-2">
-			<div class="text-sm text-[var(--ciborg-text-soft)]">Queue utilization</div>
+			<div class="text-sm text-[var(--card-foreground)]">Queue utilization</div>
 			<Progress value={68} />
 		</div>
 		<div class="flex items-center gap-4">
@@ -92,7 +92,7 @@
 </Story>
 
 <Story name="Data Table">
-	<div class="ciborg-theme w-[720px] rounded-2xl bg-[var(--ciborg-canvas)] p-6">
+	<div class="w-[720px] rounded-2xl bg-[var(--background)] p-6">
 		<Table
 			columns={[
 				{ key: 'stage', label: 'Stage' },

@@ -22,16 +22,16 @@
 
 <div class="flex flex-col gap-1.5 {className}">
 	{#if label}
-		<span class="text-sm font-medium text-[var(--ciborg-text-soft)]">{label}</span>
+		<span class="text-sm font-medium text-[var(--card-foreground)]">{label}</span>
 	{/if}
 	<input
 		{type}
 		{placeholder}
 		{disabled}
 		bind:value
-		class="w-full rounded-md border border-[var(--ciborg-border)] bg-[var(--ciborg-panel)] px-3 py-2.5 text-sm text-[var(--ciborg-text)] placeholder:text-[var(--ciborg-text-muted)] focus:ring-2 focus:ring-[var(--ciborg-primary)] focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 {variant ===
+		class="w-full rounded-md border border-[var(--border)] bg-[var(--card)] px-3 py-2.5 text-sm text-[var(--foreground)] placeholder:text-[var(--muted-foreground)] focus:ring-2 focus:ring-[var(--ring)] focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 {variant ===
 		'subtle'
-			? 'bg-[var(--ciborg-panel-strong)]'
+			? 'bg-[var(--secondary)]'
 			: ''}"
 	/>
 </div>

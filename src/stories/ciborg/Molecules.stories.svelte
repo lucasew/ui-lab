@@ -17,16 +17,16 @@
 </script>
 
 <Story name="Metric Card">
-	<div class="ciborg-theme w-[360px] rounded-2xl bg-[var(--ciborg-canvas)] p-6">
+	<div class="w-[360px] rounded-2xl bg-[var(--background)] p-6">
 		<Card>
 			{#snippet header()}
 				<div class="space-y-1">
-					<div class="text-sm text-[var(--ciborg-text-muted)]">Connected workers</div>
-					<div class="text-3xl font-semibold text-[var(--ciborg-text)]">8</div>
+					<div class="text-sm text-[var(--muted-foreground)]">Connected workers</div>
+					<div class="text-3xl font-semibold text-[var(--foreground)]">8</div>
 				</div>
 			{/snippet}
 			<div class="flex items-center justify-between">
-				<p class="text-sm text-[var(--ciborg-text-soft)]">Across all regions and ephemeral pools.</p>
+				<p class="text-sm text-[var(--card-foreground)]">Across all regions and ephemeral pools.</p>
 				<Badge label="Healthy" variant="success" />
 			</div>
 		</Card>
@@ -34,13 +34,13 @@
 </Story>
 
 <Story name="Worker Card">
-	<div class="ciborg-theme w-[480px] rounded-2xl bg-[var(--ciborg-canvas)] p-6">
+	<div class="w-[480px] rounded-2xl bg-[var(--background)] p-6">
 		<Card>
 			{#snippet header()}
 				<div class="flex items-start justify-between gap-4">
 					<div class="space-y-1">
-						<h3 class="text-lg font-semibold text-[var(--ciborg-text)]">worker-eu-central-1</h3>
-						<p class="text-sm text-[var(--ciborg-text-muted)]">
+						<h3 class="text-lg font-semibold text-[var(--foreground)]">worker-eu-central-1</h3>
+						<p class="text-sm text-[var(--muted-foreground)]">
 							Connected 19 minutes ago. This worker does not publish hardware specs.
 						</p>
 					</div>
@@ -48,8 +48,8 @@
 				</div>
 			{/snippet}
 			<div class="space-y-2">
-				<p class="text-sm text-[var(--ciborg-text-soft)]">Status: idle until requested by the next claimed run.</p>
-				<p class="text-sm text-[var(--ciborg-text-muted)]">Queue: 0 queued, 3 pending jobs in the last 12h.</p>
+				<p class="text-sm text-[var(--card-foreground)]">Status: idle until requested by the next claimed run.</p>
+				<p class="text-sm text-[var(--muted-foreground)]">Queue: 0 queued, 3 pending jobs in the last 12h.</p>
 			</div>
 			{#snippet footer()}
 				<div class="flex gap-3">
@@ -62,7 +62,7 @@
 </Story>
 
 <Story name="Sidebar">
-	<div class="ciborg-theme h-[680px] w-[256px] overflow-hidden rounded-2xl bg-[var(--ciborg-canvas)]">
+	<div class="h-[680px] w-[256px] overflow-hidden rounded-2xl bg-[var(--background)]">
 		<Sidebar
 			items={[
 				{

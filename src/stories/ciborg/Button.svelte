@@ -25,13 +25,13 @@
 <button
 	class="inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:ring-2 focus-visible:ring-[#171717] focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 {variant ===
 	'default'
-		? 'border border-[var(--ciborg-primary)] bg-[var(--ciborg-primary)] text-[var(--ciborg-text)] hover:border-[var(--ciborg-primary-hover)] hover:bg-[var(--ciborg-primary-hover)]'
+		? 'border border-[var(--primary)] bg-[var(--primary)] text-[var(--primary-foreground)] hover:opacity-90'
 		: ''} {variant === 'outline'
-		? 'border border-[var(--ciborg-border-strong)] bg-transparent text-[var(--ciborg-text)] hover:bg-[var(--ciborg-panel-muted)]'
+		? 'border border-[var(--input)] bg-transparent text-[var(--foreground)] hover:bg-[var(--accent)]'
 		: ''} {variant === 'ghost'
-		? 'border border-transparent bg-transparent text-[var(--ciborg-text-soft)] hover:bg-[var(--ciborg-panel-muted)] hover:text-[var(--ciborg-text)]'
+		? 'border border-transparent bg-transparent text-[var(--card-foreground)] hover:bg-[var(--accent)] hover:text-[var(--foreground)]'
 		: ''} {variant === 'danger'
-		? 'border border-[var(--ciborg-danger)] bg-[var(--ciborg-danger)] text-[var(--ciborg-text)] hover:opacity-90'
+		? 'border border-[var(--destructive)] bg-[var(--destructive)] text-[var(--primary-foreground)] hover:opacity-90'
 		: ''} {size ===
 		'default'
 		? 'gap-1.5 px-4 py-2 text-sm'

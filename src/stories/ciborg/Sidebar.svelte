@@ -1,4 +1,5 @@
 <script lang="ts">
+	import './ciborg.css';
 	import type { Snippet } from 'svelte';
 
 	interface SidebarItem {
@@ -19,14 +20,14 @@
 </script>
 
 <aside
-	class="flex h-full w-64 flex-col overflow-y-auto border-r border-[var(--ciborg-border)] bg-[var(--ciborg-sidebar)] p-3 {className}"
+	class="flex h-full w-64 flex-col overflow-y-auto border-r border-[var(--border)] bg-[var(--sidebar)] p-3 {className}"
 >
 	<div class="flex items-center justify-between rounded-md px-2 py-2">
 		<div class="flex items-center gap-2">
-			<div class="h-8 w-8 rounded-lg bg-[var(--ciborg-panel-muted)]"></div>
-			<span class="font-medium text-[var(--ciborg-text)]">{logo}</span>
+			<div class="h-8 w-8 rounded-lg bg-[var(--sidebar-accent)]"></div>
+			<span class="font-medium text-[var(--sidebar-foreground)]">{logo}</span>
 		</div>
-		<svg class="h-4 w-4 text-[var(--ciborg-text-muted)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+		<svg class="h-4 w-4 text-[var(--muted-foreground)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 			<path
 				stroke-linecap="round"
 				stroke-linejoin="round"
@@ -40,8 +41,8 @@
 		{#each items as item}
 				<button
 					class="flex w-full items-center justify-between rounded-md px-2 py-1.5 text-sm {item.active
-						? 'bg-[var(--ciborg-panel-muted)] text-[var(--ciborg-text)]'
-						: 'text-[var(--ciborg-text-soft)] hover:bg-[var(--ciborg-panel)] hover:text-[var(--ciborg-text)]'}"
+						? 'bg-[var(--sidebar-accent)] text-[var(--sidebar-accent-foreground)]'
+						: 'text-[var(--sidebar-foreground)] hover:bg-[var(--sidebar-accent)] hover:text-[var(--sidebar-accent-foreground)]'}"
 				>
 				<div class="flex items-center gap-2">
 					{#if item.icon}
@@ -52,7 +53,7 @@
 					<span>{item.label}</span>
 				</div>
 					{#if item.shortcut}
-						<span class="text-xs text-[var(--ciborg-text-muted)]">{item.shortcut}</span>
+						<span class="text-xs text-[var(--muted-foreground)]">{item.shortcut}</span>
 					{/if}
 				</button>
 			{/each}
@@ -61,10 +62,10 @@
 	{#if user}
 			<div class="flex items-center justify-between rounded-md px-2 py-2">
 				<div class="flex items-center gap-2">
-					<div class="h-10 w-10 rounded-full bg-[var(--ciborg-panel-muted)]"></div>
-					<span class="font-medium text-[var(--ciborg-text)]">{user.name}</span>
+					<div class="h-10 w-10 rounded-full bg-[var(--sidebar-accent)]"></div>
+					<span class="font-medium text-[var(--sidebar-foreground)]">{user.name}</span>
 				</div>
-				<svg class="h-4 w-4 text-[var(--ciborg-text-muted)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+				<svg class="h-4 w-4 text-[var(--muted-foreground)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 				<path
 					stroke-linecap="round"
 					stroke-linejoin="round"

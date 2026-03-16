@@ -56,8 +56,8 @@
 		<div class="space-y-6">
 			<div class="flex items-center justify-between">
 				<div class="space-y-1">
-					<h1 class="text-[30px] font-bold text-[var(--ciborg-text)]">Control plane overview</h1>
-					<p class="text-sm text-[var(--ciborg-text-muted)]">
+					<h1 class="text-[30px] font-bold text-[var(--foreground)]">Control plane overview</h1>
+					<p class="text-sm text-[var(--muted-foreground)]">
 						Track workers, queue depth, and recent executions from a single entry point.
 					</p>
 				</div>
@@ -74,8 +74,8 @@
 				] as metric}
 					<Card>
 						<div class="space-y-1">
-							<div class="text-sm text-[var(--ciborg-text-muted)]">{metric.label}</div>
-							<div class="text-3xl font-semibold text-[var(--ciborg-text)]">{metric.value}</div>
+							<div class="text-sm text-[var(--muted-foreground)]">{metric.label}</div>
+							<div class="text-3xl font-semibold text-[var(--foreground)]">{metric.value}</div>
 						</div>
 					</Card>
 				{/each}
@@ -84,8 +84,8 @@
 				{#snippet header()}
 					<div class="flex items-center justify-between gap-4">
 						<div>
-							<h2 class="text-lg font-semibold text-[var(--ciborg-text)]">Recent runs</h2>
-							<p class="text-sm text-[var(--ciborg-text-muted)]">Latest executions across manual, scheduled and webhook triggers.</p>
+							<h2 class="text-lg font-semibold text-[var(--foreground)]">Recent runs</h2>
+							<p class="text-sm text-[var(--muted-foreground)]">Latest executions across manual, scheduled and webhook triggers.</p>
 						</div>
 						<div class="flex gap-2">
 							<Input placeholder="Filter recent runs" class="w-56" />
@@ -117,8 +117,8 @@
 		<div class="space-y-5">
 			<div class="flex items-center justify-between">
 				<div class="space-y-1">
-					<h1 class="text-[30px] font-bold text-[var(--ciborg-text)]">Agent chats</h1>
-					<p class="max-w-xl text-sm text-[var(--ciborg-text-muted)]">
+					<h1 class="text-[30px] font-bold text-[var(--foreground)]">Agent chats</h1>
+					<p class="max-w-xl text-sm text-[var(--muted-foreground)]">
 						Persistent threads for coding help, reviews, and operations. Attach a project only when the conversation actually needs repository context.
 					</p>
 				</div>
@@ -135,9 +135,9 @@
 				] as metric}
 					<Card>
 						<div class="space-y-1">
-							<div class="text-sm text-[var(--ciborg-text-muted)]">{metric.label}</div>
-							<div class="text-3xl font-semibold text-[var(--ciborg-text)]">{metric.value}</div>
-							<p class="text-xs text-[var(--ciborg-text-muted)]">{metric.note}</p>
+							<div class="text-sm text-[var(--muted-foreground)]">{metric.label}</div>
+							<div class="text-3xl font-semibold text-[var(--foreground)]">{metric.value}</div>
+							<p class="text-xs text-[var(--muted-foreground)]">{metric.note}</p>
 						</div>
 					</Card>
 				{/each}
@@ -165,9 +165,9 @@
 						{ title: 'Summarize the behavioural risks in the shell approval changes...', type: 'review' },
 						{ title: 'Check the flaky image pipeline in infra / worker-images...', type: 'ops' }
 					] as thread}
-						<div class="rounded-xl border border-[var(--ciborg-border)] bg-[var(--ciborg-panel-strong)] p-4">
+						<div class="rounded-xl border border-[var(--border)] bg-[var(--secondary)] p-4">
 							<div class="flex items-center justify-between gap-3">
-								<span class="font-medium text-[var(--ciborg-text)]">{thread.title}</span>
+								<span class="font-medium text-[var(--foreground)]">{thread.title}</span>
 								<Badge label={thread.type} variant="outline" />
 							</div>
 						</div>
@@ -183,8 +183,8 @@
 		<div class="space-y-6">
 			<div class="flex items-center justify-between">
 				<div class="space-y-1">
-					<h1 class="text-[30px] font-bold text-[var(--ciborg-text)]">Ephemeral workers</h1>
-					<p class="text-sm text-[var(--ciborg-text-muted)]">
+					<h1 class="text-[30px] font-bold text-[var(--foreground)]">Ephemeral workers</h1>
+					<p class="text-sm text-[var(--muted-foreground)]">
 						Workers appear only while connected. Surface live status, queue pressure, and what the worker actually reports.
 					</p>
 				</div>
@@ -202,8 +202,8 @@
 				] as metric}
 					<Card>
 						<div class="space-y-1">
-							<div class="text-sm text-[var(--ciborg-text-muted)]">{metric.label}</div>
-							<div class="text-3xl font-semibold text-[var(--ciborg-text)]">{metric.value}</div>
+							<div class="text-sm text-[var(--muted-foreground)]">{metric.label}</div>
+							<div class="text-3xl font-semibold text-[var(--foreground)]">{metric.value}</div>
 						</div>
 					</Card>
 				{/each}
@@ -227,8 +227,8 @@
 						{#snippet header()}
 							<div class="flex items-start justify-between gap-3">
 								<div class="space-y-1">
-									<h3 class="text-lg font-semibold text-[var(--ciborg-text)]">{worker.name}</h3>
-									<p class="text-sm text-[var(--ciborg-text-muted)]">{worker.copy}</p>
+									<h3 class="text-lg font-semibold text-[var(--foreground)]">{worker.name}</h3>
+									<p class="text-sm text-[var(--muted-foreground)]">{worker.copy}</p>
 								</div>
 								<Badge label={worker.status} variant={worker.status === 'Busy' ? 'default' : 'neutral'} />
 							</div>
@@ -245,8 +245,8 @@
 			<Card>
 				{#snippet header()}
 					<div class="space-y-1">
-						<h2 class="text-lg font-semibold text-[var(--ciborg-text)]">Recent session changes</h2>
-						<p class="text-sm text-[var(--ciborg-text-muted)]">
+						<h2 class="text-lg font-semibold text-[var(--foreground)]">Recent session changes</h2>
+						<p class="text-sm text-[var(--muted-foreground)]">
 							Connection and drain events for ephemeral workers, without inferred hardware specs.
 						</p>
 					</div>
@@ -257,8 +257,8 @@
 						{ title: 'worker-us-east-gpu picked up 2 queued jobs', state: 'Busy' },
 						{ title: 'worker-ap-south-1 drained and disconnected', state: 'Ended' }
 					] as event}
-						<div class="flex items-center justify-between rounded-lg bg-[var(--ciborg-panel-strong)] px-4 py-3">
-							<span class="text-sm text-[var(--ciborg-text-soft)]">{event.title}</span>
+						<div class="flex items-center justify-between rounded-lg bg-[var(--secondary)] px-4 py-3">
+							<span class="text-sm text-[var(--card-foreground)]">{event.title}</span>
 							<Badge
 								label={event.state}
 								variant={event.state === 'Busy' ? 'default' : event.state === 'Ended' ? 'danger' : 'neutral'}
