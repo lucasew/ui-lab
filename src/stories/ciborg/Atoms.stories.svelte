@@ -1,6 +1,6 @@
 <script module lang="ts">
 	import { defineMeta } from '@storybook/addon-svelte-csf';
-	import '../../../routes/layout.css';
+	import '../../routes/layout.css';
 	import Button from './Button.svelte';
 	import Badge from './Badge.svelte';
 	import Input from './Input.svelte';

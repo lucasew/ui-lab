@@ -1,6 +1,6 @@
 <script module lang="ts">
 	import { defineMeta } from '@storybook/addon-svelte-csf';
-	import '../../../routes/layout.css';
+	import '../../routes/layout.css';
 	import Card from './Card.svelte';
 	import Sidebar from './Sidebar.svelte';
 
