@@ -16,7 +16,7 @@
 	>
 		Prev
 	</button>
-	{#each Array(Math.min(total, 5)) as _, i}
+	{#each Array(Math.min(total, 5)) as _, i (i)}
 		<button
 			class="rounded-md px-3 py-1.5 text-sm {i + 1 === page
 				? 'bg-[var(--primary)] text-[var(--foreground)]'

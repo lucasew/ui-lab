@@ -48,8 +48,12 @@
 				</div>
 			{/snippet}
 			<div class="space-y-2">
-				<p class="text-sm text-[var(--card-foreground)]">Status: idle until requested by the next claimed run.</p>
-				<p class="text-sm text-[var(--muted-foreground)]">Queue: 0 queued, 3 pending jobs in the last 12h.</p>
+				<p class="text-sm text-[var(--card-foreground)]">
+					Status: idle until requested by the next claimed run.
+				</p>
+				<p class="text-sm text-[var(--muted-foreground)]">
+					Queue: 0 queued, 3 pending jobs in the last 12h.
+				</p>
 			</div>
 			{#snippet footer()}
 				<div class="flex gap-3">
