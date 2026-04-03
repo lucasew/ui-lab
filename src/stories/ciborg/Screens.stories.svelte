@@ -52,12 +52,7 @@
 </script>
 
 <Story name="Overview">
-	<Screen
-		{sidebarItems}
-		user={{ name: 'John Doe' }}
-		fab={true}
-		mainWidth="1024"
-	>
+	<Screen {sidebarItems} user={{ name: 'John Doe' }} fab={true} mainWidth="1024">
 		<div class="space-y-6">
 			<div class="flex items-center justify-between">
 				<div class="space-y-1">
