@@ -14,7 +14,6 @@
 		placeholder = 'Select...',
 		class: className = ''
 	}: Props = $props();
-
 </script>
 
 <div class="flex flex-col gap-1.5 {className}">
@@ -29,7 +28,7 @@
 			{#if placeholder}
 				<option value="" disabled>{placeholder}</option>
 			{/if}
-			{#each options as option}
+			{#each options as option (option)}
 				<option value={option}>{option}</option>
 			{/each}
 		</select>

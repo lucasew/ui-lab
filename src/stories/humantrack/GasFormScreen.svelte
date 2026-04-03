@@ -1,6 +1,5 @@
 <script lang="ts">
 	import AiBanner from './AiBanner.svelte';
-	import Badge from './Badge.svelte';
 	import Button from './Button.svelte';
 	import HeaderBar from './HeaderBar.svelte';
 	import Input from './Input.svelte';
@@ -42,15 +41,13 @@
 	];
 </script>
 
-<div
-	class="min-h-screen bg-[#d9d9d9] font-[Inter,Segoe_UI,sans-serif] text-[#292965]"
->
+<div class="min-h-screen bg-[#d9d9d9] font-[Inter,Segoe_UI,sans-serif] text-[#292965]">
 	<main class="mx-auto flex w-full max-w-[1120px] flex-col gap-8 bg-[#f7f7fa] pb-10">
 		<div class="flex flex-col gap-8">
 			<HeaderBar />
 
 			<div class="px-6">
-				<h1 class="text-2xl font-semibold leading-6 text-[#292965]">Configurar nova GAS</h1>
+				<h1 class="text-2xl leading-6 font-semibold text-[#292965]">Configurar nova GAS</h1>
 			</div>
 
 			<div class="grid gap-4 px-6">
@@ -66,11 +63,7 @@
 								<Select
 									label="Especialidade"
 									value="Fisioterapia neurológica"
-									options={[
-										'Fisioterapia neurológica',
-										'Terapia ocupacional',
-										'Fonoaudiologia'
-									]}
+									options={['Fisioterapia neurológica', 'Terapia ocupacional', 'Fonoaudiologia']}
 								/>
 							</div>
 							<div class="grid gap-4 md:grid-cols-2">
@@ -110,7 +103,7 @@
 					description="Configure a recorrência e os dias de disparo. O paciente receberá as submissões automaticamente nos horários definidos"
 				>
 					<div class="grid gap-4 md:grid-cols-2">
-						{#each reminders as reminder}
+						{#each reminders as reminder (reminder.day)}
 							<ReminderRow day={reminder.day} time={reminder.time} />
 						{/each}
 					</div>

@@ -27,7 +27,7 @@
 				<Badge label={status} tone="primary" />
 			{/if}
 		</div>
-		<h3 class="text-base font-semibold leading-6 text-[#292965]">{title}</h3>
+		<h3 class="text-base leading-6 font-semibold text-[#292965]">{title}</h3>
 		<p class="text-sm leading-5 text-[#292965]">{description}</p>
 	</header>
 	{@render children?.()}

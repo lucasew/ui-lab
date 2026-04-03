@@ -32,10 +32,9 @@
 		? 'border border-transparent bg-transparent text-[var(--card-foreground)] hover:bg-[var(--accent)] hover:text-[var(--foreground)]'
 		: ''} {variant === 'danger'
 		? 'border border-[var(--destructive)] bg-[var(--destructive)] text-[var(--primary-foreground)] hover:opacity-90'
-		: ''} {size ===
-		'default'
-		? 'gap-1.5 px-4 py-2 text-sm'
-		: ''} {size === 'large' ? 'gap-2 px-6 py-2 text-sm' : ''} {className}"
+		: ''} {size === 'default' ? 'gap-1.5 px-4 py-2 text-sm' : ''} {size === 'large'
+		? 'gap-2 px-6 py-2 text-sm'
+		: ''} {className}"
 	{disabled}
 >
 	{#if icon}

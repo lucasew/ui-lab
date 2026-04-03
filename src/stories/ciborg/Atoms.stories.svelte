@@ -66,13 +66,7 @@
 
 <Story name="Navigation">
 	<div class="flex flex-col gap-4 rounded-2xl bg-[var(--background)] p-6">
-		<Tabs
-			tabs={[
-				{ label: 'Overview', active: true },
-				{ label: 'Events' },
-				{ label: 'Logs' }
-			]}
-		/>
+		<Tabs tabs={[{ label: 'Overview', active: true }, { label: 'Events' }, { label: 'Logs' }]} />
 		<Pagination page={2} total={8} />
 	</div>
 </Story>

@@ -52,7 +52,7 @@
 </script>
 
 <Story name="Overview">
-	<Screen {sidebarItems} activeNav="Overview" user={{ name: 'John Doe' }} fab={true} mainWidth="1024">
+	<Screen {sidebarItems} user={{ name: 'John Doe' }} fab={true} mainWidth="1024">
 		<div class="space-y-6">
 			<div class="flex items-center justify-between">
 				<div class="space-y-1">
@@ -67,11 +67,7 @@
 				</div>
 			</div>
 			<div class="grid grid-cols-3 gap-4">
-				{#each [
-					{ label: 'Pending jobs', value: '14' },
-					{ label: 'Workers online', value: '8' },
-					{ label: 'Success rate', value: '98.4%' }
-				] as metric}
+				{#each [{ label: 'Pending jobs', value: '14' }, { label: 'Workers online', value: '8' }, { label: 'Success rate', value: '98.4%' }] as metric (metric.label)}
 					<Card>
 						<div class="space-y-1">
 							<div class="text-sm text-[var(--muted-foreground)]">{metric.label}</div>
@@ -85,7 +81,9 @@
 					<div class="flex items-center justify-between gap-4">
 						<div>
 							<h2 class="text-lg font-semibold text-[var(--foreground)]">Recent runs</h2>
-							<p class="text-sm text-[var(--muted-foreground)]">Latest executions across manual, scheduled and webhook triggers.</p>
+							<p class="text-sm text-[var(--muted-foreground)]">
+								Latest executions across manual, scheduled and webhook triggers.
+							</p>
 						</div>
 						<div class="flex gap-2">
 							<Input placeholder="Filter recent runs" class="w-56" />
@@ -113,13 +111,14 @@
 </Story>
 
 <Story name="Chats">
-	<Screen {sidebarItems} activeNav="Chats" user={{ name: 'John Doe' }}>
+	<Screen {sidebarItems} user={{ name: 'John Doe' }}>
 		<div class="space-y-5">
 			<div class="flex items-center justify-between">
 				<div class="space-y-1">
 					<h1 class="text-[30px] font-bold text-[var(--foreground)]">Agent chats</h1>
 					<p class="max-w-xl text-sm text-[var(--muted-foreground)]">
-						Persistent threads for coding help, reviews, and operations. Attach a project only when the conversation actually needs repository context.
+						Persistent threads for coding help, reviews, and operations. Attach a project only when
+						the conversation actually needs repository context.
 					</p>
 				</div>
 				<div class="flex gap-2">
@@ -128,11 +127,7 @@
 				</div>
 			</div>
 			<div class="grid grid-cols-3 gap-4">
-				{#each [
-					{ label: 'Open threads', value: '18', note: 'Across coding, review, and ops workflows.' },
-					{ label: 'Waiting on user', value: '5', note: 'Threads paused on approvals, replies, or missing details.' },
-					{ label: 'Project-linked', value: '7', note: 'Optional context, not the default starting point.' }
-				] as metric}
+				{#each [{ label: 'Open threads', value: '18', note: 'Across coding, review, and ops workflows.' }, { label: 'Waiting on user', value: '5', note: 'Threads paused on approvals, replies, or missing details.' }, { label: 'Project-linked', value: '7', note: 'Optional context, not the default starting point.' }] as metric (metric.label)}
 					<Card>
 						<div class="space-y-1">
 							<div class="text-sm text-[var(--muted-foreground)]">{metric.label}</div>
@@ -160,11 +155,7 @@
 					</div>
 				{/snippet}
 				<div class="space-y-3">
-					{#each [
-						{ title: 'Review the migration plan for the relay artifact cleanup...', type: 'coding' },
-						{ title: 'Summarize the behavioural risks in the shell approval changes...', type: 'review' },
-						{ title: 'Check the flaky image pipeline in infra / worker-images...', type: 'ops' }
-					] as thread}
+					{#each [{ title: 'Review the migration plan for the relay artifact cleanup...', type: 'coding' }, { title: 'Summarize the behavioural risks in the shell approval changes...', type: 'review' }, { title: 'Check the flaky image pipeline in infra / worker-images...', type: 'ops' }] as thread (thread.title)}
 						<div class="rounded-xl border border-[var(--border)] bg-[var(--secondary)] p-4">
 							<div class="flex items-center justify-between gap-3">
 								<span class="font-medium text-[var(--foreground)]">{thread.title}</span>
@@ -179,13 +170,14 @@
 </Story>
 
 <Story name="Workers">
-	<Screen {sidebarItems} activeNav="Workers" user={{ name: 'John Doe' }}>
+	<Screen {sidebarItems} user={{ name: 'John Doe' }}>
 		<div class="space-y-6">
 			<div class="flex items-center justify-between">
 				<div class="space-y-1">
 					<h1 class="text-[30px] font-bold text-[var(--foreground)]">Ephemeral workers</h1>
 					<p class="text-sm text-[var(--muted-foreground)]">
-						Workers appear only while connected. Surface live status, queue pressure, and what the worker actually reports.
+						Workers appear only while connected. Surface live status, queue pressure, and what the
+						worker actually reports.
 					</p>
 				</div>
 				<div class="flex gap-3">
@@ -193,13 +185,11 @@
 					<Button>Connect worker</Button>
 				</div>
 			</div>
-			<Tabs tabs={[{ label: 'All workers', active: true }, { label: 'Busy' }, { label: 'Waiting' }]} />
+			<Tabs
+				tabs={[{ label: 'All workers', active: true }, { label: 'Busy' }, { label: 'Waiting' }]}
+			/>
 			<div class="grid grid-cols-3 gap-4">
-				{#each [
-					{ label: 'Running jobs', value: '12' },
-					{ label: 'Queued jobs', value: '34' },
-					{ label: 'Connected workers', value: '8' }
-				] as metric}
+				{#each [{ label: 'Running jobs', value: '12' }, { label: 'Queued jobs', value: '34' }, { label: 'Connected workers', value: '8' }] as metric (metric.label)}
 					<Card>
 						<div class="space-y-1">
 							<div class="text-sm text-[var(--muted-foreground)]">{metric.label}</div>
@@ -209,20 +199,7 @@
 				{/each}
 			</div>
 			<div class="grid grid-cols-2 gap-4">
-				{#each [
-					{
-						name: 'worker-eu-central-1',
-						status: 'Waiting',
-						copy: 'Connected 19 minutes ago. This worker does not publish hardware specs.',
-						actions: ['Open shell', 'View state']
-					},
-					{
-						name: 'worker-us-east-gpu',
-						status: 'Busy',
-						copy: 'Connected 4 minutes ago. This worker reports 2 jobs with 1 more waiting in queue.',
-						actions: ['Drain', 'Queue details']
-					}
-				] as worker}
+				{#each [{ name: 'worker-eu-central-1', status: 'Waiting', copy: 'Connected 19 minutes ago. This worker does not publish hardware specs.', actions: ['Open shell', 'View state'] }, { name: 'worker-us-east-gpu', status: 'Busy', copy: 'Connected 4 minutes ago. This worker reports 2 jobs with 1 more waiting in queue.', actions: ['Drain', 'Queue details'] }] as worker (worker.name)}
 					<Card>
 						{#snippet header()}
 							<div class="flex items-start justify-between gap-3">
@@ -230,13 +207,18 @@
 									<h3 class="text-lg font-semibold text-[var(--foreground)]">{worker.name}</h3>
 									<p class="text-sm text-[var(--muted-foreground)]">{worker.copy}</p>
 								</div>
-								<Badge label={worker.status} variant={worker.status === 'Busy' ? 'default' : 'neutral'} />
+								<Badge
+									label={worker.status}
+									variant={worker.status === 'Busy' ? 'default' : 'neutral'}
+								/>
 							</div>
 						{/snippet}
 						{#snippet footer()}
 							<div class="flex gap-3">
 								<Button variant="outline">{worker.actions[0]}</Button>
-								<Button variant={worker.status === 'Busy' ? 'ghost' : 'default'}>{worker.actions[1]}</Button>
+								<Button variant={worker.status === 'Busy' ? 'ghost' : 'default'}
+									>{worker.actions[1]}</Button
+								>
 							</div>
 						{/snippet}
 					</Card>
@@ -252,16 +234,18 @@
 					</div>
 				{/snippet}
 				<div class="space-y-3">
-					{#each [
-						{ title: 'worker-eu-central-1 connected from fra1', state: 'Waiting' },
-						{ title: 'worker-us-east-gpu picked up 2 queued jobs', state: 'Busy' },
-						{ title: 'worker-ap-south-1 drained and disconnected', state: 'Ended' }
-					] as event}
-						<div class="flex items-center justify-between rounded-lg bg-[var(--secondary)] px-4 py-3">
+					{#each [{ title: 'worker-eu-central-1 connected from fra1', state: 'Waiting' }, { title: 'worker-us-east-gpu picked up 2 queued jobs', state: 'Busy' }, { title: 'worker-ap-south-1 drained and disconnected', state: 'Ended' }] as event (event.title)}
+						<div
+							class="flex items-center justify-between rounded-lg bg-[var(--secondary)] px-4 py-3"
+						>
 							<span class="text-sm text-[var(--card-foreground)]">{event.title}</span>
 							<Badge
 								label={event.state}
-								variant={event.state === 'Busy' ? 'default' : event.state === 'Ended' ? 'danger' : 'neutral'}
+								variant={event.state === 'Busy'
+									? 'default'
+									: event.state === 'Ended'
+										? 'danger'
+										: 'neutral'}
 							/>
 						</div>
 					{/each}

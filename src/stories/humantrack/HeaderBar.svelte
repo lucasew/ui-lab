@@ -22,10 +22,16 @@
 
 		<nav class="min-w-0">
 			<div class="flex flex-wrap items-center gap-1.5 text-sm text-zinc-500">
-				{#each breadcrumbs as breadcrumb, index}
-					<span class={breadcrumb === 'Nova GAS' ? 'font-medium text-[#292965]' : ''}>{breadcrumb}</span>
+				{#each breadcrumbs as breadcrumb, index (index)}
+					<span class={breadcrumb === 'Nova GAS' ? 'font-medium text-[#292965]' : ''}
+						>{breadcrumb}</span
+					>
 					{#if index < breadcrumbs.length - 1}
-						<svg viewBox="0 0 16 16" class="h-[15px] w-[15px] fill-none stroke-zinc-500" stroke-width="1.6">
+						<svg
+							viewBox="0 0 16 16"
+							class="h-[15px] w-[15px] fill-none stroke-zinc-500"
+							stroke-width="1.6"
+						>
 							<path d="m6 3.5 4 4.5-4 4.5" stroke-linecap="round" stroke-linejoin="round" />
 						</svg>
 					{/if}
