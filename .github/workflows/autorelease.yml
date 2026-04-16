@@ -1,0 +1,57 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Mise
+        uses: jdx/mise-action@v2
+
+      - name: Install Dependencies
+        run: mise run install
+
+      - name: Code Generation
+        run: mise run codegen
+
+      - name: Create PR if Diff
+        id: diff
+        run: |
+          if [[ -n $(git status --porcelain) ]]; then
+            echo "Changes detected after codegen. Creating PR."
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            BRANCH_NAME="chore/codegen-update-$(date +%s)"
+            git checkout -b $BRANCH_NAME
+            git add -A
+            git commit -m "chore: update generated code"
+            git push origin $BRANCH_NAME
+            gh pr create -B main -H $BRANCH_NAME --title "chore: update generated code" --body "Automated PR to update generated code from CI."
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Run CI
+        run: mise run ci
+
+      - name: Create Release
+        if: github.event_name == 'workflow_dispatch' || startsWith(github.ref, 'refs/tags/')
+        run: gh release create ${{ github.ref_name }} --generate-notes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload Artifacts
+        if: github.event_name == 'workflow_dispatch' || startsWith(github.ref, 'refs/tags/')
+        uses: actions/upload-artifact@v4
+        with:
+          name: artifacts
+          path: build/
