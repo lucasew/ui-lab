@@ -31,13 +31,17 @@
 					<Badge label={row.label} tone={row.tone} />
 				</div>
 				<div class="grid gap-4 md:grid-cols-[36px_minmax(0,1fr)]">
-					<div class="grid h-9 w-9 place-items-center rounded-[2px] border border-[#7375fc]/30 bg-[#e9ebf8] text-sm font-semibold text-[#5451cf]">
+					<div
+						class="grid h-9 w-9 place-items-center rounded-[2px] border border-[#7375fc]/30 bg-[#e9ebf8] text-sm font-semibold text-[#5451cf]"
+					>
 						0
 					</div>
 					<Input label="Descreva a linha base" value={row.baseline} />
 				</div>
 				<div class="grid gap-4 md:grid-cols-[36px_minmax(0,1fr)]">
-					<div class="grid h-9 w-9 place-items-center rounded-[2px] border border-[#7375fc]/30 bg-[#e9ebf8] text-sm font-semibold text-[#5451cf]">
+					<div
+						class="grid h-9 w-9 place-items-center rounded-[2px] border border-[#7375fc]/30 bg-[#e9ebf8] text-sm font-semibold text-[#5451cf]"
+					>
 						+1
 					</div>
 					<Input label="Descreva a meta" value={row.target} />
