@@ -1,0 +1,1 @@
+- 2026-05-10: Missing rel="noopener noreferrer" on target="_blank" links can lead to Reverse Tabnabbing.
