@@ -42,15 +42,13 @@
 	];
 </script>
 
-<div
-	class="min-h-screen bg-[#d9d9d9] font-[Inter,Segoe_UI,sans-serif] text-[#292965]"
->
+<div class="min-h-screen bg-[#d9d9d9] font-[Inter,Segoe_UI,sans-serif] text-[#292965]">
 	<main class="mx-auto flex w-full max-w-[1120px] flex-col gap-8 bg-[#f7f7fa] pb-10">
 		<div class="flex flex-col gap-8">
 			<HeaderBar />
 
 			<div class="px-6">
-				<h1 class="text-2xl font-semibold leading-6 text-[#292965]">Configurar nova GAS</h1>
+				<h1 class="text-2xl leading-6 font-semibold text-[#292965]">Configurar nova GAS</h1>
 			</div>
 
 			<div class="grid gap-4 px-6">
@@ -66,11 +64,7 @@
 								<Select
 									label="Especialidade"
 									value="Fisioterapia neurológica"
-									options={[
-										'Fisioterapia neurológica',
-										'Terapia ocupacional',
-										'Fonoaudiologia'
-									]}
+									options={['Fisioterapia neurológica', 'Terapia ocupacional', 'Fonoaudiologia']}
 								/>
 							</div>
 							<div class="grid gap-4 md:grid-cols-2">

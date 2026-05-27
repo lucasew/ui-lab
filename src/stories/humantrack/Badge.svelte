@@ -19,7 +19,7 @@
 </script>
 
 <span
-	class={`inline-flex min-h-6 items-center justify-center rounded-md px-2.5 py-1 text-xs font-semibold leading-4 ${toneClasses[tone]}`}
+	class={`inline-flex min-h-6 items-center justify-center rounded-md px-2.5 py-1 text-xs leading-4 font-semibold ${toneClasses[tone]}`}
 >
 	{label}
 </span>

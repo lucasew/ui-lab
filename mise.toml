@@ -1,9 +1,33 @@
 [tools]
-"http:pencil" = { version = "latest", url = "https://www.pencil.dev/download/Pencil-linux-x64.tar.gz" }
+"github:lucasew/workspaced" = "0.4.1"
 node = "25.2.1"
 
 [tasks.install]
+depends = ["install:*"]
+
+[tasks."install:npm"]
 run = "npm install"
 
 [tasks.dev]
 run = "npm run storybook"
+
+[tasks.lint]
+run = "workspaced codebase lint"
+
+[tasks.fmt]
+run = "workspaced codebase format"
+
+[tasks.test]
+depends = ["test:*"]
+
+[tasks."test:npm"]
+run = "npm run test"
+
+[tasks.codegen]
+depends = ["codegen:*"]
+
+[tasks."codegen:svelte"]
+run = "npm run prepare"
+
+[tasks.ci]
+depends = ["lint", "test"]
