@@ -1,35 +1,37 @@
-import { Meta } from "@storybook/addon-docs/blocks";
+import { Meta } from '@storybook/addon-docs/blocks';
 
-import Github from "./assets/github.svg";
-import Discord from "./assets/discord.svg";
-import Youtube from "./assets/youtube.svg";
-import Tutorials from "./assets/tutorials.svg";
-import Styling from "./assets/styling.png";
-import Context from "./assets/context.png";
-import Assets from "./assets/assets.png";
-import Docs from "./assets/docs.png";
-import Share from "./assets/share.png";
-import FigmaPlugin from "./assets/figma-plugin.png";
-import Testing from "./assets/testing.png";
-import Accessibility from "./assets/accessibility.png";
-import Theming from "./assets/theming.png";
-import AddonLibrary from "./assets/addon-library.png";
+import Github from './assets/github.svg';
+import Discord from './assets/discord.svg';
+import Youtube from './assets/youtube.svg';
+import Tutorials from './assets/tutorials.svg';
+import Styling from './assets/styling.png';
+import Context from './assets/context.png';
+import Assets from './assets/assets.png';
+import Docs from './assets/docs.png';
+import Share from './assets/share.png';
+import FigmaPlugin from './assets/figma-plugin.png';
+import Testing from './assets/testing.png';
+import Accessibility from './assets/accessibility.png';
+import Theming from './assets/theming.png';
+import AddonLibrary from './assets/addon-library.png';
 
-export const RightArrow = () => <svg 
-    viewBox="0 0 14 14" 
-    width="8px" 
-    height="14px" 
-    style={{ 
-      marginLeft: '4px',
-      display: 'inline-block',
-      shapeRendering: 'inherit',
-      verticalAlign: 'middle',
-      fill: 'currentColor',
-      'path fill': 'currentColor'
-    }}
->
-  <path d="m11.1 7.35-5.5 5.5a.5.5 0 0 1-.7-.7L10.04 7 4.9 1.85a.5.5 0 1 1 .7-.7l5.5 5.5c.2.2.2.5 0 .7Z" />
-</svg>
+export const RightArrow = () => (
+	<svg
+		viewBox="0 0 14 14"
+		width="8px"
+		height="14px"
+		style={{
+			marginLeft: '4px',
+			display: 'inline-block',
+			shapeRendering: 'inherit',
+			verticalAlign: 'middle',
+			fill: 'currentColor',
+			'path fill': 'currentColor'
+		}}
+	>
+		<path d="m11.1 7.35-5.5 5.5a.5.5 0 0 1-.7-.7L10.04 7 4.9 1.85a.5.5 0 1 1 .7-.7l5.5 5.5c.2.2.2.5 0 .7Z" />
+	</svg>
+);
 
 <Meta title="Start/Configure your project" />
 
@@ -38,6 +40,7 @@ export const RightArrow = () => <svg
     # Configure your project
 
     Because Storybook works separately from your app, you'll need to configure it for your specific stack and setup. Below, explore guides for configuring Storybook with popular frameworks and tools. If you get stuck, learn how you can ask for help from our community.
+
   </div>
   <div className="sb-section">
     <div className="sb-section-item">
@@ -49,7 +52,7 @@ export const RightArrow = () => <svg
       <p className="sb-section-item-paragraph">Like with web applications, there are many ways to include CSS within Storybook. Learn more about setting up styling within Storybook.</p>
       <a
         href="https://storybook.js.org/docs/configure/styling-and-css/?renderer=svelte&ref=configure"
-        target="_blank"
+        target="_blank" rel="noopener noreferrer"
       >Learn more<RightArrow /></a>
     </div>
     <div className="sb-section-item">
@@ -61,7 +64,7 @@ export const RightArrow = () => <svg
       <p className="sb-section-item-paragraph">Often when a story doesn't render, it's because your component is expecting a specific environment or context (like a theme provider) to be available.</p>
       <a
         href="https://storybook.js.org/docs/writing-stories/decorators/?renderer=svelte&ref=configure#context-for-mocking"
-        target="_blank"
+        target="_blank" rel="noopener noreferrer"
       >Learn more<RightArrow /></a>
     </div>
     <div className="sb-section-item">
@@ -73,7 +76,7 @@ export const RightArrow = () => <svg
         starting Storybook.</p>
         <a
           href="https://storybook.js.org/docs/configure/images-and-assets/?renderer=svelte&ref=configure"
-          target="_blank"
+          target="_blank" rel="noopener noreferrer"
         >Learn more<RightArrow /></a>
       </div>
     </div>
@@ -84,6 +87,7 @@ export const RightArrow = () => <svg
     # Do more with Storybook
 
     Now that you know the basics, let's explore other parts of Storybook that will improve your experience. This list is just to get you started. You can customise Storybook in many ways to fit your needs.
+
   </div>
 
   <div className="sb-section">
@@ -95,7 +99,7 @@ export const RightArrow = () => <svg
           interactive reference documentation from your components and stories.</p>
         <a
           href="https://storybook.js.org/docs/writing-docs/autodocs/?renderer=svelte&ref=configure"
-          target="_blank"
+          target="_blank" rel="noopener noreferrer"
         >Learn more<RightArrow /></a>
       </div>
       <div className="sb-grid-item">
@@ -104,7 +108,7 @@ export const RightArrow = () => <svg
         <p className="sb-section-item-paragraph">Publish your Storybook to review and collaborate with your entire team.</p>
         <a
           href="https://storybook.js.org/docs/sharing/publish-storybook/?renderer=svelte&ref=configure#publish-storybook-with-chromatic"
-          target="_blank"
+          target="_blank" rel="noopener noreferrer"
         >Learn more<RightArrow /></a>
       </div>
       <div className="sb-grid-item">
@@ -114,7 +118,7 @@ export const RightArrow = () => <svg
           implementation in one place.</p>
         <a
           href="https://storybook.js.org/docs/sharing/design-integrations/?renderer=svelte&ref=configure#embed-storybook-in-figma-with-the-plugin"
-          target="_blank"
+          target="_blank" rel="noopener noreferrer"
         >Learn more<RightArrow /></a>
       </div>
       <div className="sb-grid-item">
@@ -124,7 +128,7 @@ export const RightArrow = () => <svg
           complex.</p>
         <a
           href="https://storybook.js.org/docs/writing-tests/?renderer=svelte&ref=configure"
-          target="_blank"
+          target="_blank" rel="noopener noreferrer"
         >Learn more<RightArrow /></a>
       </div>
       <div className="sb-grid-item">
@@ -133,7 +137,7 @@ export const RightArrow = () => <svg
         <p className="sb-section-item-paragraph">Automatically test your components for a11y issues as you develop.</p>
         <a
           href="https://storybook.js.org/docs/writing-tests/accessibility-testing/?renderer=svelte&ref=configure"
-          target="_blank"
+          target="_blank" rel="noopener noreferrer"
         >Learn more<RightArrow /></a>
       </div>
       <div className="sb-grid-item">
@@ -142,7 +146,7 @@ export const RightArrow = () => <svg
         <p className="sb-section-item-paragraph">Theme Storybook's UI to personalize it to your project.</p>
         <a
           href="https://storybook.js.org/docs/configure/theming/?renderer=svelte&ref=configure"
-          target="_blank"
+          target="_blank" rel="noopener noreferrer"
         >Learn more<RightArrow /></a>
       </div>
     </div>
@@ -154,7 +158,7 @@ export const RightArrow = () => <svg
     <p className="sb-section-item-paragraph">Integrate your tools with Storybook to connect workflows.</p>
     <a
         href="https://storybook.js.org/addons/?ref=configure"
-        target="_blank"
+        target="_blank" rel="noopener noreferrer"
       >Discover all addons<RightArrow /></a>
   </div>
   <div className='sb-addon-img'>
@@ -169,7 +173,7 @@ export const RightArrow = () => <svg
 
       <a
         href="https://github.com/storybookjs/storybook"
-        target="_blank"
+        target="_blank" rel="noopener noreferrer"
       >Star on GitHub<RightArrow /></a>
     </div>
     <div className="sb-section-item">
@@ -179,7 +183,7 @@ export const RightArrow = () => <svg
 
         <a
           href="https://discord.gg/storybook"
-          target="_blank"
+          target="_blank" rel="noopener noreferrer"
         >Join Discord server<RightArrow /></a>
       </div>
     </div>
@@ -190,7 +194,7 @@ export const RightArrow = () => <svg
 
         <a
           href="https://www.youtube.com/@chromaticui"
-          target="_blank"
+          target="_blank" rel="noopener noreferrer"
         >Watch on YouTube<RightArrow /></a>
       </div>
     </div>
@@ -200,13 +204,14 @@ export const RightArrow = () => <svg
 
       <a
           href="https://storybook.js.org/tutorials/?ref=configure"
-          target="_blank"
+          target="_blank" rel="noopener noreferrer"
         >Discover tutorials<RightArrow /></a>
     </div>
+
 </div>
 
 <style>
-  {`
+	{`
   .sb-container {
     margin-bottom: 48px;
   }
