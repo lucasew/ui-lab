@@ -18,7 +18,7 @@
 </script>
 
 <span
-	class={`inline-flex items-center justify-center rounded-full text-xs font-semibold px-2 py-0.5 ${variantClasses[variant] || ''} ${className}`}
+	class={`inline-flex items-center justify-center rounded-full px-2 py-0.5 text-xs font-semibold ${variantClasses[variant] || ''} ${className}`}
 >
 	{label}
 </span>

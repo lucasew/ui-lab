@@ -22,10 +22,14 @@
 	}: Props = $props();
 
 	const variantClasses: Record<string, string> = {
-		default: 'border border-[var(--primary)] bg-[var(--primary)] text-[var(--primary-foreground)] hover:opacity-90',
-		outline: 'border border-[var(--input)] bg-transparent text-[var(--foreground)] hover:bg-[var(--accent)]',
-		ghost: 'border border-transparent bg-transparent text-[var(--card-foreground)] hover:bg-[var(--accent)] hover:text-[var(--foreground)]',
-		danger: 'border border-[var(--destructive)] bg-[var(--destructive)] text-[var(--primary-foreground)] hover:opacity-90'
+		default:
+			'border border-[var(--primary)] bg-[var(--primary)] text-[var(--primary-foreground)] hover:opacity-90',
+		outline:
+			'border border-[var(--input)] bg-transparent text-[var(--foreground)] hover:bg-[var(--accent)]',
+		ghost:
+			'border border-transparent bg-transparent text-[var(--card-foreground)] hover:bg-[var(--accent)] hover:text-[var(--foreground)]',
+		danger:
+			'border border-[var(--destructive)] bg-[var(--destructive)] text-[var(--primary-foreground)] hover:opacity-90'
 	};
 
 	const sizeClasses: Record<string, string> = {
