@@ -20,22 +20,22 @@
 		disabled = false,
 		class: className = ''
 	}: Props = $props();
+
+	const variantClasses: Record<string, string> = {
+		default: 'border border-[var(--primary)] bg-[var(--primary)] text-[var(--primary-foreground)] hover:opacity-90',
+		outline: 'border border-[var(--input)] bg-transparent text-[var(--foreground)] hover:bg-[var(--accent)]',
+		ghost: 'border border-transparent bg-transparent text-[var(--card-foreground)] hover:bg-[var(--accent)] hover:text-[var(--foreground)]',
+		danger: 'border border-[var(--destructive)] bg-[var(--destructive)] text-[var(--primary-foreground)] hover:opacity-90'
+	};
+
+	const sizeClasses: Record<string, string> = {
+		default: 'gap-1.5 px-4 py-2 text-sm',
+		large: 'gap-2 px-6 py-2 text-sm'
+	};
 </script>
 
 <button
-	class="inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:ring-2 focus-visible:ring-[#171717] focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 {variant ===
-	'default'
-		? 'border border-[var(--primary)] bg-[var(--primary)] text-[var(--primary-foreground)] hover:opacity-90'
-		: ''} {variant === 'outline'
-		? 'border border-[var(--input)] bg-transparent text-[var(--foreground)] hover:bg-[var(--accent)]'
-		: ''} {variant === 'ghost'
-		? 'border border-transparent bg-transparent text-[var(--card-foreground)] hover:bg-[var(--accent)] hover:text-[var(--foreground)]'
-		: ''} {variant === 'danger'
-		? 'border border-[var(--destructive)] bg-[var(--destructive)] text-[var(--primary-foreground)] hover:opacity-90'
-		: ''} {size ===
-		'default'
-		? 'gap-1.5 px-4 py-2 text-sm'
-		: ''} {size === 'large' ? 'gap-2 px-6 py-2 text-sm' : ''} {className}"
+	class={`inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:ring-2 focus-visible:ring-[#171717] focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 ${variantClasses[variant] || ''} ${sizeClasses[size] || ''} ${className}`}
 	{disabled}
 >
 	{#if icon}
