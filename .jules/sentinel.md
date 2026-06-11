@@ -1,0 +1,1 @@
+- 2026-06-11: [Reverse Tabnabbing: target="_blank" missing rel="noopener noreferrer"]
