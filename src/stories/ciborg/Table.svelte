@@ -13,7 +13,9 @@
 	let { columns = [], data = [], class: className = '' }: Props = $props();
 </script>
 
-<div class="w-full overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--card)] {className}">
+<div
+	class="w-full overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--card)] {className}"
+>
 	<table class="w-full">
 		<thead class="border-b border-[var(--border)] bg-[var(--secondary)]">
 			<tr>
