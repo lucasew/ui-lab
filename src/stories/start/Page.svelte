@@ -19,7 +19,8 @@
 			We recommend building UIs with a
 			<a
 				href="https://blog.hichroma.com/component-driven-development-ce1109d56c8e"
-				target="_blank" rel="noopener noreferrer"
+				target="_blank"
+				rel="noopener noreferrer"
 			>
 				<strong>component-driven</strong>
 			</a>
