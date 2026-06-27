@@ -1,0 +1,1 @@
+- 2026-06-27: Added centralized error reporting at src/lib/utils/error-reporting.ts to satisfy global instruction.

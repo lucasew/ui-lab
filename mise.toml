@@ -1,5 +1,5 @@
 [tools]
-"http:pencil" = { version = "latest", url = "https://www.pencil.dev/download/Pencil-linux-x64.tar.gz" }
+"http:pencil" = { version = "4.0.0", url = "https://www.pencil.dev/download/Pencil-linux-x64.tar.gz" }
 node = "25.2.1"
 
 [tasks.install]
@@ -7,3 +7,5 @@ run = "npm install"
 
 [tasks.dev]
 run = "npm run storybook"
+[tasks.test]
+run = "npm run test"
