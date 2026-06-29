@@ -1,1 +1,2 @@
 - 2026-06-27: Added centralized error reporting at src/lib/utils/error-reporting.ts to satisfy global instruction.
+- 2026-06-29: Extracted common field logic in humantrack components to reduce duplication and maintenance overhead.
