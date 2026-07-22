@@ -24,7 +24,7 @@
 	description="Crie metas com escala completa (-2 a +2). Quanto mais específico for o texto de cada nível, mais fácil será interpretar a evolução."
 >
 	<div class="flex flex-col gap-8 pt-4">
-		{#each rows as row}
+		{#each rows as row (row.label)}
 			<div class="flex flex-col gap-4 border-t border-zinc-200 pt-4 first:border-t-0 first:pt-0">
 				<div class="flex items-center justify-between gap-4">
 					<div class="text-sm font-semibold text-[#292965]">{row.description}</div>

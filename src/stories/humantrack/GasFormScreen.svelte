@@ -1,6 +1,5 @@
 <script lang="ts">
 	import AiBanner from './AiBanner.svelte';
-	import Badge from './Badge.svelte';
 	import Button from './Button.svelte';
 	import HeaderBar from './HeaderBar.svelte';
 	import Input from './Input.svelte';
@@ -110,7 +109,7 @@
 					description="Configure a recorrência e os dias de disparo. O paciente receberá as submissões automaticamente nos horários definidos"
 				>
 					<div class="grid gap-4 md:grid-cols-2">
-						{#each reminders as reminder}
+						{#each reminders as reminder (reminder.day)}
 							<ReminderRow day={reminder.day} time={reminder.time} />
 						{/each}
 					</div>

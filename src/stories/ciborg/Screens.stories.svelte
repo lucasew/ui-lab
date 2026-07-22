@@ -71,7 +71,7 @@
 					{ label: 'Pending jobs', value: '14' },
 					{ label: 'Workers online', value: '8' },
 					{ label: 'Success rate', value: '98.4%' }
-				] as metric}
+				] as metric (metric.label)}
 					<Card>
 						<div class="space-y-1">
 							<div class="text-sm text-[var(--muted-foreground)]">{metric.label}</div>
@@ -132,7 +132,7 @@
 					{ label: 'Open threads', value: '18', note: 'Across coding, review, and ops workflows.' },
 					{ label: 'Waiting on user', value: '5', note: 'Threads paused on approvals, replies, or missing details.' },
 					{ label: 'Project-linked', value: '7', note: 'Optional context, not the default starting point.' }
-				] as metric}
+				] as metric (metric.label)}
 					<Card>
 						<div class="space-y-1">
 							<div class="text-sm text-[var(--muted-foreground)]">{metric.label}</div>
@@ -164,7 +164,7 @@
 						{ title: 'Review the migration plan for the relay artifact cleanup...', type: 'coding' },
 						{ title: 'Summarize the behavioural risks in the shell approval changes...', type: 'review' },
 						{ title: 'Check the flaky image pipeline in infra / worker-images...', type: 'ops' }
-					] as thread}
+					] as thread (thread.title)}
 						<div class="rounded-xl border border-[var(--border)] bg-[var(--secondary)] p-4">
 							<div class="flex items-center justify-between gap-3">
 								<span class="font-medium text-[var(--foreground)]">{thread.title}</span>
@@ -199,7 +199,7 @@
 					{ label: 'Running jobs', value: '12' },
 					{ label: 'Queued jobs', value: '34' },
 					{ label: 'Connected workers', value: '8' }
-				] as metric}
+				] as metric (metric.label)}
 					<Card>
 						<div class="space-y-1">
 							<div class="text-sm text-[var(--muted-foreground)]">{metric.label}</div>
@@ -222,7 +222,7 @@
 						copy: 'Connected 4 minutes ago. This worker reports 2 jobs with 1 more waiting in queue.',
 						actions: ['Drain', 'Queue details']
 					}
-				] as worker}
+				] as worker (worker.name)}
 					<Card>
 						{#snippet header()}
 							<div class="flex items-start justify-between gap-3">
@@ -256,7 +256,7 @@
 						{ title: 'worker-eu-central-1 connected from fra1', state: 'Waiting' },
 						{ title: 'worker-us-east-gpu picked up 2 queued jobs', state: 'Busy' },
 						{ title: 'worker-ap-south-1 drained and disconnected', state: 'Ended' }
-					] as event}
+					] as event (event.title)}
 						<div class="flex items-center justify-between rounded-lg bg-[var(--secondary)] px-4 py-3">
 							<span class="text-sm text-[var(--card-foreground)]">{event.title}</span>
 							<Badge

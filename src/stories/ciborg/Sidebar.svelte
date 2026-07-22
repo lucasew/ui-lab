@@ -1,6 +1,5 @@
 <script lang="ts">
 	import './ciborg.css';
-	import type { Snippet } from 'svelte';
 
 	interface SidebarItem {
 		label: string;
@@ -38,7 +37,7 @@
 	</div>
 
 	<nav class="flex flex-1 flex-col gap-0.5">
-		{#each items as item}
+		{#each items as item (item.label)}
 				<button
 					class="flex w-full items-center justify-between rounded-md px-2 py-1.5 text-sm {item.active
 						? 'bg-[var(--sidebar-accent)] text-[var(--sidebar-accent-foreground)]'
