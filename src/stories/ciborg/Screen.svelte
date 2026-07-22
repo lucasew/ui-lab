@@ -13,7 +13,6 @@
 
 	interface Props {
 		sidebarItems?: SidebarItem[];
-		activeNav?: string;
 		user?: { name: string; avatar?: string };
 		children?: Snippet;
 		fab?: boolean;
@@ -23,7 +22,6 @@
 
 	let {
 		sidebarItems = [],
-		activeNav = 'Overview',
 		user,
 		children,
 		fab = false,
